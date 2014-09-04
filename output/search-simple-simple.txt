@@ -1,0 +1,16 @@
+two
+"input/simple/position.txt", 1, 2
+
+chickadee
+
+aa
+"input/simple/capital_extension.TXT", 1, 1
+
+t
+"input/simple/position.txt", 6, 2
+"input/simple/symbols.txt", 4, 3
+
+elephant antelope
+"input/simple/capitals.txt", 4, 1
+"input/simple/symbols.txt", 3, 1
+

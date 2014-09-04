@@ -1,0 +1,51 @@
+two
+"input/gutenberg/4300.txt", 409, 351
+"input/gutenberg/2701.txt", 302, 874
+"input/gutenberg/98.txt", 233, 9
+"input/gutenberg/1661.txt", 150, 1411
+"input/gutenberg/1342.txt", 135, 1098
+"input/gutenberg/1322.txt", 77, 2679
+"input/rfcs/rfc3031.txt", 43, 1038
+"input/gutenberg/11.txt", 40, 2092
+"input/rfcs/rfc6797.txt", 8, 1769
+"input/rfcs/rfc6841.txt", 6, 749
+"input/rfcs/rfc6819.txt", 6, 2182
+"input/rfcs/rfc6805.txt", 4, 2932
+"input/simple/position.txt", 1, 2
+"input/rfcs/rfc475.txt", 1, 68
+"input/rfcs/rfc6838.txt", 1, 8885
+
+chickadee
+"input/gutenberg/1322.txt", 1, 9175
+
+aa
+"input/rfcs/rfc3031.txt", 3, 9128
+"input/gutenberg/4300.txt", 2, 90283
+"input/simple/capital_extension.TXT", 1, 1
+
+t
+"input/gutenberg/4300.txt", 38299, 1
+"input/gutenberg/2701.txt", 36305, 1
+"input/gutenberg/98.txt", 21552, 1
+"input/gutenberg/1322.txt", 20910, 1
+"input/gutenberg/1342.txt", 16497, 1
+"input/gutenberg/1661.txt", 15609, 4
+"input/gutenberg/11.txt", 5119, 12
+"input/rfcs/rfc6819.txt", 3430, 3
+"input/rfcs/rfc3031.txt", 3296, 15
+"input/rfcs/rfc6797.txt", 1828, 3
+"input/rfcs/rfc6838.txt", 1654, 3
+"input/rfcs/rfc6805.txt", 1423, 3
+"input/rfcs/rfc6841.txt", 990, 3
+"input/rfcs/rfc475.txt", 499, 22
+"input/simple/position.txt", 6, 2
+"input/simple/symbols.txt", 4, 3
+
+elephant antelope
+"input/gutenberg/2701.txt", 33, 17469
+"input/gutenberg/4300.txt", 11, 32792
+"input/simple/capitals.txt", 4, 1
+"input/simple/symbols.txt", 3, 1
+"input/gutenberg/1322.txt", 1, 34878
+"input/gutenberg/98.txt", 1, 65205
+
