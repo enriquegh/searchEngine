@@ -85,9 +85,9 @@ public class WordParser {
 		{
 			String line = null;
 			
-			while((line = reader.readLine()) != null){
-				words.addAll(parseText(line));
-			}
+//			while((line = reader.readLine()) != null){
+//				words.addAll(parseText(line));
+//			}
 			
 		}
 
