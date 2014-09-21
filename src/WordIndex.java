@@ -128,14 +128,11 @@ public class WordIndex {
 	    	for (Entry<String, Map<String, Set<Integer>>> key : wordMap.entrySet()){
 	    		
 	    		writer.write(key.getKey());
-	    		//System.out.println(key.getKey());
 				writer.newLine();
 	    		for (Entry<String, Set<Integer>> blah : key.getValue().entrySet()){
 	    			writer.write("\"" + blah.getKey() + "\""  + ", ");
-	    			//System.out.println(blah.getKey());
     				int i = 0;
 	    			for (Integer pos : blah.getValue()){
-		    			//System.out.println(blah.getValue());
 	    				writer.write(String.valueOf(pos));
 	    				if (i != blah.getValue().size()-1){
 	    					writer.write(", ");
