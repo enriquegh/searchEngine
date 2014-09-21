@@ -24,7 +24,7 @@ public class Driver {
 
 				} catch (IOException x) {
 				    System.err.format("%s%n", x);
-				
+				}
 				
 				//changed traverse from private static void to static void
 
@@ -32,8 +32,21 @@ public class Driver {
 			}
 	
 			if (ap.hasFlag("-i") && !ap.hasValue("-i")){
-				Path indexPath = Paths.get(".","index.txt");
-				Files.createFile(indexPath);
+				String indexPathString = "index.txt";
+				try {
+					Path indexPath = Paths.get(".","index.txt");
+					Files.createFile(indexPath);
+
+					
+				}
+				catch (NoSuchFileException x) {
+				    System.err.format("%s: no such" + " file or directory%n",indexPathString);
+
+				} catch (IOException x) {
+				    System.err.format("%s%n", x);
+				}
+				
+
 			}
 			
 			
@@ -45,6 +58,6 @@ public class Driver {
 			
 
 		}
-	}
-	
 }
+	
+

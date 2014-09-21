@@ -121,7 +121,7 @@ public class WordIndex {
 
 		try (
 			BufferedWriter writer =
-					Files.newBufferedWriter(outputPath, Charset.defaultCharset());
+					Files.newBufferedWriter(outputPath, Charset.forName("UTF-8"));
 		) {
 	    	for (Entry<String, Map<String, Set<Integer>>> key : wordMap.entrySet()){
 	    		

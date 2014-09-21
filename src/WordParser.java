@@ -79,7 +79,7 @@ public class WordParser {
 		ArrayList<String> words = new ArrayList<>();
 		
 		try (
-			BufferedReader reader = Files.newBufferedReader(path, Charset.defaultCharset());	
+			BufferedReader reader = Files.newBufferedReader(path, Charset.forName("UTF-8"));	
 		)
 		
 		{
