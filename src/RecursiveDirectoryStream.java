@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class demonstrates how to use a {@link DirectoryStream} to create a
@@ -34,9 +36,10 @@ public class RecursiveDirectoryStream {
 	 *
 	 * @param prefix the padding or prefix to put infront of the file or subdirectory name
 	 * @param path to retrieve the listing, assumes a directory and not a file is passed
+	 * @return 
 	 * @throws IOException
 	 */
-	private static void traverse(String prefix, Path path) throws IOException {
+	static void traverse(Path path, WordIndex wi) throws IOException {
 		/*
 		 * The try-with-resources block makes sure we close the directory
 		 * stream when done, to make sure there aren't any issues later
@@ -48,20 +51,24 @@ public class RecursiveDirectoryStream {
 		 */
 		try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
 
+			//WordIndex wi = new WordIndex();
 			// Efficiently iterate through the files and subdirectories.
 			for (Path file : listing) {
+
 				// Print the name with the proper padding/prefix.
 				//System.out.println(prefix + file.getFileName());
 				String fileName = file.getFileName().toString().toLowerCase();
-				if(fileName.endsWith(".txt") || fileName.endsWith(".htm")){
-					//FileReader.readFile(file.toAbsolutePath().toString());
-					WordParser.parseFile(file.toAbsolutePath());
+				if(fileName.endsWith(".txt")){
+					List<String> words = WordParser.parseFile(file);
+					for(int i=0;i<words.size();i++){
+						wi.add(words.get(i), file.toString(),i);
+					}
 				}
 				// If it is a subdirectory, recursively traverse.
 				if (Files.isDirectory(file)) {
 					// Add a little bit of padding so files in subdirectory
 					// are indented under that directory.
-					traverse("  " + prefix, file);
+					traverse(file,wi);
 				}
 			}
 		}
@@ -74,14 +81,14 @@ public class RecursiveDirectoryStream {
 	 * @param directory to traverse
 	 * @throws IOException
 	 */
-	public static void traverse(Path directory) throws IOException {
-		if (Files.isDirectory(directory)) {
-			traverse("- ", directory);
-		}
-		else {
-			//System.out.println(directory.getFileName());
-		}
-	}
+//	public static void traverse(Path directory) throws IOException {
+//		if (Files.isDirectory(directory)) {
+//			traverse("- ", directory);
+//		}
+//		else {
+//			//System.out.println(directory.getFileName());
+//		}
+//	}
 
 	/**
 	 * Recursively traverses the current directory and prints the file listing.

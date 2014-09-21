@@ -26,7 +26,7 @@ public class WordParser {
 		text = text.toLowerCase();
 		text = text.replaceAll("\n", "");
 		text = text.replaceAll("\\W+", " ");
-		text = text.replace("_", "");
+		text = text.replace("_", " ");
 		text = text.trim();
 		
 		
@@ -85,9 +85,9 @@ public class WordParser {
 		{
 			String line = null;
 			
-//			while((line = reader.readLine()) != null){
-//				words.addAll(parseText(line));
-//			}
+			while((line = reader.readLine()) != null){
+				words.addAll(parseText(line));
+			}
 			
 		}
 

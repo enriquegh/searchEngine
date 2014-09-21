@@ -11,26 +11,33 @@ public class Driver {
 
 	public static void main(String[] args) throws IOException {
 		// TODO
+		String outputPath;
 		ArgumentParser ap = new ArgumentParser(args);
-		
-		if (ap.hasFlag("-i") && !ap.hasValue("-i")){
-			Path indexPath = Paths.get(".","index.txt").toAbsolutePath();
-			Files.createFile(indexPath);
-		}
-		
-		if (ap.hasFlag("-i") && ap.hasValue("-i")){
-			String outputPath = ap.getValue("-i");
-		}
-		
+		WordIndex wi = new WordIndex();
+
+	
 		if (ap.hasFlag("-d") && ap.hasValue("-d")){
 			String directoryPath = ap.getValue("-d");
 			Path path = Paths.get(directoryPath);
-			RecursiveDirectoryStream.traverse(path);
+			//changed traverse from private static void to static void
+			RecursiveDirectoryStream.traverse(path,wi);
 
 		}
 
+		if (ap.hasFlag("-i") && !ap.hasValue("-i")){
+			Path indexPath = Paths.get(".","index.txt");
+			Files.createFile(indexPath);
+		}
 		
-		WordParser wp = new WordParser();
+		
+		if (ap.hasFlag("-i") && ap.hasValue("-i")){
+			outputPath = ap.getValue("-i");
+			wi.print(outputPath);
+
+		}
+		
+		
+		//WordParser wp = new WordParser();
 	}
 	
 }
