@@ -16,7 +16,9 @@ public class WordIndex {
     /**
      * Stores a mapping of words to the positions those words were found.
      */
-    private Map<String, Map<String,Set<Integer>>> wordMap;
+    private Map<String, Map<String,Set<Integer>>> wordMap; // TODO Only member you need and should have. Make final.
+    
+    // TODO Avoid creating unnecessary members
     private Map<String,Set<Integer>> pathMap;
     private Set<Integer> set;
 
@@ -25,7 +27,7 @@ public class WordIndex {
      * available, as sorting is not a requirement of this index.
      */
     public WordIndex() {
-        wordMap = new TreeMap<String, Map<String,Set<Integer>>>();
+        wordMap = new TreeMap<String, Map<String, Set<Integer>>>();
 
     }
 
@@ -42,8 +44,10 @@ public class WordIndex {
      *         false if no changes were made to the index
      */
     public boolean add(String word, String path, int position) {
+        // TODO Makes more sense to do the +1 in the building/traversing class.
 
     	if(!wordMap.containsKey(word)){
+    	    // TODO Create pathMap and set as a local variable here
     		pathMap = new TreeMap<String,Set<Integer>>();
             set = new TreeSet<Integer>();
             
@@ -55,14 +59,16 @@ public class WordIndex {
 
     	}
     	else{
-
-    		if(wordMap.containsKey(word) && !wordMap.get(word).containsKey(path)){
+            // TODO You know wordMap contains the key, do not need to retest
+            
+    		if(wordMap.containsKey(word) && !wordMap.get(word).containsKey(path)){ // TODO Just test !wordMap.get(word).containsKey(path)
                 set = new TreeSet<Integer>();
     			set.add(position+1);
     			wordMap.get(word).put(path,set);
 
     			return true;
     		}
+    		// TODO You know word map contains the key AND the path, just test the position
     		else if (wordMap.containsKey(word) && wordMap.get(word).containsKey(path) && !wordMap.get(word).get(path).contains(position+1)){
 
     			wordMap.get(word).get(path).add(position+1);
@@ -123,11 +129,23 @@ public class WordIndex {
 			BufferedWriter writer =
 					Files.newBufferedWriter(outputPath, Charset.forName("UTF-8"));
 		) {
+		    // TODO rename key to word
 	    	for (Entry<String, Map<String, Set<Integer>>> key : wordMap.entrySet()){
 	    		
 	    		writer.write(key.getKey());
 				writer.newLine();
+				// TODO Rename blah to location
 	    		for (Entry<String, Set<Integer>> blah : key.getValue().entrySet()){
+
+                    // TODO Comma trick	    		    
+	    		 //   writer.write("\"" + blah.getKey() + "\"");
+	    		    
+	    		 //   for (Integer position : blah.getValue()) {
+	    		 //       writer.write(", " + position);
+	    		 //   }
+	    		    
+	    		    
+	    		    
 	    			writer.write("\"" + blah.getKey() + "\""  + ", ");
     				int i = 0;
 	    			for (Integer pos : blah.getValue()){
