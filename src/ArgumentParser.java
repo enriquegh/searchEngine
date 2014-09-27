@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 
+// TODO Remove old todo comments.
+
 /**
  * Parses command-line arguments into flag/value pairs for easy access.
  */
@@ -70,6 +72,10 @@ public class ArgumentParser {
 	 * @return true if the argument is a flag
 	 */
 	public static boolean isFlag(String arg) {
+		
+		// TODO
+		// return arg.startsWith("-") && arg.trim().length() > 1;
+		
 		// TODO
 		char[] argArray = arg.toCharArray();
 		
@@ -106,6 +112,8 @@ public class ArgumentParser {
 	 */
 	
 	public static boolean isValue(String arg) {
+		// TODO Take a simliar approach
+		
 		// TODO
 		
 		char[] argArray = arg.toCharArray();
@@ -150,6 +158,9 @@ public class ArgumentParser {
 	 */
 	public boolean hasFlag(String flag) {
 		// TODO
+		// return argumentMap.containsKey(flag);
+		
+		// TODO
 		if (argumentMap.containsKey(flag)){
 			return true;
 
@@ -168,7 +179,7 @@ public class ArgumentParser {
 	public boolean hasValue(String flag) {
 		// TODO
 		if (argumentMap.containsKey(flag)){
-			if (argumentMap.get(flag) != null){
+			if (argumentMap.get(flag) != null){ // TODO Just return argumentMap.get(flag) != null;
 				return true;
 			}
 			else{
@@ -190,7 +201,7 @@ public class ArgumentParser {
 		// TODO
 
 		if (hasFlag(flag)){
-			return argumentMap.get(flag);
+			return argumentMap.get(flag); // TODO Only need this line.
 		}
 		else{
 			return null;
