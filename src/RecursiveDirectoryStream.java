@@ -5,6 +5,9 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
+// TODO Update comments, get rid of unused stuff.
+// TODO Rename InvertedIndexBuilder
+
 /**
  * This class demonstrates how to use a {@link DirectoryStream} to create a
  * recursive file listing.
@@ -39,7 +42,8 @@ public class RecursiveDirectoryStream {
 	 * @return 
 	 * @throws IOException
 	 */
-	static void traverse(Path path, WordIndex wi) throws IOException {
+	 // TODO Rename wi to index
+	static void traverse(Path path, WordIndex wi) throws IOException { // TODO public static void build or parseDirectory etc.
 		/*
 		 * The try-with-resources block makes sure we close the directory
 		 * stream when done, to make sure there aren't any issues later
@@ -49,7 +53,7 @@ public class RecursiveDirectoryStream {
 		 * type of try block does not have to be accompanied with a catch
 		 * block. (You should, however, do something about the exception.)
 		 */
-		try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
+		try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) { // TODO Formatting
 
 			//WordIndex wi = new WordIndex();
 			// Efficiently iterate through the files and subdirectories.
@@ -58,17 +62,21 @@ public class RecursiveDirectoryStream {
 				// Print the name with the proper padding/prefix.
 				//System.out.println(prefix + file.getFileName());
 				String fileName = file.getFileName().toString().toLowerCase();
-				if(fileName.endsWith(".txt")){
+				
+				if (fileName.endsWith(".txt")) {
+					// TODO Functional but inefficient!
 					List<String> words = WordParser.parseFile(file);
-					for(int i=0;i<words.size();i++){
-						wi.add(words.get(i), file.toString(),i);
+					
+					for (int i = 0; i < words.size(); i++) {
+						wi.add(words.get(i), file.toString(), i);
 					}
 				}
+				
 				// If it is a subdirectory, recursively traverse.
 				if (Files.isDirectory(file)) {
 					// Add a little bit of padding so files in subdirectory
 					// are indented under that directory.
-					traverse(file,wi);
+					traverse(file, wi);
 				}
 			}
 		}

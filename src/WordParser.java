@@ -6,6 +6,8 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
+// TODO Check formatting in Eclipse (try to use spaces instead of tabs in general).
+
 /**
  * Contains several methods for parsing text into words. Assumes words are
  * separated by whitespace.
@@ -24,6 +26,10 @@ public class WordParser {
 	public static String cleanText(String text) {
 		
 		text = text.toLowerCase();
+		
+		// TODO Simplier regular expression
+		// text = text.replaceAll("[\\W_]+", " ");
+		
 		text = text.replaceAll("\n", "");
 		text = text.replaceAll("\\W+", " ");
 		text = text.replace("_", " ");
@@ -51,7 +57,7 @@ public class WordParser {
 
 		String[] wordsString = cleanText(text).split(" ");
 			for (String word : wordsString ){
-				if (!word.equals("")){
+				if (!word.equals("")){ // TODO !word.isEmpty()
 					words.add(word);
 				}
 			}
