@@ -10,17 +10,12 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-
 public class WordIndex {
 
     /**
      * Stores a mapping of words to the positions those words were found.
      */
-    private Map<String, Map<String,Set<Integer>>> wordMap; // TODO Only member you need and should have. Make final.
-    
-    // TODO Avoid creating unnecessary members
-    private Map<String,Set<Integer>> pathMap;
-    private Set<Integer> set;
+    private final Map<String, Map<String, Set<Integer>>> wordMap;
 
     /**
      * Properly initializes the index. Choose the fastest data structures
@@ -40,132 +35,120 @@ public class WordIndex {
      *            - word to add to index
      * @param position
      *            - position word was found
-     * @return true if this was a unique entry,
-     *         false if no changes were made to the index
+     * @return true if this was a unique entry, false if no changes were made to
+     *         the index
      */
     public boolean add(String word, String path, int position) {
-        // TODO Makes more sense to do the +1 in the building/traversing class.
 
-    	if(!wordMap.containsKey(word)){
-    	    // TODO Create pathMap and set as a local variable here
-    		pathMap = new TreeMap<String,Set<Integer>>();
-            set = new TreeSet<Integer>();
-            
-    		wordMap.put(word, pathMap);
-    		pathMap.put(path, set);
-    		set.add(Integer.valueOf(position+1));
+        Set<Integer> set;
+        if (!wordMap.containsKey(word)) {
 
-    		return true;
+            Map<String, Set<Integer>> pathMap = new TreeMap<>();
+            set = new TreeSet<>();
 
-    	}
-    	else{
-            // TODO You know wordMap contains the key, do not need to retest
-            
-    		if(wordMap.containsKey(word) && !wordMap.get(word).containsKey(path)){ // TODO Just test !wordMap.get(word).containsKey(path)
+            wordMap.put(word, pathMap);
+            pathMap.put(path, set);
+            set.add(Integer.valueOf(position));
+
+            return true;
+
+        } else {
+
+            if (!wordMap.get(word).containsKey(path)) { // TODO Just test
+                                                        // !wordMap.get(word).containsKey(path)
                 set = new TreeSet<Integer>();
-    			set.add(position+1);
-    			wordMap.get(word).put(path,set);
+                set.add(position);
+                wordMap.get(word).put(path, set);
 
-    			return true;
-    		}
-    		// TODO You know word map contains the key AND the path, just test the position
-    		else if (wordMap.containsKey(word) && wordMap.get(word).containsKey(path) && !wordMap.get(word).get(path).contains(position+1)){
+                return true;
+            }
 
-    			wordMap.get(word).get(path).add(position+1);
-    			return true;
-    		}
-    		
-			else{
-				return false;
-			}
-    	
-    	}
-    	
+            else if (!wordMap.get(word).get(path).contains(position)) {
+
+                wordMap.get(word).get(path).add(position);
+                return true;
+            }
+
+            else {
+                return false;
+            }
+
+        }
+
     }
 
     /**
      * Returns the number of times a word was found (i.e. the number of
      * positions associated with a word in the index).
      *
-     * @param word - word to look for
+     * @param word
+     *            - word to look for
      * @return number of times word was found
      */
 
-
     /**
      * Returns the total number of words stored in the index.
+     * 
      * @return number of words
      */
     public int words() {
-    	return wordMap.size();
+        return wordMap.size();
     }
 
     /**
      * Tests whether the index contains the specified word.
-     * @param word - word to look for
+     * 
+     * @param word
+     *            - word to look for
      * @return true if the word is stored in the index
      */
     public boolean contains(String word) {
-    	return wordMap.containsKey(word);
+        return wordMap.containsKey(word);
     }
 
     /**
-     * Safely returns the set of positions for a specified word (or an
-     * empty set if the word is not found). Be wary of directly returning
-     * a reference to your private mutable data!
+     * Safely returns the set of positions for a specified word (or an empty set
+     * if the word is not found). Be wary of directly returning a reference to
+     * your private mutable data!
      *
-     * @param word - word to look for
-     * @return set of positions associated with word (will be empty if
-     *         word was not found)
-     * @throws IOException 
+     * @param word
+     *            - word to look for
+     * @return set of positions associated with word (will be empty if word was
+     *         not found)
+     * @throws IOException
      */
 
-    
     public void print(String output) throws IOException {
-    	
-		Path outputPath = Paths.get(output);
 
-		try (
-			BufferedWriter writer =
-					Files.newBufferedWriter(outputPath, Charset.forName("UTF-8"));
-		) {
-		    // TODO rename key to word
-	    	for (Entry<String, Map<String, Set<Integer>>> key : wordMap.entrySet()){
-	    		
-	    		writer.write(key.getKey());
-				writer.newLine();
-				// TODO Rename blah to location
-	    		for (Entry<String, Set<Integer>> blah : key.getValue().entrySet()){
+        Path outputPath = Paths.get(output);
 
-                    // TODO Comma trick	    		    
-	    		 //   writer.write("\"" + blah.getKey() + "\"");
-	    		    
-	    		 //   for (Integer position : blah.getValue()) {
-	    		 //       writer.write(", " + position);
-	    		 //   }
-	    		    
-	    		    
-	    		    
-	    			writer.write("\"" + blah.getKey() + "\""  + ", ");
-    				int i = 0;
-	    			for (Integer pos : blah.getValue()){
-	    				writer.write(String.valueOf(pos));
-	    				if (i != blah.getValue().size()-1){
-	    					writer.write(", ");
-	    				}
-	    				i++;
-	    				
+        try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
+                Charset.forName("UTF-8"));) {
+            
+            for (Entry<String, Map<String, Set<Integer>>> word : wordMap
+                    .entrySet()) {
 
-	    			}
-    				writer.newLine();
+                writer.write(word.getKey());
+                writer.newLine();
 
-	    		}
-				writer.newLine();
-	    		writer.flush();
+                for (Entry<String, Set<Integer>> location : word.getValue()
+                        .entrySet()) {
 
-	    	}
-			
-	}
+                    writer.write("\"" + location.getKey() + "\"");
+
+                    for (Integer position : location.getValue()) {
+                        writer.write(", " + position);
+                    }
+
+                    writer.newLine();
+
+                }
+                writer.newLine();
+                writer.flush();
+
+            }
+
+        }
 
     }
 
@@ -174,7 +157,7 @@ public class WordIndex {
      */
     @Override
     public String toString() {
-    	// THIS METHOD IS PROVIDED FOR YOU
+
         return wordMap.toString();
     }
 }
