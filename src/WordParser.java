@@ -8,13 +8,13 @@ import java.util.List;
 
 
 /**
- * Contains several methods for parsing text into words. Assumes words are
- * separated by whitespace.
+ * This class parses through text removing unnecessary spaces and special
+ * characters and assumes words will be separated by whitespace.
  */
 public class WordParser {
 
     /**
-     * Converts text into a consistent format by converting text to lower- case,
+     * Converts text into a consistent format by converting text to lower-case,
      * replacing non-word characters and underscores with a single space, and
      * finally removing leading and trailing whitespace. (See the {@link String}
      * class for several helpful methods.)
@@ -40,12 +40,6 @@ public class WordParser {
      * {@link #cleanText(String)} so that they are in a consistent format, and
      * adds non-empty words to an {@link ArrayList}.
      *
-     * <p>
-     * <em>
-     * You must use the {@link #cleanText(String)} method and an enhanced
-     * for loop to receive full credit for this method.
-     * </em>
-     * </p>
      *
      * @param text
      *            - original text
@@ -68,14 +62,6 @@ public class WordParser {
      * Reads a file line-by-line and parses the resulting line into words using
      * the {@link #parseText(String)} method. Adds the parsed words to a master
      * list of words, which is returned at the end.
-     *
-     * <p>
-     * <em>
-     * You must use the {@link #parseText(String)}, a try-with-resources
-     * block, and read and store only one line at a time to receive full
-     * credit for this method. You can throw an IOException in this method. 
-     * </em>
-     * </p>
      *
      * @param path
      *            - file path to open

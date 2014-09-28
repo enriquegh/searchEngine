@@ -2,14 +2,11 @@ import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 
-// TODO Update comments, get rid of unused stuff.
-
 /**
- * This class demonstrates how to use a {@link DirectoryStream} to create a
- * recursive file listing.
+ * This class traverses over all the files on a given folder figures out
+ * if files are text parses them with {@link WordParser} and adds them into {@link WordIndex }.
  *
  * <p>
  * <em>
@@ -18,14 +15,6 @@ import java.util.List;
  * </em>
  * </p>
  *
- * @see <a
- *      href="http://docs.oracle.com/javase/tutorial/essential/io/index.html">
- *      The Java Tutorials - Lesson: Basic I/O </a>
- *
- * @see java.nio.file.Path
- * @see java.nio.file.Paths
- * @see java.nio.file.Files
- * @see java.nio.file.DirectoryStream
  */
 public class InvertedIndexBuilder {
 
@@ -34,37 +23,22 @@ public class InvertedIndexBuilder {
      * help indicate the hierarchy. If a subdirectory is encountered, will
      * recursively list all the files in that subdirectory.
      *
-     * The recursive version of this method is private. Users of this class will
-     * have to use the public version (see below).
      *
-     * @param prefix
-     *            the padding or prefix to put infront of the file or
-     *            subdirectory name
      * @param path
      *            to retrieve the listing, assumes a directory and not a file is
      *            passed
+     * @param index
+     *            WordIndex instance where the the files, words and position will be stored
      * @return
      * @throws IOException
      */
 
     public static void traverse(Path path, WordIndex index) throws IOException {
-        /*
-         * The try-with-resources block makes sure we close the directory stream
-         * when done, to make sure there aren't any issues later when accessing
-         * this directory.
-         * 
-         * Note, however, we are still not catching any exceptions. This type of
-         * try block does not have to be accompanied with a catch block. (You
-         * should, however, do something about the exception.)
-         */
-        try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) { // TODO
-                                                                               // Formatting
 
-            // Efficiently iterate through the files and subdirectories.
+        try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
+
             for (Path file : listing) {
-
-                // Print the name with the proper padding/prefix.
-                // System.out.println(prefix + file.getFileName());
+                
                 String fileName = file.getFileName().toString().toLowerCase();
 
                 if (fileName.endsWith(".txt")) {
@@ -79,8 +53,6 @@ public class InvertedIndexBuilder {
 
                 // If it is a subdirectory, recursively traverse.
                 if (Files.isDirectory(file)) {
-                    // Add a little bit of padding so files in subdirectory
-                    // are indented under that directory.
                     traverse(file, index);
                 }
             }

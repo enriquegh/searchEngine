@@ -10,12 +10,9 @@ public class ArgumentParser {
     private final Map<String, String> argumentMap;
 
     /**
-     * Initializes an empty argument map. The method
-     * {@link #parseArguments(String[])} should eventually be called to populate
-     * the map.
+     * Initializes an empty argument map.
      */
     public ArgumentParser() {
-
         argumentMap = new HashMap<String, String>();
     }
 
@@ -45,7 +42,6 @@ public class ArgumentParser {
      * @see #isValue(String)
      */
     public void parseArguments(String[] args) {
-
         for (int i = 0; i < args.length; i++) {
             if (isFlag(args[i])) {
                 if ((i + 1 < args.length) && isValue(args[i + 1])) {
@@ -71,9 +67,7 @@ public class ArgumentParser {
      * @return true if the argument is a flag
      */
     public static boolean isFlag(String arg) {
-
         return arg.startsWith("-") && arg.trim().length() > 1;
-
     }
 
     /**
@@ -88,9 +82,7 @@ public class ArgumentParser {
      */
 
     public static boolean isValue(String arg) {
-
         return !arg.startsWith("-") && arg.trim().length() > 1;
-
     }
 
     /**
@@ -101,9 +93,7 @@ public class ArgumentParser {
      * @return true if the flag exists and false otherwise
      */
     public boolean hasFlag(String flag) {
-
         return argumentMap.containsKey(flag);
-
     }
 
     /**
@@ -115,7 +105,6 @@ public class ArgumentParser {
      */
     public boolean hasValue(String flag) {
         if (argumentMap.containsKey(flag)) {
-
             return argumentMap.get(flag) != null;
         }
 
@@ -132,9 +121,7 @@ public class ArgumentParser {
      * @return value of flag or null if flag does not exist or has no value
      */
     public String getValue(String flag) {
-
         return argumentMap.get(flag);
-
     }
 
     @Override

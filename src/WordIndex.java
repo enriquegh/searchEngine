@@ -13,14 +13,10 @@ import java.util.TreeSet;
 public class WordIndex {
 
     /**
-     * Stores a mapping of words to the positions those words were found.
+     * Stores a mapping of words to the path and position those words were found.
      */
     private final Map<String, Map<String, Set<Integer>>> wordMap;
 
-    /**
-     * Properly initializes the index. Choose the fastest data structures
-     * available, as sorting is not a requirement of this index.
-     */
     public WordIndex() {
         wordMap = new TreeMap<String, Map<String, Set<Integer>>>();
 
@@ -33,6 +29,8 @@ public class WordIndex {
      *
      * @param word
      *            - word to add to index
+     * @param path
+     *            - path where word was found
      * @param position
      *            - position word was found
      * @return true if this was a unique entry, false if no changes were made to
@@ -78,24 +76,6 @@ public class WordIndex {
     }
 
     /**
-     * Returns the number of times a word was found (i.e. the number of
-     * positions associated with a word in the index).
-     *
-     * @param word
-     *            - word to look for
-     * @return number of times word was found
-     */
-
-    /**
-     * Returns the total number of words stored in the index.
-     * 
-     * @return number of words
-     */
-    public int words() {
-        return wordMap.size();
-    }
-
-    /**
      * Tests whether the index contains the specified word.
      * 
      * @param word
@@ -111,10 +91,9 @@ public class WordIndex {
      * if the word is not found). Be wary of directly returning a reference to
      * your private mutable data!
      *
-     * @param word
-     *            - word to look for
-     * @return set of positions associated with word (will be empty if word was
-     *         not found)
+     * @param output
+     *            - path where the word, path and position will be stored in
+     * @return
      * @throws IOException
      */
 
