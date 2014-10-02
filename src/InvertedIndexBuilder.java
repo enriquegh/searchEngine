@@ -43,12 +43,14 @@ public class InvertedIndexBuilder {
 
                 if (fileName.endsWith(".txt")) {
                     // TODO Functional but inefficient!
-                    List<String> words = WordParser.parseFile(file);
+//                    List<String> words = WordParser.parseFile(file);
+                    
+                    index.addAll(WordParser.parseFile(file),file.toString(),1);
 
-                    for (int i = 0; i < words.size(); i++) {
-                        // Adding i+1 to get positions starting from 1
-                        index.add(words.get(i), file.toString(), i+1);
-                    }
+//                    for (int i = 0; i < words.size(); i++) {
+//                        // Adding i+1 to get positions starting from 1
+//                        index.add(words.get(i), file.toString(), i+1);
+//                    }
                 }
 
                 // If it is a subdirectory, recursively traverse.

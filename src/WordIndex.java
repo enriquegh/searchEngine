@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -75,6 +76,15 @@ public class WordIndex {
 
     }
 
+    
+    public boolean addAll(List<String> list, String file, int i){
+        for (String word : list){
+            add(word,file, i);
+            i++;
+        }
+        return true;
+    }
+    
     /**
      * Tests whether the index contains the specified word.
      * 
