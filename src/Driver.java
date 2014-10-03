@@ -4,8 +4,6 @@ import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-// TODO Javadoc, describes how to run the program
-
 /**
  * This class runs all the methods and classes needed to make search
  * engine work. Driver calls {@link ArgumentParser} & {@link InvertedIndex}.
