@@ -1,8 +1,3 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,10 +21,7 @@ public class WordParser {
     public static String cleanText(String text) {
 
         text = text.toLowerCase();
-
-        text = text.replaceAll("\n", "");   // TODO Double check that this is necessary
-        text = text.replaceAll("[\\W_]+", " ");
-        
+        text = text.replaceAll("[\\W_]+", " ");       
         text = text.trim();
 
         return text;
@@ -53,34 +45,6 @@ public class WordParser {
             if (!word.isEmpty()) {
                 words.add(word);
             }
-        }
-
-        return words;
-    }
-
-    /**
-     * Reads a file line-by-line and parses the resulting line into words using
-     * the {@link #parseText(String)} method. Adds the parsed words to a master
-     * list of words, which is returned at the end.
-     *
-     * @param path
-     *            - file path to open
-     * @return list of cleaned words
-     * @throws IOException
-     */
-    public static List<String> parseFile(Path path) throws IOException {
-        ArrayList<String> words = new ArrayList<>();
-
-        try (BufferedReader reader = Files.newBufferedReader(path,
-                Charset.forName("UTF-8"));)
-
-        {
-            String line = null;
-
-            while ((line = reader.readLine()) != null) {
-                words.addAll(parseText(line));
-            }
-
         }
 
         return words;

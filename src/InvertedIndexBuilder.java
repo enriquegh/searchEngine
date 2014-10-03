@@ -1,12 +1,13 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 /**
  * This class traverses over all the files on a given folder figures out
- * if files are text parses them with {@link WordParser} and adds them into {@link WordIndex }.
+ * if files are text parses them with {@link WordParser} and adds them into {@link InvertedIndex }.
  *
  * <p>
  * <em>
@@ -33,7 +34,7 @@ public class InvertedIndexBuilder {
      * @throws IOException
      */
 
-    public static void traverse(Path path, WordIndex index) throws IOException {
+    public static void traverse(Path path, InvertedIndex index) throws IOException {
 
         try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
 
@@ -42,15 +43,7 @@ public class InvertedIndexBuilder {
                 String fileName = file.getFileName().toString().toLowerCase();
 
                 if (fileName.endsWith(".txt")) {
-                    // TODO Functional but inefficient!
-//                    List<String> words = WordParser.parseFile(file);
-                    // TODO Call parseFile instead
-                    index.addAll(WordParser.parseFile(file),file.toString(),1);
-
-//                    for (int i = 0; i < words.size(); i++) {
-//                        // Adding i+1 to get positions starting from 1
-//                        index.add(words.get(i), file.toString(), i+1);
-//                    }
+                    parseFile(file, index);
                 }
 
                 // If it is a subdirectory, recursively traverse.
@@ -61,11 +54,29 @@ public class InvertedIndexBuilder {
         }
     }
 
-    // TODO Add for efficiency
-    public static void parseFile(Path file, WordIndex index) {
-        // Loop through the file line by line 
-        // For every line, call WordParser.cleanText(), split here
-        // Loop through the split words and add directly to the index
+    public static void parseFile(Path file, InvertedIndex index) throws IOException {
+        
+        try (BufferedReader reader = Files.newBufferedReader(file,
+                Charset.forName("UTF-8"));)
+
+        {
+            String line = null;
+            int i = 1;
+            
+            while ((line = reader.readLine()) != null) {
+  
+                String[] wordsString = WordParser.cleanText(line).split(" ");
+                
+                for (String word : wordsString) {
+
+                    if (!word.isEmpty()) {
+                        index.add(word, file.toString(), i);
+                        i++;
+                    }
+
+                }
+            }
+        }
         
     }
 

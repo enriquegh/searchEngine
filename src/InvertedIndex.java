@@ -11,14 +11,14 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class WordIndex { // TODO Rename to InvertedIndex
+public class InvertedIndex {
 
     /**
      * Stores a mapping of words to the path and position those words were found.
      */
     private final Map<String, Map<String, Set<Integer>>> wordMap;
 
-    public WordIndex() {
+    public InvertedIndex() {
         wordMap = new TreeMap<String, Map<String, Set<Integer>>>();
 
     }
@@ -75,11 +75,21 @@ public class WordIndex { // TODO Rename to InvertedIndex
 
     }
 
-    // TODO Javadoc
-    public boolean addAll(List<String> list, String file, int i) {
+    /**
+     * Adds a whole List of type String into the WordIndex
+     * 
+     * @param list
+     *            - list to be added
+     * @param file
+     *            - String path to where word was found
+     * @param start
+     *            - Number where the position should start
+     * @return true if the word is stored in the index
+     */
+    public boolean addAll(List<String> list, String file, int start) {
         for (String word : list) {
-            add(word,file, i);
-            i++;
+            add(word,file, start);
+            start++;
         }
         return true;
     }

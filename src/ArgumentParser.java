@@ -44,16 +44,12 @@ public class ArgumentParser {
     public void parseArguments(String[] args) {
         for (int i = 0; i < args.length; i++) {
             if (isFlag(args[i])) {
-                if ((i + 1 < args.length) && isValue(args[i + 1])) {
+                if ((i + 1 < args.length) && isValue(args[i + 1]))
                     argumentMap.put(args[i], args[i + 1]);
-                } else {
+                else
                     argumentMap.put(args[i], null);
-                }
-            } else { // TODO Remove
-
             }
         }
-
     }
 
     /**

@@ -6,12 +6,19 @@ import java.nio.file.Paths;
 
 // TODO Javadoc, describes how to run the program
 
+/**
+ * This class runs all the methods and classes needed to make search
+ * engine work. Driver calls {@link ArgumentParser} & {@link InvertedIndex}.
+ * Checks that the flag -d and a directory are entered.
+ * If flag -i is entered an output directory will be included.
+ * If flag is included but no directory it will be saved to "index.txt"
+ */
 public class Driver {
 
     public static void main(String[] args) throws IOException {
         String outputPath;
         ArgumentParser ap = new ArgumentParser(args);
-        WordIndex wi = new WordIndex();
+        InvertedIndex wi = new InvertedIndex();
 
         if (ap.hasFlag("-d") && ap.hasValue("-d")) {
             String directoryPath = ap.getValue("-d");
