@@ -11,7 +11,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class WordIndex {
+public class WordIndex { // TODO Rename to InvertedIndex
 
     /**
      * Stores a mapping of words to the path and position those words were found.
@@ -53,8 +53,7 @@ public class WordIndex {
 
         } else {
 
-            if (!wordMap.get(word).containsKey(path)) { // TODO Just test
-                                                        // !wordMap.get(word).containsKey(path)
+            if (!wordMap.get(word).containsKey(path)) { 
                 set = new TreeSet<Integer>();
                 set.add(position);
                 wordMap.get(word).put(path, set);
@@ -76,9 +75,9 @@ public class WordIndex {
 
     }
 
-    
-    public boolean addAll(List<String> list, String file, int i){
-        for (String word : list){
+    // TODO Javadoc
+    public boolean addAll(List<String> list, String file, int i) {
+        for (String word : list) {
             add(word,file, i);
             i++;
         }

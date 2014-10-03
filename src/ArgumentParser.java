@@ -49,7 +49,7 @@ public class ArgumentParser {
                 } else {
                     argumentMap.put(args[i], null);
                 }
-            } else {
+            } else { // TODO Remove
 
             }
         }
@@ -107,7 +107,6 @@ public class ArgumentParser {
         if (argumentMap.containsKey(flag)) {
             return argumentMap.get(flag) != null;
         }
-
         else {
             return false;
         }

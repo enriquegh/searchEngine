@@ -44,7 +44,7 @@ public class InvertedIndexBuilder {
                 if (fileName.endsWith(".txt")) {
                     // TODO Functional but inefficient!
 //                    List<String> words = WordParser.parseFile(file);
-                    
+                    // TODO Call parseFile instead
                     index.addAll(WordParser.parseFile(file),file.toString(),1);
 
 //                    for (int i = 0; i < words.size(); i++) {
@@ -61,5 +61,12 @@ public class InvertedIndexBuilder {
         }
     }
 
+    // TODO Add for efficiency
+    public static void parseFile(Path file, WordIndex index) {
+        // Loop through the file line by line 
+        // For every line, call WordParser.cleanText(), split here
+        // Loop through the split words and add directly to the index
+        
+    }
 
 }
