@@ -27,7 +27,7 @@ public class WordParser {
 
         text = text.toLowerCase();
 
-        text = text.replaceAll("\n", "");
+        text = text.replaceAll("\n", "");   // TODO Double check that this is necessary
         text = text.replaceAll("[\\W_]+", " ");
         
         text = text.trim();
