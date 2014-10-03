@@ -4,6 +4,8 @@ import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+// TODO Javadoc, describes how to run the program
+
 public class Driver {
 
     public static void main(String[] args) throws IOException {
