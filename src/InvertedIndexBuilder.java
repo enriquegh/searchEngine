@@ -54,6 +54,7 @@ public class InvertedIndexBuilder {
         }
     }
 
+    // TODO Missing Javadoc
     public static void parseFile(Path file, InvertedIndex index) throws IOException {
         
         try (BufferedReader reader = Files.newBufferedReader(file,
