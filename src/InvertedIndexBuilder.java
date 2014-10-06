@@ -54,7 +54,20 @@ public class InvertedIndexBuilder {
         }
     }
 
-    // TODO Missing Javadoc
+    /**
+     * Parses through the entire file reading line by line.
+     * It cleans text using {@link WordParser} and stores word into a {@link WordIndex}
+     * 
+     *
+     *
+     * @param path
+     *            File that will be read
+     * @param index
+     *            WordIndex instance where the the files, words and position will be stored
+     * @return
+     * @throws IOException
+     */
+    
     public static void parseFile(Path file, InvertedIndex index) throws IOException {
         
         try (BufferedReader reader = Files.newBufferedReader(file,

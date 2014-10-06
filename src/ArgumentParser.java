@@ -44,12 +44,13 @@ public class ArgumentParser {
     public void parseArguments(String[] args) {
         for (int i = 0; i < args.length; i++) {
             if (isFlag(args[i])) {
-                // TODO Beware this style if statement! This was a cause of a HUGE Apple bug last year.
-                // TODO It is a good idea to ALWAYS use { } even when there is only a single statement.
-                if ((i + 1 < args.length) && isValue(args[i + 1]))
+                
+                if ((i + 1 < args.length) && isValue(args[i + 1])) {
                     argumentMap.put(args[i], args[i + 1]);
-                else
+                }
+                else {
                     argumentMap.put(args[i], null);
+                }
             }
         }
     }
