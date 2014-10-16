@@ -4,6 +4,8 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.List;
@@ -11,12 +13,15 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class InvertedIndex {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+public class InvertedIndex {
+    private static Logger logger = LogManager.getLogger();
     /**
      * Stores a mapping of words to the path and position those words were found.
      */
-    private final Map<String, Map<String, Set<Integer>>> wordMap;
+    private final TreeMap<String, Map<String, Set<Integer>>> wordMap;
 
     public InvertedIndex() {
         wordMap = new TreeMap<String, Map<String, Set<Integer>>>();
@@ -148,6 +153,25 @@ public class InvertedIndex {
 
         }
 
+    }
+    //TODO search function on InvertedIndex Function
+    public void search(String[] queryList) {
+        for (String query : queryList) {
+                      
+            for (Entry<String, Map<String, Set<Integer>>> word :  wordMap.tailMap(query).entrySet()) {
+                
+                if (!word.getKey().startsWith(query)) {
+                    logger.debug("End of query. Word: {} Query word: {}", word.getKey(), query);
+                    break;
+                }
+                
+            }
+        
+        }
+        
+        
+        
+        
     }
 
     /**
