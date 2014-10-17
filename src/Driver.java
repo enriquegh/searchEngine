@@ -3,6 +3,8 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,9 +21,9 @@ public class Driver {
 
     public static void main(String[] args) throws IOException {
         String outputPath;
-        String searchPath;
         ArgumentParser parser = new ArgumentParser(args);
         InvertedIndex index = new InvertedIndex();
+        HashMap<String,ArrayList<SearchResult>> searchResultList = null;
 
         
 //        for(String arg : args){
@@ -62,7 +64,7 @@ public class Driver {
 
         if (parser.hasFlag("-i") && parser.hasValue("-i")) {
             outputPath = parser.getValue("-i");
-            index.print(outputPath);
+            index.printInvertedIndex(outputPath);
 
         }
         
@@ -70,7 +72,7 @@ public class Driver {
             String directoryPath = parser.getValue("-q");
             Path path = Paths.get(directoryPath);
             //InvertedIndexBuilder.traverse(path, index);
-            QueryParser.parseFile(path, index);
+            searchResultList = QueryParser.parseFile(path, index);
             
 
         }
@@ -97,6 +99,9 @@ public class Driver {
             outputPath = parser.getValue("-s");
             //index.print(outputPath);
             //logger.debug(outputPath);
+            index.printQueryResults(searchResultList, outputPath);
+            
+            //use sortedHashSet
             
         }
 

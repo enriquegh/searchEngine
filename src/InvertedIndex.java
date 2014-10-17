@@ -6,10 +6,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.List;
-import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -21,10 +21,10 @@ public class InvertedIndex {
     /**
      * Stores a mapping of words to the path and position those words were found.
      */
-    private final TreeMap<String, Map<String, Set<Integer>>> wordMap;
+    private final TreeMap<String, Map<String, TreeSet<Integer>>> wordMap;
 
     public InvertedIndex() {
-        wordMap = new TreeMap<String, Map<String, Set<Integer>>>();
+        wordMap = new TreeMap<String, Map<String, TreeSet<Integer>>>();
 
     }
 
@@ -44,10 +44,10 @@ public class InvertedIndex {
      */
     public boolean add(String word, String path, int position) {
 
-        Set<Integer> set;
+        TreeSet<Integer> set;
         if (!wordMap.containsKey(word)) {
 
-            Map<String, Set<Integer>> pathMap = new TreeMap<>();
+            Map<String, TreeSet<Integer>> pathMap = new TreeMap<>();
             set = new TreeSet<>();
 
             wordMap.put(word, pathMap);
@@ -121,20 +121,20 @@ public class InvertedIndex {
      * @throws IOException
      */
 
-    public void print(String output) throws IOException {
+    public void printInvertedIndex(String output) throws IOException {
 
         Path outputPath = Paths.get(output);
 
         try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
                 Charset.forName("UTF-8"));) {
             
-            for (Entry<String, Map<String, Set<Integer>>> word : wordMap
+            for (Entry<String, Map<String, TreeSet<Integer>>> word : wordMap
                     .entrySet()) {
 
                 writer.write(word.getKey());
                 writer.newLine();
 
-                for (Entry<String, Set<Integer>> location : word.getValue()
+                for (Entry<String, TreeSet<Integer>> location : word.getValue()
                         .entrySet()) {
 
                     writer.write("\"" + location.getKey() + "\"");
@@ -154,20 +154,59 @@ public class InvertedIndex {
         }
 
     }
+    
+    public void printQueryResults(HashMap<String, ArrayList<SearchResult>> searchResultList, String output) throws IOException{
+        Path outputPath = Paths.get(output);
+
+        try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
+                Charset.forName("UTF-8"));) {
+            for (Entry<String, ArrayList<SearchResult>> queryResult : searchResultList.entrySet()){
+                writer.write(queryResult.getKey());
+                writer.newLine();
+                for (SearchResult sr : queryResult.getValue()){
+                    writer.write(sr.toString());
+                    writer.newLine();
+                }
+                //writer.newLine();
+                writer.newLine();
+            }
+            writer.flush();
+
+
+        }
+    }
+    
     //TODO search function on InvertedIndex Function
-    public void search(String[] queryList) {
+    public ArrayList<SearchResult> search(String[] queryList) {
+
+        ArrayList<SearchResult> searchResultsList = new ArrayList<>();
         for (String query : queryList) {
-                      
-            for (Entry<String, Map<String, Set<Integer>>> word :  wordMap.tailMap(query).entrySet()) {
+            System.out.print(query + " ");
+            int count = 0;
+            for (Entry<String, Map<String, TreeSet<Integer>>> word :  wordMap.tailMap(query).entrySet()) {
                 
                 if (!word.getKey().startsWith(query)) {
-                    logger.debug("End of query. Word: {} Query word: {}", word.getKey(), query);
                     break;
                 }
-                
+                //count++;
+                // TODO Traverse through each path of word look up position
+                // Need to check and updated initial position and count.
+                for (Entry<String, TreeSet<Integer>> path : word.getValue().entrySet()){
+                    int wordAppeared = path.getValue().size();
+                    count += wordAppeared;
+                    SearchResult wordSearched = new SearchResult(count, path.getValue().first(), path.getKey());
+                    searchResultsList.add(wordSearched);
+                }
+
+               
             }
-        
+
+            //logger.debug(searchResultsList);
+            
         }
+        System.out.println();
+        Collections.sort(searchResultsList);
+        return searchResultsList;
         
         
         

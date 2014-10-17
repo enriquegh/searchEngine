@@ -4,6 +4,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -19,8 +20,8 @@ public class QueryParser {
     private static Logger logger = LogManager.getLogger();
 
 
-    public static void parseFile(Path file, InvertedIndex index) throws IOException {
-        
+    public static HashMap<String,ArrayList<SearchResult>> parseFile(Path file, InvertedIndex index) throws IOException {
+        HashMap<String,ArrayList<SearchResult>> results = new HashMap<>();
         try (BufferedReader reader = Files.newBufferedReader(file,
                 Charset.forName("UTF-8"));)
 
@@ -29,9 +30,11 @@ public class QueryParser {
             
             while ((line = reader.readLine()) != null) {
                 String[] wordsString = line.split(" ");
-                index.search(wordsString);
-
+                results.put(line, index.search(wordsString));
+                //results.add(index.search(wordsString));
             }
+            return results;
+            //index.printQueryResults(searchResults, file);
         }
         
     }
