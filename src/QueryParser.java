@@ -5,7 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,8 +22,8 @@ public class QueryParser {
     private static Logger logger = LogManager.getLogger();
 
 
-    public static HashMap<String,ArrayList<SearchResult>> parseFile(Path file, InvertedIndex index) throws IOException {
-        HashMap<String,ArrayList<SearchResult>> results = new HashMap<>();
+    public static LinkedHashMap<String,ArrayList<SearchResult>> parseFile(Path file, InvertedIndex index) throws IOException {
+        LinkedHashMap<String,ArrayList<SearchResult>> results = new LinkedHashMap<>();
         try (BufferedReader reader = Files.newBufferedReader(file,
                 Charset.forName("UTF-8"));)
 
@@ -31,10 +33,9 @@ public class QueryParser {
             while ((line = reader.readLine()) != null) {
                 String[] wordsString = line.split(" ");
                 results.put(line, index.search(wordsString));
-                //results.add(index.search(wordsString));
+
             }
             return results;
-            //index.printQueryResults(searchResults, file);
         }
         
     }

@@ -5,6 +5,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,7 +25,7 @@ public class Driver {
         String outputPath;
         ArgumentParser parser = new ArgumentParser(args);
         InvertedIndex index = new InvertedIndex();
-        HashMap<String,ArrayList<SearchResult>> searchResultList = null;
+        LinkedHashMap<String,ArrayList<SearchResult>> searchResultList = null;
 
         
 //        for(String arg : args){
@@ -70,9 +72,18 @@ public class Driver {
         
         if (parser.hasFlag("-q") && parser.hasValue("-q")){
             String directoryPath = parser.getValue("-q");
-            Path path = Paths.get(directoryPath);
-            //InvertedIndexBuilder.traverse(path, index);
-            searchResultList = QueryParser.parseFile(path, index);
+            
+            try {
+                Path path = Paths.get(directoryPath);
+                searchResultList = QueryParser.parseFile(path, index);
+
+            } catch (NoSuchFileException x) {
+                System.err.format("%s: no such" + " file or directory%n",
+                        directoryPath);
+
+            } catch (IOException x) {
+                System.err.format("%s%n", x);
+            }
             
 
         }
@@ -97,8 +108,6 @@ public class Driver {
         
         if (parser.hasFlag("-s") && parser.hasValue("-s")){
             outputPath = parser.getValue("-s");
-            //index.print(outputPath);
-            //logger.debug(outputPath);
             index.printQueryResults(searchResultList, outputPath);
             
             //use sortedHashSet

@@ -16,8 +16,8 @@ public class SearchResult implements Comparable<SearchResult> {
     public int compareTo(SearchResult o) {
         // TODO compareTo frequency > postion > location
         
-        if (Integer.compare(this.frequency, o.frequency) != 0){
-            return Integer.compare(this.frequency, o.frequency);
+        if (Integer.compare(o.frequency, this.frequency) != 0){
+            return Integer.compare(o.frequency, this.frequency);
         }
         
         else{
@@ -34,6 +34,23 @@ public class SearchResult implements Comparable<SearchResult> {
     public String toString() {
         
         return "\"" + path + "\", " + frequency + ", " + position;
+    }
+
+    public boolean hasPath(String key) {
+        // TODO Auto-generated method stub
+        return path.equalsIgnoreCase(key);
+    }
+
+    public void updateFrequency(int wordAppeared) {
+        frequency += wordAppeared;
+        
+    }
+
+    public void checkPositions(Integer num) {
+        if (Integer.compare(num, this.position) < 0){
+            this.position = num;
+        }
+        
     }
 
 }

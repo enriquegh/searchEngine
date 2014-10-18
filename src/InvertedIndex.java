@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.List;
@@ -155,7 +156,7 @@ public class InvertedIndex {
 
     }
     
-    public void printQueryResults(HashMap<String, ArrayList<SearchResult>> searchResultList, String output) throws IOException{
+    public void printQueryResults(LinkedHashMap<String, ArrayList<SearchResult>> searchResultList, String output) throws IOException{
         Path outputPath = Paths.get(output);
 
         try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
@@ -181,8 +182,6 @@ public class InvertedIndex {
 
         ArrayList<SearchResult> searchResultsList = new ArrayList<>();
         for (String query : queryList) {
-            System.out.print(query + " ");
-            int count = 0;
             for (Entry<String, Map<String, TreeSet<Integer>>> word :  wordMap.tailMap(query).entrySet()) {
                 
                 if (!word.getKey().startsWith(query)) {
@@ -193,9 +192,29 @@ public class InvertedIndex {
                 // Need to check and updated initial position and count.
                 for (Entry<String, TreeSet<Integer>> path : word.getValue().entrySet()){
                     int wordAppeared = path.getValue().size();
-                    count += wordAppeared;
-                    SearchResult wordSearched = new SearchResult(count, path.getValue().first(), path.getKey());
-                    searchResultsList.add(wordSearched);
+                    
+                    if (searchResultsList.isEmpty()){
+                        SearchResult wordSearched = new SearchResult(wordAppeared, path.getValue().first(), path.getKey());
+                        searchResultsList.add(wordSearched);
+                    }
+                    
+                    else{
+                        boolean updatedSearch = false;
+                        for (SearchResult searchResults : searchResultsList){
+                            if (searchResults.hasPath(path.getKey())){
+                                searchResults.updateFrequency(wordAppeared);
+                                searchResults.checkPositions(path.getValue().first());
+                                updatedSearch = true;
+                                break;
+                            }
+                            
+                        }
+                        if (!updatedSearch){
+                            SearchResult wordSearched = new SearchResult(wordAppeared, path.getValue().first(), path.getKey());
+                            searchResultsList.add(wordSearched);
+                        }
+                        
+                    }
                 }
 
                
@@ -204,8 +223,8 @@ public class InvertedIndex {
             //logger.debug(searchResultsList);
             
         }
-        System.out.println();
         Collections.sort(searchResultsList);
+        logger.debug(searchResultsList);
         return searchResultsList;
         
         
