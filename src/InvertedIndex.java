@@ -125,55 +125,55 @@ public class InvertedIndex {
     public void printInvertedIndex(String output) throws IOException {
 
         Path outputPath = Paths.get(output);
-
-        try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
-                Charset.forName("UTF-8"));) {
-            
-            for (Entry<String, Map<String, TreeSet<Integer>>> word : wordMap
-                    .entrySet()) {
-
-                writer.write(word.getKey());
-                writer.newLine();
-
-                for (Entry<String, TreeSet<Integer>> location : word.getValue()
+        if (!outputPath.toFile().isDirectory()) {
+            try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
+                    Charset.forName("UTF-8"));) {
+                
+                for (Entry<String, Map<String, TreeSet<Integer>>> word : wordMap
                         .entrySet()) {
-
-                    writer.write("\"" + location.getKey() + "\"");
-
-                    for (Integer position : location.getValue()) {
-                        writer.write(", " + position);
-                    }
-
+    
+                    writer.write(word.getKey());
                     writer.newLine();
-
+    
+                    for (Entry<String, TreeSet<Integer>> location : word.getValue()
+                            .entrySet()) {
+    
+                        writer.write("\"" + location.getKey() + "\"");
+    
+                        for (Integer position : location.getValue()) {
+                            writer.write(", " + position);
+                        }
+    
+                        writer.newLine();
+    
+                    }
+                    writer.newLine();
+                    writer.flush();
+    
                 }
-                writer.newLine();
-                writer.flush();
-
+    
             }
-
         }
 
     }
     
     public void printQueryResults(LinkedHashMap<String, ArrayList<SearchResult>> searchResultList, String output) throws IOException{
         Path outputPath = Paths.get(output);
-
-        try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
-                Charset.forName("UTF-8"));) {
-            for (Entry<String, ArrayList<SearchResult>> queryResult : searchResultList.entrySet()){
-                writer.write(queryResult.getKey());
-                writer.newLine();
-                for (SearchResult sr : queryResult.getValue()){
-                    writer.write(sr.toString());
+        if (!outputPath.toFile().isDirectory()) {
+            try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
+                    Charset.forName("UTF-8"));) {
+                for (Entry<String, ArrayList<SearchResult>> queryResult : searchResultList.entrySet()){
+                    writer.write(queryResult.getKey());
+                    writer.newLine();
+                    for (SearchResult sr : queryResult.getValue()){
+                        writer.write(sr.toString());
+                        writer.newLine();
+                    }
                     writer.newLine();
                 }
-                //writer.newLine();
-                writer.newLine();
+                writer.flush();
+    
             }
-            writer.flush();
-
-
         }
     }
     

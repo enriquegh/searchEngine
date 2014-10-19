@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -89,12 +90,10 @@ public class Driver {
         }
         
         if (parser.hasFlag("-s") && !parser.hasValue("-s")){
-            //logger.debug("Trying to create search.txt file");
             String searchPathString = "search.txt";
             try {
                 Path indexPath = Paths.get(".", "search.txt");
                 Files.createFile(indexPath);
-                //logger.debug("Trying to create search.txt file");
               
 
             } catch (NoSuchFileException x) {
@@ -108,7 +107,9 @@ public class Driver {
         
         if (parser.hasFlag("-s") && parser.hasValue("-s")){
             outputPath = parser.getValue("-s");
+ 
             index.printQueryResults(searchResultList, outputPath);
+
             
             //use sortedHashSet
             
