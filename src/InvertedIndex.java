@@ -17,6 +17,8 @@ import java.util.TreeSet;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+// TODO Formatting and Javadoc. Pay specific attention to your use of blank lines and spaces.
+
 public class InvertedIndex {
     private static Logger logger = LogManager.getLogger();
     /**
@@ -26,7 +28,6 @@ public class InvertedIndex {
 
     public InvertedIndex() {
         wordMap = new TreeMap<String, Map<String, TreeSet<Integer>>>();
-
     }
 
     /**
@@ -46,8 +47,8 @@ public class InvertedIndex {
     public boolean add(String word, String path, int position) {
 
         TreeSet<Integer> set;
+        
         if (!wordMap.containsKey(word)) {
-
             Map<String, TreeSet<Integer>> pathMap = new TreeMap<>();
             set = new TreeSet<>();
 
@@ -56,9 +57,7 @@ public class InvertedIndex {
             set.add(Integer.valueOf(position));
 
             return true;
-
         } else {
-
             if (!wordMap.get(word).containsKey(path)) { 
                 set = new TreeSet<Integer>();
                 set.add(position);
@@ -66,19 +65,14 @@ public class InvertedIndex {
 
                 return true;
             }
-
             else if (!wordMap.get(word).get(path).contains(position)) {
-
                 wordMap.get(word).get(path).add(position);
                 return true;
             }
-
             else {
                 return false;
             }
-
         }
-
     }
 
     /**
@@ -122,7 +116,7 @@ public class InvertedIndex {
      * @throws IOException
      */
 
-    public void printInvertedIndex(String output) throws IOException {
+    public void printInvertedIndex(String output) throws IOException { // TODO Rename this to print()
 
         Path outputPath = Paths.get(output);
         if (!outputPath.toFile().isDirectory()) {
@@ -157,6 +151,7 @@ public class InvertedIndex {
 
     }
     
+    // TODO Move this to QueryParser, create the LinkedHashMap as a member there.
     public void printQueryResults(LinkedHashMap<String, ArrayList<SearchResult>> searchResultList, String output) throws IOException{
         Path outputPath = Paths.get(output);
         if (!outputPath.toFile().isDirectory()) {
@@ -181,6 +176,8 @@ public class InvertedIndex {
     public ArrayList<SearchResult> search(String[] queryList) {
 
         ArrayList<SearchResult> searchResultsList = new ArrayList<>();
+        // TODO Map<String, SearchResult> searchResultMap = new HashMap<>(); (key is path, value is result for that path)
+        
         for (String query : queryList) {
             for (Entry<String, Map<String, TreeSet<Integer>>> word :  wordMap.tailMap(query).entrySet()) {
                 
@@ -193,6 +190,13 @@ public class InvertedIndex {
                 for (Entry<String, TreeSet<Integer>> path : word.getValue().entrySet()){
                     int wordAppeared = path.getValue().size();
                     
+                    /* TODO
+                     * Instead of the code below, check if the map has the path. If it does
+                     * update the search result object stored in the map. Otherwise add
+                     * a new search result object.
+                     */
+                    
+                    
                     if (searchResultsList.isEmpty()){
                         SearchResult wordSearched = new SearchResult(wordAppeared, path.getValue().first(), path.getKey());
                         searchResultsList.add(wordSearched);
@@ -200,6 +204,8 @@ public class InvertedIndex {
                     
                     else{
                         boolean updatedSearch = false;
+                        
+                        // TODO Linear search, whenever you do this, you know you are using the wrong data structure
                         for (SearchResult searchResults : searchResultsList){
                             if (searchResults.hasPath(path.getKey())){
                                 searchResults.updateFrequency(wordAppeared);
@@ -223,6 +229,9 @@ public class InvertedIndex {
             //logger.debug(searchResultsList);
             
         }
+        
+        // TODO searchResultsList.addAll(searchResultsMap.values());
+        
         Collections.sort(searchResultsList);
         logger.debug(searchResultsList);
         return searchResultsList;
@@ -237,7 +246,6 @@ public class InvertedIndex {
      */
     @Override
     public String toString() {
-
         return wordMap.toString();
     }
 }
