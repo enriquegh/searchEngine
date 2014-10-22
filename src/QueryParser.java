@@ -17,6 +17,11 @@ import org.apache.logging.log4j.Logger;
   * characters and assumes words will be separated by whitespace.
   */
 public class QueryParser {
+ 
+    // TODO Create the linked hash map as an instance member.
+    // TODO Add a constructor
+    // TODO Make your parseFile() method non-static and return void.
+    // TODO Move print method into here.
     
     
     private static Logger logger = LogManager.getLogger();
@@ -39,6 +44,8 @@ public class QueryParser {
         }
         
     }
+    
+    // TODO Call WordParser.parseText() instead and remove this method.
     /**
      * Splits text into words by whitespaces, cleans the resulting words using
      * {@link #cleanText(String)} so that they are in a consistent format, and
