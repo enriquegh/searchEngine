@@ -15,6 +15,12 @@ import java.util.TreeSet;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * 
+ * This class contains a TreeMap with
+ * all the necessary data to make a WordIndex of a file
+ *
+ */
 public class InvertedIndex {
     private static Logger logger = LogManager.getLogger();
     private final TreeMap<String, Map<String, TreeSet<Integer>>> wordMap;
@@ -81,6 +87,7 @@ public class InvertedIndex {
      * @return true if the word is stored in the index
      */
     public boolean addAll(List<String> list, String file, int start) {
+        
         for (String word : list) {
             add(word,file, start);
             start++;
@@ -109,11 +116,12 @@ public class InvertedIndex {
      * @return
      * @throws IOException
      */
-
     public void print(String output) throws IOException {
-
         Path outputPath = Paths.get(output);
+        logger.debug("Printing to {}", output);
+        
         if (!outputPath.toFile().isDirectory()) {
+            
             try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
                     Charset.forName("UTF-8"));) {
                 
@@ -136,7 +144,6 @@ public class InvertedIndex {
                 }
             }
         }
-
     }
     
 
@@ -147,8 +154,7 @@ public class InvertedIndex {
      *
      * @param queryList
      *            - String array that contains all the words on the query
-     * @return ArrayList<SearchResult>
-     *            - ArrayList with SearchResult instances
+     * @return ArrayList with SearchResult instances
      */
     public ArrayList<SearchResult> search(String[] queryList) {
         ArrayList<SearchResult> searchResultsList = new ArrayList<>();

@@ -22,22 +22,19 @@ public class Driver {
         ArgumentParser parser = new ArgumentParser(args);
         InvertedIndex index = new InvertedIndex();
         QueryParser parseQuery = new QueryParser();
-        //LinkedHashMap<String,ArrayList<SearchResult>> searchResultList = null;
 
-        if (parser.hasFlag("-d") && parser.hasValue("-d")) {
+        if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
             String directoryPath = parser.getValue("-d");
+            
             try {
                 Path path = Paths.get(directoryPath);
                 InvertedIndexBuilder.traverse(path, index);
-
             } catch (NoSuchFileException x) {
                 System.err.format("%s: no such" + " file or directory%n",
                         directoryPath);
-
             } catch (IOException x) {
                 System.err.format("%s%n", x);
             }
-
         }
 
         if (parser.hasFlag("-i") && !parser.hasValue("-i")) {
@@ -58,12 +55,14 @@ public class Driver {
 
         if (parser.hasFlag("-i") && parser.hasValue("-i")) {
             outputPath = parser.getValue("-i");
+            logger.debug("WordIndex being printed to: {}", outputPath);
             index.print(outputPath);
 
         }
         
-        if (parser.hasFlag("-q") && parser.hasValue("-q")){
+        if (parser.hasFlag("-q") && parser.hasValue("-q")) {
             String directoryPath = parser.getValue("-q");
+            
             try {
                 Path path = Paths.get(directoryPath);
                 parseQuery.parseFile(path, index);
@@ -75,12 +74,11 @@ public class Driver {
             } catch (IOException x) {
                 System.err.format("%s%n", x);
             }
-            
-
         }
         
-        if (parser.hasFlag("-s") && !parser.hasValue("-s")){
+        if (parser.hasFlag("-s") && !parser.hasValue("-s")) {
             String searchPathString = "search.txt";
+            
             try {
                 Path indexPath = Paths.get(".", "search.txt");
                 Files.createFile(indexPath);
@@ -95,13 +93,10 @@ public class Driver {
             }
         }
         
-        if (parser.hasFlag("-s") && parser.hasValue("-s")){
+        if (parser.hasFlag("-s") && parser.hasValue("-s")) {
             outputPath = parser.getValue("-s");
- 
+            logger.debug("Search results being printed to: {}", outputPath);
             parseQuery.print(outputPath);
-
-            
         }
-
     }
 }

@@ -38,8 +38,7 @@ public class InvertedIndexBuilder {
 
         try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
 
-            for (Path file : listing) {
-                
+            for (Path file : listing) {   
                 String fileName = file.getFileName().toString().toLowerCase();
 
                 if (fileName.endsWith(".txt")) {
@@ -58,8 +57,6 @@ public class InvertedIndexBuilder {
      * Parses through the entire file reading line by line.
      * It cleans text using {@link WordParser} and stores word into a {@link WordIndex}
      * 
-     *
-     *
      * @param path
      *            File that will be read
      * @param index
@@ -72,13 +69,11 @@ public class InvertedIndexBuilder {
         
         try (BufferedReader reader = Files.newBufferedReader(file,
                 Charset.forName("UTF-8"));)
-
         {
             String line = null;
             int i = 1;
             
             while ((line = reader.readLine()) != null) {
-  
                 String[] wordsString = WordParser.cleanText(line).split(" ");
                 
                 for (String word : wordsString) {
@@ -87,11 +82,9 @@ public class InvertedIndexBuilder {
                         index.add(word, file.toString(), i);
                         i++;
                     }
-
                 }
             }
-        }
-        
+        } 
     }
 
 }

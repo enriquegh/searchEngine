@@ -39,14 +39,14 @@ public class WordParser {
      */
     public static List<String> parseText(String text) {
         ArrayList<String> words = new ArrayList<>();
-
         String[] wordsString = cleanText(text).split(" ");
+        
         for (String word : wordsString) {
+            
             if (!word.isEmpty()) {
                 words.add(word);
             }
         }
-
         return words;
     }
 }

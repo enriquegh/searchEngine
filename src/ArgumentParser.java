@@ -121,9 +121,4 @@ public class ArgumentParser {
     public String getValue(String flag) {
         return argumentMap.get(flag);
     }
-
-    @Override
-    public String toString() {
-        return argumentMap.toString();
-    }
 }
