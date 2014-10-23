@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 public class Driver {
     private static Logger logger = LogManager.getLogger();
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException { // TODO Remove the "throws IOException"
         String outputPath;
         ArgumentParser parser = new ArgumentParser(args);
         InvertedIndex index = new InvertedIndex();
