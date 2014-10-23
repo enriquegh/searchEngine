@@ -12,13 +12,14 @@ import java.util.Map.Entry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
- /**
-  * This class parses through text removing unnecessary spaces and special
-  * characters and assumes words will be separated by whitespace.
-  */
+/**
+ * This class parses through text removing unnecessary spaces and special
+ * characters and assumes words will be separated by whitespace.
+ */
 public class QueryParser {
     private static Logger logger = LogManager.getLogger();
     private final LinkedHashMap<String,ArrayList<SearchResult>> results;
+    
     /**
      * Instantiated the LinkedHashMap that will be used to save the results.
      */
