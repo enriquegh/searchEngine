@@ -1,13 +1,13 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.Map.Entry;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,21 +17,17 @@ import org.apache.logging.log4j.Logger;
   * characters and assumes words will be separated by whitespace.
   */
 public class QueryParser {
- 
-    // TODO Create the linked hash map as an instance member.
-    // TODO Add a constructor
-    // TODO Make your parseFile() method non-static and return void.
-    // TODO Move print method into here.
-    
     
     private static Logger logger = LogManager.getLogger();
-
-
-    public static LinkedHashMap<String,ArrayList<SearchResult>> parseFile(Path file, InvertedIndex index) throws IOException {
-        LinkedHashMap<String,ArrayList<SearchResult>> results = new LinkedHashMap<>();
+    LinkedHashMap<String,ArrayList<SearchResult>> results;
+    
+    public QueryParser() {
+        results = new LinkedHashMap<>();
+    }
+    
+    public void parseFile(Path file, InvertedIndex index) throws IOException {
         try (BufferedReader reader = Files.newBufferedReader(file,
                 Charset.forName("UTF-8"));)
-
         {
             String line = null;
             
@@ -40,35 +36,29 @@ public class QueryParser {
                 results.put(line, index.search(wordsString));
 
             }
-            return results;
-        }
-        
+        }   
     }
     
-    // TODO Call WordParser.parseText() instead and remove this method.
-    /**
-     * Splits text into words by whitespaces, cleans the resulting words using
-     * {@link #cleanText(String)} so that they are in a consistent format, and
-     * adds non-empty words to an {@link ArrayList}.
-     *
-     *
-     * @param text
-     *            - original text
-     * @return list of cleaned words
-     */
-    public static List<String> parseText(String text) {
-        ArrayList<String> words = new ArrayList<>();
-
-        String[] wordsString = text.split(" ");
-        
-        for (String word : wordsString) {
-            if (!word.isEmpty()) {
-                words.add(word);
+    public void print(String output) throws IOException {
+        Path outputPath = Paths.get(output);
+        if (!outputPath.toFile().isDirectory()) {
+            
+            try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
+                    Charset.forName("UTF-8"));) {
+                
+                for (Entry<String, ArrayList<SearchResult>> queryResult : results.entrySet()) {
+                    
+                    writer.write(queryResult.getKey());
+                    writer.newLine();
+                    
+                    for (SearchResult sr : queryResult.getValue()) {
+                        writer.write(sr.toString());
+                        writer.newLine();
+                    }
+                    writer.newLine();
+                }
+                writer.flush();    
             }
         }
-
-        return words;
     }
-
-    
 }

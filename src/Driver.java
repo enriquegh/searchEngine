@@ -1,13 +1,8 @@
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.InvalidPathException;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,12 +21,8 @@ public class Driver {
         String outputPath;
         ArgumentParser parser = new ArgumentParser(args);
         InvertedIndex index = new InvertedIndex();
-        LinkedHashMap<String,ArrayList<SearchResult>> searchResultList = null;
-
-        
-//        for(String arg : args){
-//            logger.debug(arg);  
-//        }
+        QueryParser parseQuery = new QueryParser();
+        //LinkedHashMap<String,ArrayList<SearchResult>> searchResultList = null;
 
         if (parser.hasFlag("-d") && parser.hasValue("-d")) {
             String directoryPath = parser.getValue("-d");
@@ -67,16 +58,15 @@ public class Driver {
 
         if (parser.hasFlag("-i") && parser.hasValue("-i")) {
             outputPath = parser.getValue("-i");
-            index.printInvertedIndex(outputPath);
+            index.print(outputPath);
 
         }
         
         if (parser.hasFlag("-q") && parser.hasValue("-q")){
             String directoryPath = parser.getValue("-q");
-            
             try {
                 Path path = Paths.get(directoryPath);
-                searchResultList = QueryParser.parseFile(path, index);
+                parseQuery.parseFile(path, index);
 
             } catch (NoSuchFileException x) {
                 System.err.format("%s: no such" + " file or directory%n",
@@ -108,10 +98,8 @@ public class Driver {
         if (parser.hasFlag("-s") && parser.hasValue("-s")){
             outputPath = parser.getValue("-s");
  
-            index.printQueryResults(searchResultList, outputPath);
+            parseQuery.print(outputPath);
 
-            
-            //use sortedHashSet
             
         }
 
