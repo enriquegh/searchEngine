@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 public class Driver {
     private static Logger logger = LogManager.getLogger();
 
-    public static void main(String[] args) throws IOException { // TODO Remove the "throws IOException"
+    public static void main(String[] args) {
         String outputPath;
         ArgumentParser parser = new ArgumentParser(args);
         InvertedIndex index = new InvertedIndex();
@@ -56,7 +56,11 @@ public class Driver {
         if (parser.hasFlag("-i") && parser.hasValue("-i")) {
             outputPath = parser.getValue("-i");
             logger.debug("WordIndex being printed to: {}", outputPath);
-            index.print(outputPath);
+            try {
+                index.print(outputPath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         }
         
@@ -96,7 +100,11 @@ public class Driver {
         if (parser.hasFlag("-s") && parser.hasValue("-s")) {
             outputPath = parser.getValue("-s");
             logger.debug("Search results being printed to: {}", outputPath);
-            parseQuery.print(outputPath);
+            try {
+                parseQuery.print(outputPath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
