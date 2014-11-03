@@ -34,6 +34,7 @@ public class QueryParser {
      * @param index a {@link WordIndex} instance to access its methods.
      * @throws IOException
      */
+    //TODO modify to use MT
     public void parseFile(Path file, InvertedIndex index) throws IOException {
         
         try (BufferedReader reader = Files.newBufferedReader(file,
