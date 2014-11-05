@@ -21,19 +21,115 @@ public class Driver {
 
     public static void main(String[] args) {
         String outputPath;
+        int threads;
         ArgumentParser parser = new ArgumentParser(args);
-        InvertedIndex index = new InvertedIndex();
-        QueryParser parseQuery = new QueryParser();
-
-        if (parser.hasFlag("-t") && !parser.hasValue("-t")) {
-        	
-        }
         
-        else if (parser.hasFlag("-t") && !parser.hasValue("-t")) {
-        	
+        QueryParser parseQuery = new QueryParser();
+        
+        if (parser.hasFlag("-t")) {
+            TSInvertedIndex index = new TSInvertedIndex();
+            
+            if (parser.hasValue("-t")) {
+                
+                try {
+                    threads = Integer.parseInt(parser.getValue("-t"));
+                }
+                catch(NumberFormatException e) {
+                    threads = 5;
+                }
+            }
+            else {
+                threads = 5;
+            }
+            WorkQueue workers = new WorkQueue(threads);
+            
+            if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
+                String directoryPath = parser.getValue("-d");
+                
+                try {
+                    Path path = Paths.get(directoryPath);
+                    InvertedIndexBuilder.traverse(path, index);
+                } catch (NoSuchFileException x) {
+                    System.err.format("%s: no such" + " file or directory%n",
+                            directoryPath);
+                } catch (IOException x) {
+                    System.err.format("%s%n", x);
+                }
+            }
+            
+            if (parser.hasFlag("-i") && !parser.hasValue("-i")) {
+                String indexPathString = "index.txt";
+                try {
+                    Path indexPath = Paths.get(".", "index.txt");
+                    Files.createFile(indexPath);
+
+                } catch (NoSuchFileException x) {
+                    System.err.format("%s: no such" + " file or directory%n",
+                            indexPathString);
+
+                } catch (IOException x) {
+                    System.err.format("%s%n", x);
+                }
+
+            }
+
+            if (parser.hasFlag("-i") && parser.hasValue("-i")) {
+                outputPath = parser.getValue("-i");
+                logger.debug("WordIndex being printed to: {}", outputPath);
+                try {
+                    index.print(outputPath);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            //TODO doesn't use MT
+            if (parser.hasFlag("-q") && parser.hasValue("-q")) {
+                String directoryPath = parser.getValue("-q");
+                
+                try {
+                    Path path = Paths.get(directoryPath);
+                    parseQuery.parseFile(path, index);
+
+                } catch (NoSuchFileException x) {
+                    System.err.format("%s: no such" + " file or directory%n",
+                            directoryPath);
+
+                } catch (IOException x) {
+                    System.err.format("%s%n", x);
+                }
+            }
+            
+            if (parser.hasFlag("-s") && !parser.hasValue("-s")) {
+                String searchPathString = "search.txt";
+                
+                try {
+                    Path indexPath = Paths.get(".", "search.txt");
+                    Files.createFile(indexPath);
+                  
+
+                } catch (NoSuchFileException x) {
+                    System.err.format("%s: no such" + " file or directory%n",
+                            searchPathString);
+
+                } catch (IOException x) {
+                    System.err.format("%s%n", x);
+                }
+            }
+            
+            if (parser.hasFlag("-s") && parser.hasValue("-s")) {
+                outputPath = parser.getValue("-s");
+                logger.debug("Search results being printed to: {}", outputPath);
+                try {
+                    parseQuery.print(outputPath);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         
         else {
+            InvertedIndex index = new InvertedIndex();
         	
             if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
                 String directoryPath = parser.getValue("-d");
