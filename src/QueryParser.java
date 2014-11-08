@@ -18,7 +18,6 @@ import org.apache.logging.log4j.Logger;
  */
 public class QueryParser {
     private static Logger logger = LogManager.getLogger();
-    //TODO changed to protected for TS class
     protected final LinkedHashMap<String,ArrayList<SearchResult>> results;
     
     /**

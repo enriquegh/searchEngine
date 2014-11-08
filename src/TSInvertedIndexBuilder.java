@@ -59,7 +59,6 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
             try {
                 parseFile(directory, tempIndex);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
 

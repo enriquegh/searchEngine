@@ -23,7 +23,6 @@ public class Driver {
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
         
-        //TODO change from InvertedIndex to TSInvertedIndex
         if (parser.hasFlag("-t")) {
             TSInvertedIndex tsindex = new TSInvertedIndex();
             TSInvertedIndexBuilder tsbuilder = new TSInvertedIndexBuilder();

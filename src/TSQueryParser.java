@@ -12,13 +12,13 @@ import org.apache.logging.log4j.Logger;
 public class TSQueryParser extends QueryParser {
     private static Logger logger = LogManager.getLogger();
     private final WorkQueue workers = new WorkQueue();
+    private final ReadWriteLock lock = new ReadWriteLock();
     private int pending;
 
     public TSQueryParser() {
         super();
     }
 
-    // TODO same as in TSInvertedIndexBuilder
 
     public void parseFile(Path file, TSInvertedIndex index) throws IOException {
 
@@ -28,7 +28,8 @@ public class TSQueryParser extends QueryParser {
 
             while ((line = reader.readLine()) != null) {
                 // String[] wordsString = line.split(" ");
-                // results.put(line, index.search(wordsString));
+                ArrayList<SearchResult> emptyResults = new ArrayList<SearchResult>();
+                results.put(line, emptyResults);
                 workers.execute(new LineWorker(line, index));
                 incrementPending();
             }
@@ -45,7 +46,10 @@ public class TSQueryParser extends QueryParser {
         @Override
         public void run() {
             String[] wordsString = line.split(" ");
-            results.put(line, index.search(wordsString));
+            ArrayList<SearchResult> searchResults = index.search(wordsString);
+            lock.lockWrite();
+            results.put(line, searchResults);
+            lock.unlockWrite();
             decrementPending();
 
         }
