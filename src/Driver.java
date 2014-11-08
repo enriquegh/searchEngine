@@ -15,7 +15,6 @@ import org.apache.logging.log4j.Logger;
  * If flag is included but no directory it will be saved to "index.txt"
  */
 
-//TODO add -t flag. Only that changes is InvertedIndex and InvertedIndexBuilder
 public class Driver {
     private static Logger logger = LogManager.getLogger();
 
@@ -24,10 +23,11 @@ public class Driver {
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
         
-        QueryParser parseQuery = new QueryParser();
-        
+        //TODO change from InvertedIndex to TSInvertedIndex
         if (parser.hasFlag("-t")) {
-            TSInvertedIndex index = new TSInvertedIndex();
+            TSInvertedIndex tsindex = new TSInvertedIndex();
+            TSInvertedIndexBuilder tsbuilder = new TSInvertedIndexBuilder();
+            TSQueryParser tsparseQuery = new TSQueryParser();
             
             if (parser.hasValue("-t")) {
                 
@@ -41,14 +41,15 @@ public class Driver {
             else {
                 threads = 5;
             }
-            WorkQueue workers = new WorkQueue(threads);
             
             if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
                 String directoryPath = parser.getValue("-d");
                 
                 try {
                     Path path = Paths.get(directoryPath);
-                    InvertedIndexBuilder.traverse(path, index);
+                    tsbuilder.traverse(path, tsindex);
+                    logger.debug("Traversed all files");
+                    tsbuilder.shutdown();
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
                             directoryPath);
@@ -77,19 +78,20 @@ public class Driver {
                 outputPath = parser.getValue("-i");
                 logger.debug("WordIndex being printed to: {}", outputPath);
                 try {
-                    index.print(outputPath);
+                    tsindex.print(outputPath);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
 
             }
-            //TODO doesn't use MT
+            
             if (parser.hasFlag("-q") && parser.hasValue("-q")) {
                 String directoryPath = parser.getValue("-q");
                 
                 try {
                     Path path = Paths.get(directoryPath);
-                    parseQuery.parseFile(path, index);
+                    tsparseQuery.parseFile(path, tsindex);
+                    tsparseQuery.shutdown();
 
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
@@ -121,7 +123,7 @@ public class Driver {
                 outputPath = parser.getValue("-s");
                 logger.debug("Search results being printed to: {}", outputPath);
                 try {
-                    parseQuery.print(outputPath);
+                    tsparseQuery.print(outputPath);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -130,6 +132,7 @@ public class Driver {
         
         else {
             InvertedIndex index = new InvertedIndex();
+            QueryParser parseQuery = new QueryParser();
         	
             if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
                 String directoryPath = parser.getValue("-d");
@@ -171,7 +174,7 @@ public class Driver {
                 }
 
             }
-            //TODO doesn't use MT
+            
             if (parser.hasFlag("-q") && parser.hasValue("-q")) {
                 String directoryPath = parser.getValue("-q");
                 

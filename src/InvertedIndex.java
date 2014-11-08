@@ -12,6 +12,7 @@ import java.util.Map.Entry;
 import java.util.List;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -86,11 +87,22 @@ public class InvertedIndex {
      *            - Number where the position should start
      * @return true if the word is stored in the index
      */
-    public boolean addAll(List<String> list, String file, int start) {
-        
-        for (String word : list) {
-            add(word,file, start);
-            start++;
+    public boolean addAll(InvertedIndex tempIndex) {
+        //InvertedIndex,
+        for (String word : tempIndex.wordMap.keySet()) {
+            if (!wordMap.containsKey(word)) {
+                wordMap.put(word, tempIndex.wordMap.get(word));
+            }
+            else {
+                 for (String path : tempIndex.wordMap.get(word).keySet()) {
+                     if (!wordMap.get(word).containsKey(path)) {
+                         wordMap.get(word).put(path, tempIndex.wordMap.get(word).get(path));
+                     }
+                     else {
+                         wordMap.get(word).get(path).addAll(tempIndex.wordMap.get(word).get(path));
+                     }
+                 }
+            }
         }
         return true;
     }

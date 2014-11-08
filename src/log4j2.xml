@@ -32,7 +32,7 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
 
-        <Root level="OFF">
+        <Root level="ALL">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"  />
         </Root>

@@ -75,7 +75,7 @@ public class ReadWriteLock {
     public synchronized void unlockWrite() {
         assert writers > 0;
         writers--;
-        if (writers == 0){
+        if (writers == 0) {
             this.notifyAll(); 
         }
 
