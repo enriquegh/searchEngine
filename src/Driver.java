@@ -23,12 +23,22 @@ public class Driver {
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
         
+        /* TODO Could try to take advantage of upcasting more...
+          InvertedIndex index;
+          
+          if -t, index = new TSINvertedIndex();
+          else, index = new InvertedIndex();
+          
+          if -t, index.print()
+        */
+        
         if (parser.hasFlag("-t")) {
             TSInvertedIndex tsindex = new TSInvertedIndex();
             TSInvertedIndexBuilder tsbuilder = new TSInvertedIndexBuilder();
             TSQueryParser tsparseQuery = new TSQueryParser();
             
             if (parser.hasValue("-t")) {
+                // TODO Not using your threads value, need to pass in to anything with a work queue.
                 
                 try {
                     threads = Integer.parseInt(parser.getValue("-t"));
@@ -79,7 +89,7 @@ public class Driver {
                 try {
                     tsindex.print(outputPath);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    e.printStackTrace(); // TODO Error messages
                 }
 
             }
@@ -127,6 +137,8 @@ public class Driver {
                     e.printStackTrace();
                 }
             }
+            
+            // TODO Shutdown the work queues, regardless of what arguments are provided.
         }
         
         else {
