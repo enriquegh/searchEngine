@@ -73,9 +73,9 @@ public class ReadWriteLock {
      * threads if necessary.
      */
     public synchronized void unlockWrite() {
-        assert writers > 0;
+        assert writers > 0; // TODO assert writers == 1
         writers--;
-        if (writers == 0) {
+        if (writers == 0) { // TODO Don't need this check for unlockWrite()
             this.notifyAll(); 
         }
 
