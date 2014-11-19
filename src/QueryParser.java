@@ -18,7 +18,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class QueryParser {
     private static Logger logger = LogManager.getLogger();
-    protected final LinkedHashMap<String,ArrayList<SearchResult>> results;
+    protected final LinkedHashMap<String, ArrayList<SearchResult>> results; // TODO Try to avoid, and access via public methods instead.
     
     /**
      * Instantiated the LinkedHashMap that will be used to save the results.
