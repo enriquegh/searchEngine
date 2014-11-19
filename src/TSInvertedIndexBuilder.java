@@ -13,9 +13,12 @@ import org.apache.logging.log4j.Logger;
 
 public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
     private static Logger logger = LogManager.getLogger();
+    
+    // TODO Have a constructor, initialize non-static members there.
     private final WorkQueue workers = new WorkQueue();
     private int pending;
 
+    // TODO Add javadoc
     public void traverse(Path path, TSInvertedIndex index) throws IOException {
 
         try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
@@ -39,9 +42,10 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
      * {@link DirectoryMinion} is created to handle that subdirectory.
      */
     private class DirectoryWorker implements Runnable {
-
+        // TODO Use final where appropriate
         private Path directory;
         private TSInvertedIndex mainIndex;
+        // TODO Initialize in constructor
         private InvertedIndex tempIndex = new InvertedIndex();
 
         public DirectoryWorker(Path directory, TSInvertedIndex index) {
@@ -59,7 +63,7 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
             try {
                 parseFile(directory, tempIndex);
             } catch (IOException e) {
-                e.printStackTrace();
+                e.printStackTrace(); // TODO No printing of stack trace
             }
 
             // Indicate that we no longer have "pending" work to do.
@@ -126,6 +130,7 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
         workers.shutdown();
     }
     
+    // TODO Shouldn't need this
     public static void parseFile(Path file, InvertedIndex index) throws IOException {
         
         try (BufferedReader reader = Files.newBufferedReader(file,
