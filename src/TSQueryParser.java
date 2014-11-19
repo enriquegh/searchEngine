@@ -11,6 +11,10 @@ import org.apache.logging.log4j.Logger;
 
 public class TSQueryParser extends QueryParser {
     private static Logger logger = LogManager.getLogger();
+    
+    // TODO Not using number of threads from Driver.
+    
+    // TODO Initialize non-static members in a constructor
     private final WorkQueue workers = new WorkQueue();
     private final ReadWriteLock lock = new ReadWriteLock();
     private int pending;
@@ -19,7 +23,7 @@ public class TSQueryParser extends QueryParser {
         super();
     }
 
-
+    // TODO Consider overriding... if not, add Javadoc
     public void parseFile(Path file, TSInvertedIndex index) throws IOException {
 
         try (BufferedReader reader = Files.newBufferedReader(file,
@@ -29,14 +33,15 @@ public class TSQueryParser extends QueryParser {
             while ((line = reader.readLine()) != null) {
                 // String[] wordsString = line.split(" ");
                 ArrayList<SearchResult> emptyResults = new ArrayList<SearchResult>();
-                results.put(line, emptyResults);
+                results.put(line, emptyResults); // TODO Lock around this put()
                 workers.execute(new LineWorker(line, index));
-                incrementPending();
+                incrementPending(); // TODO Do this in the constructor of the worker
             }
         }
     }
 
     private class LineWorker implements Runnable {
+        // TODO Use final, put a blank line inbetween methods
         private String line;
         private TSInvertedIndex index;
         public LineWorker(String line, TSInvertedIndex index) {
