@@ -5,10 +5,13 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+// TODO Avoid abbreviations, ThreadSafeInvertedIndex, or SafeInvertedIndex
+// TODO Mix of tabs and spaces
 
 public class TSInvertedIndex extends InvertedIndex {
     private static Logger logger = LogManager.getLogger();
-	ReadWriteLock lock;
+	ReadWriteLock lock; // TODO private final
+	
 	public TSInvertedIndex() {
 		super();
 		lock = new ReadWriteLock();
@@ -22,6 +25,7 @@ public class TSInvertedIndex extends InvertedIndex {
 		return add;
 	}
 	
+	// TODO Potential issue, but do not need to fix.
 	@Override
 	public boolean addAll(InvertedIndex tempIndex) {
 		lock.lockWrite();
@@ -29,6 +33,8 @@ public class TSInvertedIndex extends InvertedIndex {
 		lock.unlockWrite();
 		return add;
 	}
+	
+	// TODO Override contains() and toString()
 	
 	@Override
 	public void print(String output) throws IOException {
