@@ -22,6 +22,10 @@ public class ThreadSafeQueryParser extends QueryParser {
         lock = new ReadWriteLock();
         
     }
+    
+    // TODO Override add() method to always lock
+    
+    // TODO Override parseFile to create workers
 
     @SuppressWarnings("unused")
     private class LineWorker implements Runnable {
@@ -40,6 +44,7 @@ public class ThreadSafeQueryParser extends QueryParser {
             String[] wordsString = line.split(" ");
             ArrayList<SearchResult> searchResults = index.search(wordsString);
             lock.lockWrite();
+            // TODO Call an add() method instead
             getResults().put(line, searchResults);            
             lock.unlockWrite();
             decrementPending();
