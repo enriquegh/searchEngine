@@ -1,11 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-// TODO Mix of tabs and spaces
 
 public class ThreadSafeInvertedIndex extends InvertedIndex {
     private static Logger logger = LogManager.getLogger();
@@ -33,7 +29,21 @@ public class ThreadSafeInvertedIndex extends InvertedIndex {
         return add;
     }
 
-    // TODO Override contains() and toString()
+    @Override
+    public String toString() {
+        lock.lockRead();
+        String string = super.toString();
+        lock.unlockRead();
+        return string;        
+    }
+    
+    @Override
+    public boolean contains(String word) {
+        lock.lockRead();
+        boolean bool = super.contains(word);
+        lock.unlockRead();
+        return bool;
+    }
 
     @Override
     public void print(String output) throws IOException {

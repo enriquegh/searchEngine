@@ -1,10 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,35 +6,26 @@ import org.apache.logging.log4j.Logger;
 public class ThreadSafeQueryParser extends QueryParser {
     private static Logger logger = LogManager.getLogger();
 
-    // TODO Not using number of threads from Driver.
-
-    // TODO Initialize non-static members in a constructor
-    private final WorkQueue workers = new WorkQueue();
-    private final ReadWriteLock lock = new ReadWriteLock();
+    private final WorkQueue workers;
+    private final ReadWriteLock lock;
     private int pending;
 
     public ThreadSafeQueryParser() {
         super();
+        workers = new WorkQueue();
+        lock = new ReadWriteLock();
     }
 
-    // TODO Consider overriding... if not, add Javadoc
-    public void parseFile(Path file, ThreadSafeInvertedIndex index) throws IOException {
-
-        try (BufferedReader reader = Files.newBufferedReader(file,
-                Charset.forName("UTF-8"));) {
-            String line = null;
-
-            while ((line = reader.readLine()) != null) {
-                // String[] wordsString = line.split(" ");
-                ArrayList<SearchResult> emptyResults = new ArrayList<SearchResult>();
-                results.put(line, emptyResults); // TODO Lock around this put()
-                workers.execute(new LineWorker(line, index));
-            }
-        }
+    public ThreadSafeQueryParser(int threads) {
+        super();
+        workers = new WorkQueue(threads);
+        lock = new ReadWriteLock();
+        
     }
 
+    @SuppressWarnings("unused")
     private class LineWorker implements Runnable {
-        // TODO Use final, put a blank line inbetween methods
+        
         private final String line;
         private final ThreadSafeInvertedIndex index;
 
@@ -55,7 +40,7 @@ public class ThreadSafeQueryParser extends QueryParser {
             String[] wordsString = line.split(" ");
             ArrayList<SearchResult> searchResults = index.search(wordsString);
             lock.lockWrite();
-            results.put(line, searchResults);
+            getResults().put(line, searchResults);            
             lock.unlockWrite();
             decrementPending();
 

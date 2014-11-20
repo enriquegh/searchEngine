@@ -18,16 +18,8 @@ import org.apache.logging.log4j.Logger;
  */
 public class QueryParser {
     private static Logger logger = LogManager.getLogger();
-    protected final LinkedHashMap<String, ArrayList<SearchResult>> results; // TODO
-                                                                            // Try
-                                                                            // to
-                                                                            // avoid,
-                                                                            // and
-                                                                            // access
-                                                                            // via
-                                                                            // public
-                                                                            // methods
-                                                                            // instead.
+    private final LinkedHashMap<String, ArrayList<SearchResult>> results; 
+    // TODO Try to avoid, and access via public methods instead.
 
     /**
      * Instantiated the LinkedHashMap that will be used to save the results.
@@ -59,6 +51,11 @@ public class QueryParser {
                 results.put(line, index.search(wordsString));
             }
         }
+    }
+    
+    public LinkedHashMap<String, ArrayList<SearchResult>> getResults() {
+        LinkedHashMap<String, ArrayList<SearchResult>> copyResults = results;
+        return copyResults;
     }
 
     /**

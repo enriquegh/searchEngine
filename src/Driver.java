@@ -18,29 +18,20 @@ import org.apache.logging.log4j.Logger;
 public class Driver {
     private static Logger logger = LogManager.getLogger();
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         String outputPath;
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
+        InvertedIndex index;
 
-        /*
-         * TODO Could try to take advantage of upcasting more... InvertedIndex
-         * index;
-         * 
-         * if -t, index = new TSINvertedIndex(); else, index = new
-         * InvertedIndex();
-         * 
-         * if -t, index.print()
-         */
 
         if (parser.hasFlag("-t")) {
-            ThreadSafeInvertedIndex tsindex = new ThreadSafeInvertedIndex();
-            ThreadSafeInvertedIndexBuilder tsbuilder = new ThreadSafeInvertedIndexBuilder();
-            ThreadSafeQueryParser tsparseQuery = new ThreadSafeQueryParser();
+            index = new ThreadSafeInvertedIndex();
+            ThreadSafeInvertedIndexBuilder tsbuilder;
+            ThreadSafeQueryParser parseQuery;
 
             if (parser.hasValue("-t")) {
-                // TODO Not using your threads value, need to pass in to
-                // anything with a work queue.
 
                 try {
                     threads = Integer.parseInt(parser.getValue("-t"));
@@ -50,15 +41,16 @@ public class Driver {
             } else {
                 threads = 5;
             }
+            tsbuilder = new ThreadSafeInvertedIndexBuilder(threads);
+            parseQuery = new ThreadSafeQueryParser(threads);
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
                 String directoryPath = parser.getValue("-d");
 
                 try {
                     Path path = Paths.get(directoryPath);
-                    tsbuilder.traverse(path, tsindex);
+                    tsbuilder.traverse(path, index);
                     logger.debug("Traversed all files");
-                    tsbuilder.shutdown();
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
                             directoryPath);
@@ -87,9 +79,9 @@ public class Driver {
                 outputPath = parser.getValue("-i");
                 logger.debug("WordIndex being printed to: {}", outputPath);
                 try {
-                    tsindex.print(outputPath);
+                    index.print(outputPath);
                 } catch (IOException e) {
-                    e.printStackTrace(); // TODO Error messages
+                    
                 }
 
             }
@@ -99,8 +91,7 @@ public class Driver {
 
                 try {
                     Path path = Paths.get(directoryPath);
-                    tsparseQuery.parseFile(path, tsindex);
-                    tsparseQuery.shutdown();
+                    parseQuery.parseFile(path, index);
 
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
@@ -131,18 +122,19 @@ public class Driver {
                 outputPath = parser.getValue("-s");
                 logger.debug("Search results being printed to: {}", outputPath);
                 try {
-                    tsparseQuery.print(outputPath);
+                    parseQuery.print(outputPath);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
 
-            // TODO Shutdown the work queues, regardless of what arguments are
-            // provided.
+            tsbuilder.shutdown();
+            parseQuery.shutdown();
+            
         }
 
         else {
-            InvertedIndex index = new InvertedIndex();
+            index = new InvertedIndex();
             QueryParser parseQuery = new QueryParser();
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {

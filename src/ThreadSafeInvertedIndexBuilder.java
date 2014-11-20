@@ -1,22 +1,32 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     private static Logger logger = LogManager.getLogger();
-
-    // TODO Have a constructor, initialize non-static members there.
-    private final WorkQueue workers = new WorkQueue();
+    private final WorkQueue workers;
     private int pending;
+    
+    public ThreadSafeInvertedIndexBuilder(int threads){
+        workers = new WorkQueue(threads);
+    }
+    
+    public ThreadSafeInvertedIndexBuilder(){
+        workers = new WorkQueue();
+    }
 
-    // TODO Add javadoc
+    /**
+     * This function traverses over a list of files. If the file is a text file it assigns it to a
+     * Directory Worker else if it is a Directory it access it recursively.
+     * 
+     * @param path
+     * @param index
+     * @throws IOException
+     */
     public void traverse(Path path, ThreadSafeInvertedIndex index) throws IOException {
 
         try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
@@ -39,16 +49,16 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
      * {@link DirectoryMinion} is created to handle that subdirectory.
      */
     private class DirectoryWorker implements Runnable {
-        // TODO Use final where appropriate
-        private Path directory;
-        private ThreadSafeInvertedIndex mainIndex;
-        // TODO Initialize in constructor
-        private InvertedIndex tempIndex = new InvertedIndex();
+
+        private final Path directory;
+        private final ThreadSafeInvertedIndex mainIndex;
+        private final InvertedIndex tempIndex;
 
         public DirectoryWorker(Path directory, ThreadSafeInvertedIndex index) {
             logger.debug("Worker created for {}", directory);
             this.directory = directory;
             this.mainIndex = index;
+            tempIndex = new InvertedIndex();
             // Indicate we now have "pending" work to do. This is necessary
             // so we know when our threads are "done", since we can no longer
             // call the join() method on them.
@@ -60,7 +70,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
             try {
                 parseFile(directory, tempIndex);
             } catch (IOException e) {
-                e.printStackTrace(); // TODO No printing of stack trace
+
             }
 
             // Indicate that we no longer have "pending" work to do.
@@ -124,27 +134,5 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
         workers.shutdown();
     }
 
-    // TODO Shouldn't need this
-    public static void parseFile(Path file, InvertedIndex index)
-            throws IOException {
-
-        try (BufferedReader reader = Files.newBufferedReader(file,
-                Charset.forName("UTF-8"));) {
-            String line = null;
-            int i = 1;
-
-            while ((line = reader.readLine()) != null) {
-                String[] wordsString = WordParser.cleanText(line).split(" ");
-
-                for (String word : wordsString) {
-
-                    if (!word.isEmpty()) {
-                        index.add(word, file.toString(), i);
-                        i++;
-                    }
-                }
-            }
-        }
-    }
 
 }
