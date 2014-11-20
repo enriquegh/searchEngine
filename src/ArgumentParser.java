@@ -44,11 +44,10 @@ public class ArgumentParser {
     public void parseArguments(String[] args) {
         for (int i = 0; i < args.length; i++) {
             if (isFlag(args[i])) {
-                
+
                 if ((i + 1 < args.length) && isValue(args[i + 1])) {
                     argumentMap.put(args[i], args[i + 1]);
-                }
-                else {
+                } else {
                     argumentMap.put(args[i], null);
                 }
             }
@@ -105,8 +104,7 @@ public class ArgumentParser {
     public boolean hasValue(String flag) {
         if (argumentMap.containsKey(flag)) {
             return argumentMap.get(flag) != null;
-        }
-        else {
+        } else {
             return false;
         }
     }

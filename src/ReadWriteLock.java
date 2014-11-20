@@ -31,8 +31,7 @@ public class ReadWriteLock {
         while (writers > 0) {
             try {
                 this.wait();
-            }
-            catch (InterruptedException e) {
+            } catch (InterruptedException e) {
                 logger.debug("Interrupted Exception {}", e);
             }
         }
@@ -47,7 +46,7 @@ public class ReadWriteLock {
         assert readers > 0;
         readers--;
         if (readers == 0) {
-            this.notifyAll(); 
+            this.notifyAll();
         }
 
     }
@@ -73,12 +72,9 @@ public class ReadWriteLock {
      * threads if necessary.
      */
     public synchronized void unlockWrite() {
-        assert writers > 0; // TODO assert writers == 1
         writers--;
-        if (writers == 0) { // TODO Don't need this check for unlockWrite()
-            this.notifyAll(); 
-        }
+        this.notifyAll();
 
     }
-    
+
 }

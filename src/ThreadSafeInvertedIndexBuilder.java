@@ -9,34 +9,31 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
-
-public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
+public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     private static Logger logger = LogManager.getLogger();
-    
+
     // TODO Have a constructor, initialize non-static members there.
     private final WorkQueue workers = new WorkQueue();
     private int pending;
 
     // TODO Add javadoc
-    public void traverse(Path path, TSInvertedIndex index) throws IOException {
+    public void traverse(Path path, ThreadSafeInvertedIndex index) throws IOException {
 
         try (DirectoryStream<Path> listing = Files.newDirectoryStream(path)) {
 
             for (Path file : listing) {
                 String fileName = file.getFileName().toString().toLowerCase();
 
-                    if (fileName.endsWith(".txt")) {
-                        workers.execute(new DirectoryWorker(file,index));
-                    }
-                    else if(Files.isDirectory(file)) {
-                        traverse(file,index);
-                    }
+                if (fileName.endsWith(".txt")) {
+                    workers.execute(new DirectoryWorker(file, index));
+                } else if (Files.isDirectory(file)) {
+                    traverse(file, index);
+                }
 
             }
         }
     }
-    
+
     /**
      * Handles per-directory parsing. If a subdirectory is encountered, a new
      * {@link DirectoryMinion} is created to handle that subdirectory.
@@ -44,11 +41,11 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
     private class DirectoryWorker implements Runnable {
         // TODO Use final where appropriate
         private Path directory;
-        private TSInvertedIndex mainIndex;
+        private ThreadSafeInvertedIndex mainIndex;
         // TODO Initialize in constructor
         private InvertedIndex tempIndex = new InvertedIndex();
 
-        public DirectoryWorker(Path directory, TSInvertedIndex index) {
+        public DirectoryWorker(Path directory, ThreadSafeInvertedIndex index) {
             logger.debug("Worker created for {}", directory);
             this.directory = directory;
             this.mainIndex = index;
@@ -69,20 +66,18 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
             // Indicate that we no longer have "pending" work to do.
             mainIndex.addAll(tempIndex);
             decrementPending();
-//                mainIndex.addAll(list, file, start)
+            // mainIndex.addAll(list, file, start)
             logger.debug("Worker finished {}", directory);
         }
     }
 
-
-
     /**
-     * Indicates that we now have additional "pending" work to wait for. We
-     * need this since we can no longer call join() on the threads. (The
-     * threads keep running forever in the background.)
+     * Indicates that we now have additional "pending" work to wait for. We need
+     * this since we can no longer call join() on the threads. (The threads keep
+     * running forever in the background.)
      *
-     * We made this a synchronized method in the outer class, since locking
-     * on the "this" object within an inner class does not work.
+     * We made this a synchronized method in the outer class, since locking on
+     * the "this" object within an inner class does not work.
      */
     private synchronized void incrementPending() {
         pending++;
@@ -90,8 +85,8 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
     }
 
     /**
-     * Indicates that we now have one less "pending" work, and will notify
-     * any waiting threads if we no longer have any more pending work left.
+     * Indicates that we now have one less "pending" work, and will notify any
+     * waiting threads if we no longer have any more pending work left.
      */
     private synchronized void decrementPending() {
         pending--;
@@ -101,11 +96,11 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
             this.notifyAll();
         }
     }
-    
+
     /**
-     * Helper method, that helps a thread wait until all of the current
-     * work is done. This is useful for resetting the counters or shutting
-     * down the work queue.
+     * Helper method, that helps a thread wait until all of the current work is
+     * done. This is useful for resetting the counters or shutting down the work
+     * queue.
      */
     public synchronized void finish() {
         try {
@@ -113,8 +108,7 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
                 logger.debug("Waiting until finished");
                 this.wait();
             }
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             logger.debug("Finish interrupted", e);
         }
     }
@@ -129,19 +123,19 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
         finish();
         workers.shutdown();
     }
-    
+
     // TODO Shouldn't need this
-    public static void parseFile(Path file, InvertedIndex index) throws IOException {
-        
+    public static void parseFile(Path file, InvertedIndex index)
+            throws IOException {
+
         try (BufferedReader reader = Files.newBufferedReader(file,
-                Charset.forName("UTF-8"));)
-        {
+                Charset.forName("UTF-8"));) {
             String line = null;
             int i = 1;
-            
+
             while ((line = reader.readLine()) != null) {
                 String[] wordsString = WordParser.cleanText(line).split(" ");
-                
+
                 for (String word : wordsString) {
 
                     if (!word.isEmpty()) {
@@ -150,12 +144,7 @@ public class TSInvertedIndexBuilder extends InvertedIndexBuilder {
                     }
                 }
             }
-        } 
+        }
     }
-    
-    
-    
+
 }
-
-
-

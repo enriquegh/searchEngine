@@ -8,11 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * This class runs all the methods and classes needed to make search
- * engine work. Driver calls {@link ArgumentParser} & {@link InvertedIndex}.
- * Checks that the flag -d and a directory are entered.
- * If flag -i is entered an output directory will be included.
- * If flag is included but no directory it will be saved to "index.txt"
+ * This class runs all the methods and classes needed to make search engine
+ * work. Driver calls {@link ArgumentParser} & {@link InvertedIndex}. Checks
+ * that the flag -d and a directory are entered. If flag -i is entered an output
+ * directory will be included. If flag is included but no directory it will be
+ * saved to "index.txt"
  */
 
 public class Driver {
@@ -22,38 +22,38 @@ public class Driver {
         String outputPath;
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
-        
-        /* TODO Could try to take advantage of upcasting more...
-          InvertedIndex index;
-          
-          if -t, index = new TSINvertedIndex();
-          else, index = new InvertedIndex();
-          
-          if -t, index.print()
-        */
-        
+
+        /*
+         * TODO Could try to take advantage of upcasting more... InvertedIndex
+         * index;
+         * 
+         * if -t, index = new TSINvertedIndex(); else, index = new
+         * InvertedIndex();
+         * 
+         * if -t, index.print()
+         */
+
         if (parser.hasFlag("-t")) {
-            TSInvertedIndex tsindex = new TSInvertedIndex();
-            TSInvertedIndexBuilder tsbuilder = new TSInvertedIndexBuilder();
-            TSQueryParser tsparseQuery = new TSQueryParser();
-            
+            ThreadSafeInvertedIndex tsindex = new ThreadSafeInvertedIndex();
+            ThreadSafeInvertedIndexBuilder tsbuilder = new ThreadSafeInvertedIndexBuilder();
+            ThreadSafeQueryParser tsparseQuery = new ThreadSafeQueryParser();
+
             if (parser.hasValue("-t")) {
-                // TODO Not using your threads value, need to pass in to anything with a work queue.
-                
+                // TODO Not using your threads value, need to pass in to
+                // anything with a work queue.
+
                 try {
                     threads = Integer.parseInt(parser.getValue("-t"));
-                }
-                catch(NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     threads = 5;
                 }
-            }
-            else {
+            } else {
                 threads = 5;
             }
-            
-            if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
+
+            if (parser.hasFlag("-d") && parser.hasValue("-d")) {
                 String directoryPath = parser.getValue("-d");
-                
+
                 try {
                     Path path = Paths.get(directoryPath);
                     tsbuilder.traverse(path, tsindex);
@@ -66,7 +66,7 @@ public class Driver {
                     System.err.format("%s%n", x);
                 }
             }
-            
+
             if (parser.hasFlag("-i") && !parser.hasValue("-i")) {
                 String indexPathString = "index.txt";
                 try {
@@ -93,10 +93,10 @@ public class Driver {
                 }
 
             }
-            
+
             if (parser.hasFlag("-q") && parser.hasValue("-q")) {
                 String directoryPath = parser.getValue("-q");
-                
+
                 try {
                     Path path = Paths.get(directoryPath);
                     tsparseQuery.parseFile(path, tsindex);
@@ -110,14 +110,13 @@ public class Driver {
                     System.err.format("%s%n", x);
                 }
             }
-            
+
             if (parser.hasFlag("-s") && !parser.hasValue("-s")) {
                 String searchPathString = "search.txt";
-                
+
                 try {
                     Path indexPath = Paths.get(".", "search.txt");
                     Files.createFile(indexPath);
-                  
 
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
@@ -127,7 +126,7 @@ public class Driver {
                     System.err.format("%s%n", x);
                 }
             }
-            
+
             if (parser.hasFlag("-s") && parser.hasValue("-s")) {
                 outputPath = parser.getValue("-s");
                 logger.debug("Search results being printed to: {}", outputPath);
@@ -137,17 +136,18 @@ public class Driver {
                     e.printStackTrace();
                 }
             }
-            
-            // TODO Shutdown the work queues, regardless of what arguments are provided.
+
+            // TODO Shutdown the work queues, regardless of what arguments are
+            // provided.
         }
-        
+
         else {
             InvertedIndex index = new InvertedIndex();
             QueryParser parseQuery = new QueryParser();
-        	
-            if ( parser.hasFlag("-d") && parser.hasValue("-d") ) {
+
+            if (parser.hasFlag("-d") && parser.hasValue("-d")) {
                 String directoryPath = parser.getValue("-d");
-                
+
                 try {
                     Path path = Paths.get(directoryPath);
                     InvertedIndexBuilder.traverse(path, index);
@@ -158,7 +158,7 @@ public class Driver {
                     System.err.format("%s%n", x);
                 }
             }
-            
+
             if (parser.hasFlag("-i") && !parser.hasValue("-i")) {
                 String indexPathString = "index.txt";
                 try {
@@ -185,10 +185,10 @@ public class Driver {
                 }
 
             }
-            
+
             if (parser.hasFlag("-q") && parser.hasValue("-q")) {
                 String directoryPath = parser.getValue("-q");
-                
+
                 try {
                     Path path = Paths.get(directoryPath);
                     parseQuery.parseFile(path, index);
@@ -201,14 +201,13 @@ public class Driver {
                     System.err.format("%s%n", x);
                 }
             }
-            
+
             if (parser.hasFlag("-s") && !parser.hasValue("-s")) {
                 String searchPathString = "search.txt";
-                
+
                 try {
                     Path indexPath = Paths.get(".", "search.txt");
                     Files.createFile(indexPath);
-                  
 
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
@@ -218,7 +217,7 @@ public class Driver {
                     System.err.format("%s%n", x);
                 }
             }
-            
+
             if (parser.hasFlag("-s") && parser.hasValue("-s")) {
                 outputPath = parser.getValue("-s");
                 logger.debug("Search results being printed to: {}", outputPath);
@@ -227,7 +226,7 @@ public class Driver {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }	     	
-        }       
+            }
+        }
     }
 }

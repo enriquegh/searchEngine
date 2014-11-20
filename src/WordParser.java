@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * This class parses through text removing unnecessary spaces and special
  * characters and assumes words will be separated by whitespace.
@@ -21,7 +20,7 @@ public class WordParser {
     public static String cleanText(String text) {
 
         text = text.toLowerCase();
-        text = text.replaceAll("[\\W_]+", " ");       
+        text = text.replaceAll("[\\W_]+", " ");
         text = text.trim();
 
         return text;
@@ -40,9 +39,9 @@ public class WordParser {
     public static List<String> parseText(String text) {
         ArrayList<String> words = new ArrayList<>();
         String[] wordsString = cleanText(text).split(" ");
-        
+
         for (String word : wordsString) {
-            
+
             if (!word.isEmpty()) {
                 words.add(word);
             }

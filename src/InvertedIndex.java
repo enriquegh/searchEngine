@@ -18,15 +18,17 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * 
- * This class contains a TreeMap with
- * all the necessary data to make a WordIndex of a file
+ * This class contains a TreeMap with all the necessary data to make a WordIndex
+ * of a file
  *
  */
 public class InvertedIndex {
     private static Logger logger = LogManager.getLogger();
     private final TreeMap<String, Map<String, TreeSet<Integer>>> wordMap;
+
     /**
-     * Stores a mapping of words to the path and position those words were found.
+     * Stores a mapping of words to the path and position those words were
+     * found.
      */
     public InvertedIndex() {
         wordMap = new TreeMap<String, Map<String, TreeSet<Integer>>>();
@@ -48,7 +50,7 @@ public class InvertedIndex {
      */
     public boolean add(String word, String path, int position) {
         TreeSet<Integer> set;
-        
+
         if (!wordMap.containsKey(word)) {
             Map<String, TreeSet<Integer>> pathMap = new TreeMap<>();
             set = new TreeSet<>();
@@ -65,12 +67,10 @@ public class InvertedIndex {
                 wordMap.get(word).put(path, set);
 
                 return true;
-            }
-            else if (!wordMap.get(word).get(path).contains(position)) {
+            } else if (!wordMap.get(word).get(path).contains(position)) {
                 wordMap.get(word).get(path).add(position);
                 return true;
-            }
-            else {
+            } else {
                 return false;
             }
         }
@@ -88,25 +88,25 @@ public class InvertedIndex {
      * @return true if the word is stored in the index
      */
     public boolean addAll(InvertedIndex tempIndex) {
-        //InvertedIndex,
+        // InvertedIndex,
         for (String word : tempIndex.wordMap.keySet()) {
             if (!wordMap.containsKey(word)) {
                 wordMap.put(word, tempIndex.wordMap.get(word));
-            }
-            else {
-                 for (String path : tempIndex.wordMap.get(word).keySet()) {
-                     if (!wordMap.get(word).containsKey(path)) {
-                         wordMap.get(word).put(path, tempIndex.wordMap.get(word).get(path));
-                     }
-                     else {
-                         wordMap.get(word).get(path).addAll(tempIndex.wordMap.get(word).get(path));
-                     }
-                 }
+            } else {
+                for (String path : tempIndex.wordMap.get(word).keySet()) {
+                    if (!wordMap.get(word).containsKey(path)) {
+                        wordMap.get(word).put(path,
+                                tempIndex.wordMap.get(word).get(path));
+                    } else {
+                        wordMap.get(word).get(path)
+                                .addAll(tempIndex.wordMap.get(word).get(path));
+                    }
+                }
             }
         }
         return true;
     }
-    
+
     /**
      * Tests whether the index contains the specified word.
      * 
@@ -131,38 +131,36 @@ public class InvertedIndex {
     public void print(String output) throws IOException {
         Path outputPath = Paths.get(output);
         logger.debug("Printing to {}", output);
-        
+
         if (!outputPath.toFile().isDirectory()) {
-            
+
             try (BufferedWriter writer = Files.newBufferedWriter(outputPath,
                     Charset.forName("UTF-8"));) {
-                
+
                 for (Entry<String, Map<String, TreeSet<Integer>>> word : wordMap
                         .entrySet()) {
                     writer.write(word.getKey());
                     writer.newLine();
-    
-                    for (Entry<String, TreeSet<Integer>> location : word.getValue()
-                            .entrySet()) {
+
+                    for (Entry<String, TreeSet<Integer>> location : word
+                            .getValue().entrySet()) {
                         writer.write("\"" + location.getKey() + "\"");
-    
+
                         for (Integer position : location.getValue()) {
                             writer.write(", " + position);
-                        } 
-                        writer.newLine();    
+                        }
+                        writer.newLine();
                     }
                     writer.newLine();
-                    writer.flush();   
+                    writer.flush();
                 }
             }
         }
     }
-    
 
     /**
-     * Traverses through query and searches the wordMap
-     * for possible matches. All matches are saved into a
-     * SearchResult instance.
+     * Traverses through query and searches the wordMap for possible matches.
+     * All matches are saved into a SearchResult instance.
      *
      * @param queryList
      *            - String array that contains all the words on the query
@@ -171,24 +169,29 @@ public class InvertedIndex {
     public ArrayList<SearchResult> search(String[] queryList) {
         ArrayList<SearchResult> searchResultsList = new ArrayList<>();
         Map<String, SearchResult> searchResultsMap = new HashMap<>();
-        
+
         for (String query : queryList) {
-            
-            for (Entry<String, Map<String, TreeSet<Integer>>> word :  wordMap.tailMap(query).entrySet()) {
-                
+
+            for (Entry<String, Map<String, TreeSet<Integer>>> word : wordMap
+                    .tailMap(query).entrySet()) {
+
                 if (!word.getKey().startsWith(query)) {
                     break;
                 }
 
-                for (Entry<String, TreeSet<Integer>> path : word.getValue().entrySet()) {          
+                for (Entry<String, TreeSet<Integer>> path : word.getValue()
+                        .entrySet()) {
                     int wordAppeared = path.getValue().size();
-                    
+
                     if (searchResultsMap.containsKey(path.getKey())) {
-                        searchResultsMap.get(path.getKey()).updateFrequency(wordAppeared);
-                        searchResultsMap.get(path.getKey()).checkPositions(path.getValue().first());
-                    }
-                    else {
-                        SearchResult wordSearched = new SearchResult(wordAppeared, path.getValue().first(), path.getKey());
+                        searchResultsMap.get(path.getKey()).updateFrequency(
+                                wordAppeared);
+                        searchResultsMap.get(path.getKey()).checkPositions(
+                                path.getValue().first());
+                    } else {
+                        SearchResult wordSearched = new SearchResult(
+                                wordAppeared, path.getValue().first(),
+                                path.getKey());
                         searchResultsMap.put(path.getKey(), wordSearched);
                     }
                 }
