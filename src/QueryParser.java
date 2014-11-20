@@ -53,6 +53,7 @@ public class QueryParser {
         }
     }
     
+    // TODO public void addResult(String line) or addResult(String line, List<SearchResult> results)
     public LinkedHashMap<String, ArrayList<SearchResult>> getResults() {
         LinkedHashMap<String, ArrayList<SearchResult>> copyResults = results;
         return copyResults;
