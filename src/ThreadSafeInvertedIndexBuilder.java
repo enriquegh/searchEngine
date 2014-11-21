@@ -70,8 +70,8 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
             try {
                 parseFile(directory, tempIndex);
             } catch (IOException e) {
-                // TODO Better exception handling:
-                // logger.debug("Could not parse file.", e);
+                logger.debug("Could not parse file", e);
+
             }
 
             // Indicate that we no longer have "pending" work to do.

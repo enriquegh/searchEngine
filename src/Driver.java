@@ -50,7 +50,7 @@ public class Driver {
                 try {
                     Path path = Paths.get(directoryPath);
                     tsbuilder.traverse(path, index);
-                    // TODO Add a finish()
+                    tsbuilder.finish();
                     logger.debug("Traversed all files");
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
@@ -82,7 +82,7 @@ public class Driver {
                 try {
                     index.print(outputPath);
                 } catch (IOException e) {
-                    // TODO
+                    logger.debug("Couldn't print", e);
                 }
 
             }
@@ -93,6 +93,7 @@ public class Driver {
                 try {
                     Path path = Paths.get(directoryPath);
                     parseQuery.parseFile(path, index);
+                    parseQuery.finish();
 
                 } catch (NoSuchFileException x) {
                     System.err.format("%s: no such" + " file or directory%n",
@@ -125,7 +126,7 @@ public class Driver {
                 try {
                     parseQuery.print(outputPath);
                 } catch (IOException e) {
-                    e.printStackTrace(); // TODO
+                    logger.debug("Couldn't print query", e);
                 }
             }
 
@@ -174,7 +175,7 @@ public class Driver {
                 try {
                     index.print(outputPath);
                 } catch (IOException e) {
-                    e.printStackTrace(); // TODO
+                    logger.debug("couldn't print index", e);
                 }
 
             }
@@ -217,7 +218,7 @@ public class Driver {
                 try {
                     parseQuery.print(outputPath);
                 } catch (IOException e) {
-                    e.printStackTrace(); // TODO
+                    logger.debug("couldn't print query", e);
                 }
             }
         }

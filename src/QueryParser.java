@@ -19,7 +19,6 @@ import org.apache.logging.log4j.Logger;
 public class QueryParser {
     private static Logger logger = LogManager.getLogger();
     private final LinkedHashMap<String, ArrayList<SearchResult>> results; 
-    // TODO Try to avoid, and access via public methods instead.
 
     /**
      * Instantiated the LinkedHashMap that will be used to save the results.
@@ -53,10 +52,8 @@ public class QueryParser {
         }
     }
     
-    // TODO public void addResult(String line) or addResult(String line, List<SearchResult> results)
-    public LinkedHashMap<String, ArrayList<SearchResult>> getResults() {
-        LinkedHashMap<String, ArrayList<SearchResult>> copyResults = results;
-        return copyResults;
+    public void addResult(String line, ArrayList<SearchResult> tempResults) {
+        results.put(line,tempResults);
     }
 
     /**

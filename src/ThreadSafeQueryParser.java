@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 import org.apache.logging.log4j.LogManager;
@@ -23,11 +28,34 @@ public class ThreadSafeQueryParser extends QueryParser {
         
     }
     
-    // TODO Override add() method to always lock
-    
-    // TODO Override parseFile to create workers
 
-    @SuppressWarnings("unused")
+    @Override
+    public void addResult(String line, java.util.ArrayList<SearchResult> tempResults) {
+        lock.lockWrite();
+        super.addResult(line, tempResults);
+        lock.unlockWrite();
+    }
+    /**
+     * This method 
+     * @param file
+     * @param index
+     * @throws IOException
+     */
+
+    public void parseFile(Path file, ThreadSafeInvertedIndex index) throws IOException {
+
+        try (BufferedReader reader = Files.newBufferedReader(file,
+                Charset.forName("UTF-8"));) {
+            String line = null;
+
+            while ((line = reader.readLine()) != null) {
+                ArrayList<SearchResult> emptyResults = new ArrayList<SearchResult>();
+                addResult(line, emptyResults);
+                workers.execute(new LineWorker(line, index));
+            }
+        }
+    }
+
     private class LineWorker implements Runnable {
         
         private final String line;
@@ -43,10 +71,7 @@ public class ThreadSafeQueryParser extends QueryParser {
         public void run() {
             String[] wordsString = line.split(" ");
             ArrayList<SearchResult> searchResults = index.search(wordsString);
-            lock.lockWrite();
-            // TODO Call an add() method instead
-            getResults().put(line, searchResults);            
-            lock.unlockWrite();
+            addResult(line, searchResults);
             decrementPending();
 
         }
