@@ -1,10 +1,8 @@
 import java.io.IOException;
 import java.util.ArrayList;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 public class ThreadSafeInvertedIndex extends InvertedIndex {
-    private static Logger logger = LogManager.getLogger();
     private final ReadWriteLock lock;
 
     public ThreadSafeInvertedIndex() {
