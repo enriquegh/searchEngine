@@ -1,5 +1,8 @@
 import java.util.LinkedList;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * A simple work queue implementation based on the IBM developerWorks article by
  * Brian Goetz.
@@ -9,6 +12,7 @@ import java.util.LinkedList;
  *      Theory and Practice: Thread Pools and Work Queues</a>
  */
 public class WorkQueue {
+    private static Logger logger = LogManager.getLogger();
 
     /**
      * Pool of worker threads that will wait in the background until work is
@@ -61,6 +65,7 @@ public class WorkQueue {
      *            work request (in the form of a {@link Runnable} object)
      */
     public void execute(Runnable r) {
+        logger.debug("Thread is executing work");
         synchronized (queue) {
             queue.addLast(r);
             queue.notifyAll();
@@ -116,6 +121,7 @@ public class WorkQueue {
                     if (shutdown) {
                         break;
                     } else {
+                        logger.debug("Removing runnable from list");
                         r = queue.removeFirst();
                     }
                 }

@@ -17,22 +17,32 @@
 
     <Loggers>
     
-        <Logger name="QueryParser" level="ALL">
+        <Logger name="QueryParser" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>
         </Logger>
 
-        <Logger name="InvertedIndex" level="ALL">
+        <Logger name="InvertedIndex" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="InvertedIndex" level="ALL">
+        <Logger name="InvertedIndex" level="OFF">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>          
+        </Logger>
+        
+        <Logger name="WorkQueue" level="ALL">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>          
+        </Logger>
+        
+        <Logger name="ThreadSafeInvertedIndexBuilder" level="ALL">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
 
-        <Root level="ALL">
+        <Root level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"  />
         </Root>

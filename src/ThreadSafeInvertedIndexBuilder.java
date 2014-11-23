@@ -35,6 +35,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
                 String fileName = file.getFileName().toString().toLowerCase();
 
                 if (fileName.endsWith(".txt")) {
+                    logger.debug("worker being executed");
                     workers.execute(new DirectoryWorker(file, index));
                 } else if (Files.isDirectory(file)) {
                     traverse(file, index);
@@ -78,7 +79,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
             mainIndex.addAll(tempIndex);
             decrementPending();
             // mainIndex.addAll(list, file, start)
-            logger.debug("Worker finished {}", directory);
+//            logger.debug("Worker finished {}", directory);
         }
     }
 
@@ -92,7 +93,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
      */
     private synchronized void incrementPending() {
         pending++;
-        logger.debug("Pending is now {}", pending);
+//        logger.debug("Pending is now {}", pending);
     }
 
     /**
@@ -116,11 +117,11 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     public synchronized void finish() {
         try {
             while (pending > 0) {
-                logger.debug("Waiting until finished");
+//                logger.debug("Waiting until finished");
                 this.wait();
             }
         } catch (InterruptedException e) {
-            logger.debug("Finish interrupted", e);
+//            logger.debug("Finish interrupted", e);
         }
     }
 
@@ -130,7 +131,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
      * background.
      */
     public synchronized void shutdown() {
-        logger.debug("Shutting down");
+//        logger.debug("Shutting down");
         finish();
         workers.shutdown();
     }

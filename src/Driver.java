@@ -18,18 +18,16 @@ import org.apache.logging.log4j.Logger;
 public class Driver {
     private static Logger logger = LogManager.getLogger();
 
-    @SuppressWarnings("static-access")
+
     public static void main(String[] args) {
         String outputPath;
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
-        InvertedIndex index;
+
 
 
         if (parser.hasFlag("-t")) {
-            index = new ThreadSafeInvertedIndex();
-            ThreadSafeInvertedIndexBuilder tsbuilder;
-            ThreadSafeQueryParser parseQuery;
+            ThreadSafeInvertedIndex index = new ThreadSafeInvertedIndex(); //Need to call here if not traverse uses parent method
 
             if (parser.hasValue("-t")) {
 
@@ -41,6 +39,8 @@ public class Driver {
             } else {
                 threads = 5;
             }
+            ThreadSafeInvertedIndexBuilder tsbuilder;
+            ThreadSafeQueryParser parseQuery;
             tsbuilder = new ThreadSafeInvertedIndexBuilder(threads);
             parseQuery = new ThreadSafeQueryParser(threads);
 
@@ -136,7 +136,7 @@ public class Driver {
         }
 
         else {
-            index = new InvertedIndex();
+            InvertedIndex index = new InvertedIndex();
             QueryParser parseQuery = new QueryParser();
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
