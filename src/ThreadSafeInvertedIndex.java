@@ -55,7 +55,6 @@ public class ThreadSafeInvertedIndex extends InvertedIndex {
     @Override
     public ArrayList<SearchResult> search(String[] queryList) {
         lock.lockRead();
-        logger.debug("I am inside search");
         ArrayList<SearchResult> search = super.search(queryList);
         lock.unlockRead();
         return search;
