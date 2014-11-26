@@ -3,6 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,8 +24,6 @@ public class Driver {
         String outputPath;
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
-
-
 
         if (parser.hasFlag("-t")) {
             ThreadSafeInvertedIndex index = new ThreadSafeInvertedIndex(); //Need to call here if not traverse uses parent method
@@ -138,6 +137,21 @@ public class Driver {
         else {
             InvertedIndex index = new InvertedIndex();
             QueryParser parseQuery = new QueryParser();
+            
+            if (parser.hasFlag("-u") && parser.hasValue("-u")) {
+                String urlPath = parser.getValue("-u");
+                String html;
+                try {
+                    html = HTTPFetcher.fetchHTML(urlPath);
+                    ArrayList<String> links = HTMLLinkParser.listLinks(html);
+                    String text = HTMLCleaner.cleanHTML(html);
+                    
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+                }
+
+            }
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
                 String directoryPath = parser.getValue("-d");

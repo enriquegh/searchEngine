@@ -32,12 +32,17 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="WorkQueue" level="ALL">
+        <Logger name="WorkQueue" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
         <Logger name="ThreadSafeInvertedIndexBuilder" level="ALL">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>          
+        </Logger>
+        
+        <Logger name="Driver" level="ALL">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
