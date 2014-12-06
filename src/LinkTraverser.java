@@ -24,13 +24,17 @@ public class LinkTraverser {
         try {
             html = HTTPFetcher.fetchHTML(urlPath);
             ArrayList<String> links = HTMLLinkParser.listLinks(html);
-            for (String link :links) {
-                if (urlCount <= 50) {
-                    logger.debug("Worker will be executed");
-                    workers.execute(new LinkWorker(link,index));
-                    urlCount++;
+            if (links.size() > 0) {
+                for (String link :links) {
+                    traverse(link,index);
+                    if (urlCount <= 50) {
+                        logger.debug("Worker will be executed");
+                        workers.execute(new LinkWorker(link,index));
+                        urlCount++;
+                    }
                 }
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,8 +79,10 @@ public class LinkTraverser {
         @Override
         public void run() {
             parsePath(urlPath,tempIndex);
-            decrementPending();
+
             mainIndex.addAll(tempIndex);
+            decrementPending();
+            logger.debug("Worker finished {}",urlPath);
         }
 
         

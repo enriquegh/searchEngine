@@ -1,914 +1,430 @@
-19:29:43:445 [debug] LinkTraverser.java:29 Thread-0: Worker will be executed
-19:29:43:445 [debug] LinkTraverser.java:29 Thread-0: Worker will be executed
-19:29:43:447 [debug] LinkTraverser.java:68 Thread-0: Worker created for link02.html
-19:29:43:447 [debug] LinkTraverser.java:68 Thread-0: Worker created for link02.html
-19:29:43:448 [debug] Driver.java:50 Thread-0: Finished traversing links
-19:29:43:448 [debug] Driver.java:50 Thread-0: Finished traversing links
-19:29:43:448 [debug] Driver.java:51 Thread-0: {}
-19:29:43:448 [debug] Driver.java:51 Thread-0: {}
-19:29:43:448 [debug] LinkTraverser.java:52 Thread-16: java.net.MalformedURLException: no protocol: link02.html
-19:29:43:448 [debug] LinkTraverser.java:52 Thread-16: java.net.MalformedURLException: no protocol: link02.html
-19:29:43:449 [debug] LinkTraverser.java:103 Thread-16: Pending is now 0
-19:29:43:449 [debug] LinkTraverser.java:103 Thread-16: Pending is now 0
-19:29:43:449 [debug] Driver.java:95 Thread-0: WordIndex being printed to: results/index-recurse.txt
-19:29:43:449 [debug] Driver.java:95 Thread-0: WordIndex being printed to: results/index-recurse.txt
-19:29:43:449 [debug] Driver.java:96 Thread-0: {}
-19:29:43:449 [debug] Driver.java:96 Thread-0: {}
-19:29:43:468 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:468 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:468 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html
-19:29:43:468 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html
-19:29:43:469 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:469 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:469 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html
-19:29:43:469 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html
-19:29:43:469 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:469 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:469 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html
-19:29:43:469 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html
-19:29:43:469 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:469 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:470 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html
-19:29:43:470 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html
-19:29:43:470 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:470 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:470 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html
-19:29:43:470 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html
-19:29:43:471 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:471 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:471 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html
-19:29:43:471 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html
-19:29:43:471 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:471 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:471 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html
-19:29:43:471 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html
-19:29:43:472 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:472 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:472 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html
-19:29:43:472 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html
-19:29:43:472 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:472 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:472 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html
-19:29:43:472 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html
-19:29:43:473 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:473 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:473 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html
-19:29:43:473 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html
-19:29:43:473 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:473 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:473 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html
-19:29:43:473 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html
-19:29:43:473 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:473 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:474 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html
-19:29:43:474 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html
-19:29:43:474 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:474 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:474 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html
-19:29:43:474 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html
-19:29:43:474 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:474 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:475 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html
-19:29:43:475 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html
-19:29:43:475 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:475 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:475 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html will be parsed
-19:29:43:475 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html
-19:29:43:475 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html will be parsed
-19:29:43:475 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html will be parsed
-19:29:43:475 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html
-19:29:43:475 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html will be parsed
-19:29:43:475 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:475 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:475 [debug] LinkTraverser.java:103 Thread-31: Pending is now 14
-19:29:43:475 [debug] LinkTraverser.java:103 Thread-31: Pending is now 14
-19:29:43:476 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html
-19:29:43:476 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html
-19:29:43:476 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:476 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:476 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html will be parsed
-19:29:43:476 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html
-19:29:43:476 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html will be parsed
-19:29:43:476 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html
-19:29:43:476 [debug] LinkTraverser.java:103 Thread-29: Pending is now 15
-19:29:43:476 [debug] LinkTraverser.java:103 Thread-29: Pending is now 15
-19:29:43:476 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:477 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html will be parsed
-19:29:43:476 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:477 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html will be parsed
-19:29:43:477 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html
-19:29:43:477 [debug] LinkTraverser.java:103 Thread-28: Pending is now 14
-19:29:43:477 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html
-19:29:43:477 [debug] LinkTraverser.java:103 Thread-28: Pending is now 14
-19:29:43:477 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:477 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:477 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html
-19:29:43:477 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html
-19:29:43:478 [debug] LinkTraverser.java:103 Thread-32: Pending is now 14
-19:29:43:478 [debug] LinkTraverser.java:103 Thread-32: Pending is now 14
-19:29:43:478 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html will be parsed
-19:29:43:478 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html will be parsed
-19:29:43:479 [debug] LinkTraverser.java:103 Thread-30: Pending is now 13
-19:29:43:479 [debug] LinkTraverser.java:103 Thread-30: Pending is now 13
-19:29:43:480 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:480 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:480 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html
-19:29:43:480 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html
-19:29:43:480 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:480 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:481 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html
-19:29:43:481 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html
-19:29:43:481 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:481 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:481 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html
-19:29:43:481 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html
-19:29:43:482 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:482 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:482 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html
-19:29:43:482 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html
-19:29:43:482 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:482 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:482 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html
-19:29:43:482 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html
-19:29:43:483 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:483 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:483 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html
-19:29:43:483 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html
-19:29:43:483 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:483 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:483 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html
-19:29:43:483 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html
-19:29:43:483 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html will be parsed
-19:29:43:484 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:483 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html will be parsed
-19:29:43:484 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:484 [debug] LinkTraverser.java:103 Thread-32: Pending is now 20
-19:29:43:484 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html
-19:29:43:484 [debug] LinkTraverser.java:103 Thread-32: Pending is now 20
-19:29:43:484 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html
-19:29:43:485 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html will be parsed
-19:29:43:485 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html will be parsed
-19:29:43:485 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html will be parsed
-19:29:43:486 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html will be parsed
-19:29:43:486 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html will be parsed
-19:29:43:486 [debug] LinkTraverser.java:103 Thread-29: Pending is now 19
-19:29:43:486 [debug] LinkTraverser.java:103 Thread-29: Pending is now 19
-19:29:43:487 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:487 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:487 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html
-19:29:43:487 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html
-19:29:43:487 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:487 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:488 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html
-19:29:43:488 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html
-19:29:43:488 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:488 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:488 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html
-19:29:43:488 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html
-19:29:43:489 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:489 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:486 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html will be parsed
-19:29:43:489 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html
-19:29:43:486 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html will be parsed
-19:29:43:489 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html
-19:29:43:489 [debug] LinkTraverser.java:103 Thread-31: Pending is now 22
-19:29:43:489 [debug] LinkTraverser.java:103 Thread-31: Pending is now 22
-19:29:43:485 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html will be parsed
-19:29:43:490 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:490 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:490 [debug] LinkTraverser.java:103 Thread-30: Pending is now 22
-19:29:43:490 [debug] LinkTraverser.java:103 Thread-30: Pending is now 22
-19:29:43:490 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html
-19:29:43:490 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html
-19:29:43:490 [debug] LinkTraverser.java:103 Thread-28: Pending is now 21
-19:29:43:490 [debug] LinkTraverser.java:103 Thread-28: Pending is now 21
-19:29:43:491 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:491 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:493 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html will be parsed
-19:29:43:493 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html will be parsed
-19:29:43:493 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html will be parsed
-19:29:43:493 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html will be parsed
-19:29:43:493 [debug] LinkTraverser.java:103 Thread-32: Pending is now 21
-19:29:43:493 [debug] LinkTraverser.java:103 Thread-32: Pending is now 21
-19:29:43:493 [debug] LinkTraverser.java:103 Thread-29: Pending is now 20
-19:29:43:493 [debug] LinkTraverser.java:103 Thread-29: Pending is now 20
-19:29:43:492 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html
-19:29:43:492 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html
-19:29:43:494 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:494 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:494 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html
-19:29:43:494 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html
-19:29:43:495 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:495 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:495 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html
-19:29:43:495 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html
-19:29:43:495 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html will be parsed
-19:29:43:495 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html will be parsed
-19:29:43:495 [debug] LinkTraverser.java:103 Thread-31: Pending is now 22
-19:29:43:495 [debug] LinkTraverser.java:103 Thread-31: Pending is now 22
-19:29:43:495 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:495 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:496 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html will be parsed
-19:29:43:496 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html
-19:29:43:496 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html will be parsed
-19:29:43:496 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html will be parsed
-19:29:43:496 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html will be parsed
-19:29:43:496 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html
-19:29:43:497 [debug] LinkTraverser.java:103 Thread-28: Pending is now 21
-19:29:43:497 [debug] LinkTraverser.java:103 Thread-28: Pending is now 21
-19:29:43:497 [debug] LinkTraverser.java:103 Thread-30: Pending is now 21
-19:29:43:497 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:497 [debug] LinkTraverser.java:103 Thread-30: Pending is now 21
-19:29:43:497 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:498 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html
-19:29:43:498 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html
-19:29:43:498 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:498 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:499 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html will be parsed
-19:29:43:499 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html will be parsed
-19:29:43:499 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html will be parsed
-19:29:43:499 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html will be parsed
-19:29:43:500 [debug] LinkTraverser.java:103 Thread-29: Pending is now 21
-19:29:43:500 [debug] LinkTraverser.java:103 Thread-29: Pending is now 21
-19:29:43:500 [debug] LinkTraverser.java:103 Thread-32: Pending is now 20
-19:29:43:500 [debug] LinkTraverser.java:103 Thread-32: Pending is now 20
-19:29:43:500 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html will be parsed
-19:29:43:500 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html will be parsed
-19:29:43:501 [debug] LinkTraverser.java:103 Thread-31: Pending is now 19
-19:29:43:499 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html
-19:29:43:501 [debug] LinkTraverser.java:103 Thread-31: Pending is now 19
-19:29:43:502 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html will be parsed
-19:29:43:502 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html will be parsed
-19:29:43:502 [debug] LinkTraverser.java:103 Thread-28: Pending is now 18
-19:29:43:502 [debug] LinkTraverser.java:103 Thread-28: Pending is now 18
-19:29:43:499 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html
-19:29:43:503 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:503 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:504 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html
-19:29:43:504 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html
-19:29:43:504 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html will be parsed
-19:29:43:504 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html will be parsed
-19:29:43:504 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:504 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:504 [debug] LinkTraverser.java:103 Thread-30: Pending is now 19
-19:29:43:504 [debug] LinkTraverser.java:103 Thread-30: Pending is now 19
-19:29:43:506 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html will be parsed
-19:29:43:507 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html will be parsed
-19:29:43:507 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html will be parsed
-19:29:43:507 [debug] LinkTraverser.java:103 Thread-29: Pending is now 18
-19:29:43:507 [debug] LinkTraverser.java:103 Thread-29: Pending is now 18
-19:29:43:508 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html will be parsed
-19:29:43:508 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html will be parsed
-19:29:43:508 [debug] LinkTraverser.java:103 Thread-31: Pending is now 17
-19:29:43:508 [debug] LinkTraverser.java:103 Thread-31: Pending is now 17
-19:29:43:508 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html will be parsed
-19:29:43:508 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html will be parsed
-19:29:43:509 [debug] LinkTraverser.java:103 Thread-28: Pending is now 16
-19:29:43:509 [debug] LinkTraverser.java:103 Thread-28: Pending is now 16
-19:29:43:506 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html will be parsed
-19:29:43:509 [debug] LinkTraverser.java:103 Thread-32: Pending is now 15
-19:29:43:509 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html
-19:29:43:509 [debug] LinkTraverser.java:103 Thread-32: Pending is now 15
-19:29:43:509 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html
-19:29:43:510 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:510 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:510 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html
-19:29:43:510 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html
-19:29:43:510 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:510 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:511 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html
-19:29:43:511 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html
-19:29:43:511 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:511 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:511 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html
-19:29:43:511 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html
-19:29:43:512 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html will be parsed
-19:29:43:512 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html will be parsed
-19:29:43:513 [debug] LinkTraverser.java:103 Thread-30: Pending is now 18
-19:29:43:513 [debug] LinkTraverser.java:103 Thread-30: Pending is now 18
-19:29:43:514 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html will be parsed
-19:29:43:514 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html will be parsed
-19:29:43:514 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html will be parsed
-19:29:43:514 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html will be parsed
-19:29:43:514 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html will be parsed
-19:29:43:514 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html will be parsed
-19:29:43:514 [debug] LinkTraverser.java:103 Thread-28: Pending is now 17
-19:29:43:514 [debug] LinkTraverser.java:103 Thread-28: Pending is now 17
-19:29:43:514 [debug] LinkTraverser.java:103 Thread-29: Pending is now 16
-19:29:43:514 [debug] LinkTraverser.java:103 Thread-29: Pending is now 16
-19:29:43:515 [debug] LinkTraverser.java:103 Thread-31: Pending is now 15
-19:29:43:515 [debug] LinkTraverser.java:103 Thread-31: Pending is now 15
-19:29:43:516 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html will be parsed
-19:29:43:516 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html will be parsed
-19:29:43:516 [debug] LinkTraverser.java:103 Thread-32: Pending is now 14
-19:29:43:516 [debug] LinkTraverser.java:103 Thread-32: Pending is now 14
-19:29:43:512 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:512 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:516 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html
-19:29:43:516 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html
-19:29:43:517 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:517 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:517 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/turkey.html
-19:29:43:517 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/turkey.html
-19:29:43:518 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:518 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:518 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/vulture.html
-19:29:43:518 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/vulture.html
-19:29:43:518 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:518 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:519 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html will be parsed
-19:29:43:519 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/warbler.html
-19:29:43:519 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html will be parsed
-19:29:43:519 [debug] LinkTraverser.java:103 Thread-30: Pending is now 16
-19:29:43:519 [debug] LinkTraverser.java:103 Thread-30: Pending is now 16
-19:29:43:520 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html will be parsed
-19:29:43:520 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html will be parsed
-19:29:43:520 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html will be parsed
-19:29:43:520 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html will be parsed
-19:29:43:520 [debug] LinkTraverser.java:103 Thread-31: Pending is now 15
-19:29:43:520 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html will be parsed
-19:29:43:520 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html will be parsed
-19:29:43:519 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/warbler.html
-19:29:43:520 [debug] LinkTraverser.java:103 Thread-31: Pending is now 15
-19:29:43:521 [debug] LinkTraverser.java:103 Thread-29: Pending is now 15
-19:29:43:521 [debug] LinkTraverser.java:103 Thread-29: Pending is now 15
-19:29:43:522 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html will be parsed
-19:29:43:522 [debug] LinkTraverser.java:103 Thread-28: Pending is now 14
-19:29:43:522 [debug] LinkTraverser.java:103 Thread-28: Pending is now 14
-19:29:43:522 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html will be parsed
-19:29:43:522 [debug] LinkTraverser.java:103 Thread-32: Pending is now 13
-19:29:43:522 [debug] LinkTraverser.java:103 Thread-32: Pending is now 13
-19:29:43:521 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:521 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:523 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/woodpecker.html
-19:29:43:523 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/woodpecker.html
-19:29:43:523 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:523 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:523 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/wren.html
-19:29:43:523 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/wren.html
-19:29:43:523 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:523 [debug] LinkTraverser.java:29 Thread-17: Worker will be executed
-19:29:43:524 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html
-19:29:43:524 [debug] LinkTraverser.java:68 Thread-17: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html
-19:29:43:524 [debug] Driver.java:50 Thread-17: Finished traversing links
-19:29:43:524 [debug] Driver.java:50 Thread-17: Finished traversing links
-19:29:43:526 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html will be parsed
-19:29:43:526 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html will be parsed
-19:29:43:526 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html will be parsed
-19:29:43:526 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html will be parsed
-19:29:43:526 [debug] LinkTraverser.java:103 Thread-31: Pending is now 15
-19:29:43:526 [debug] LinkTraverser.java:103 Thread-31: Pending is now 15
-19:29:43:526 [debug] LinkTraverser.java:103 Thread-30: Pending is now 14
-19:29:43:526 [debug] LinkTraverser.java:103 Thread-30: Pending is now 14
-19:29:43:524 [debug] Driver.java:51 Thread-17: {
-
-
-
-
-Web={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[1]}, Crawler={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[2]}, Test
-
-
-
-
-
-Albatross={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[3]}, Test
-
-
-
-
-
-Blackbird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[3]}, Test
-
-
-
-
-
-Bluebird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[3]}, Test
-
-
-
-
-
-Cardinal={http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[3]}, Test
-
-
-
-
-
-Chickadee={http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[3]}, Test
-
-
-
-
-
-Crane={http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[3]}, Test
-
-
-
-
-
-Crow={http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[3]}, Test
-
-
-
-
-
-Cuckoo={http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[3]}, Test
-
-
-
-
-
-Dove={http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[3]}, Test
-
-
-
-
-
-Duck={http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[3]}, Test
-
-
-
-
-
-Eagle={http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[3]}, Test
-
-
-
-
-
-Egret={http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[3]}, Test
-
-
-
-
-
-Falcon={http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[3]}, Test
-
-
-
-
-
-Finch={http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[3]}, Test
-
-
-
-
-
-Goose={http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[3]}, Test
-
-
-
-
-
-Gull={http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[3]}, Test
-
-
-
-
-
-Hawk={http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[3]}, Test
-
-
-
-
-
-Heron={http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[3]}, Test
-
-
-
-
-
-Hummingbird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[3]}, Test
-
-
-
-
-
-Ibis={http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[3]}, Test
-
-
-
-
-
-Kingfisher={http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[3]}, Test
-
-
-
-
-
-Loon={http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[3]}, Test
-
-
-
-
-
-Magpie={http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[3]}, Test
-
-
-
-
-
-Mallard={http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[3]}, Test
-
-
-
-
-
-Meadowlark={http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[3]}, Test
-
-
-
-
-
-Mockingbird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[3]}, Test
-
-
-
-
-
-Nighthawk={http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[3]}, Test
-
-
-
-
-
-Osprey={http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[3]}, Test
-
-
-
-
-
-Owl={http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[3]}, Test
-
-
-
-
-
-Pelican={http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[3]}, Test
-
-
-
-
-
-Pheasant={http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[3]}, Test
-
-
-
-
-
-Pigeon={http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[3]}, Test
-
-
-
-
-
-Puffin={http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[3]}, Test
-
-
-
-
-
-Quail={http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[3]}, a={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[5]}, bird.
-
-
-
-
-Home
-
-
-
-={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[9]}, common={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[6]}, is={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[4]}, of={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[8]}, type={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[7]}}
-19:29:43:524 [debug] Driver.java:51 Thread-17: {
-
-
-
-
-Web={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[1], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[1]}, Crawler={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[2], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[2]}, Test
-
-
-
-
-
-Albatross={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[3]}, Test
-
-
-
-
-
-Blackbird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[3]}, Test
-
-
-
-
-
-Bluebird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[3]}, Test
-
-
-
-
-
-Cardinal={http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[3]}, Test
-
-
-
-
-
-Chickadee={http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[3]}, Test
-
-
-
-
-
-Crane={http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[3]}, Test
-
-
-
-
-
-Crow={http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[3]}, Test
-
-
-
-
-
-Cuckoo={http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[3]}, Test
-
-
-
-
-
-Dove={http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[3]}, Test
-
-
-
-
-
-Duck={http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[3]}, Test
-
-
-
-
-
-Eagle={http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[3]}, Test
-
-
-
-
-
-Egret={http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[3]}, Test
-
-
-
-
-
-Falcon={http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[3]}, Test
-
-
-
-
-
-Finch={http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[3]}, Test
-
-
-
-
-
-Goose={http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[3]}, Test
-
-
-
-
-
-Gull={http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[3]}, Test
-
-
-
-
-
-Hawk={http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[3]}, Test
-
-
-
-
-
-Heron={http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[3]}, Test
-
-
-
-
-
-Hummingbird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[3]}, Test
-
-
-
-
-
-Ibis={http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[3]}, Test
-
-
-
-
-
-Kingfisher={http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[3]}, Test
-
-
-
-
-
-Loon={http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[3]}, Test
-
-
-
-
-
-Magpie={http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[3]}, Test
-
-
-
-
-
-Mallard={http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[3]}, Test
-
-
-
-
-
-Meadowlark={http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[3]}, Test
-
-
-
-
-
-Mockingbird={http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[3]}, Test
-
-
-
-
-
-Nighthawk={http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[3]}, Test
-
-
-
-
-
-Osprey={http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[3]}, Test
-
-
-
-
-
-Owl={http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[3]}, Test
-
-
-
-
-
-Pelican={http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[3]}, Test
-
-
-
-
-
-Pheasant={http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[3]}, Test
-
-
-
-
-
-Pigeon={http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[3]}, Test
-
-
-
-
-
-Puffin={http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[3]}, Test
-
-
-
-
-
-Quail={http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[3]}, a={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[5], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[5]}, bird.
-
-
-
-
-Home
-
-
-
-={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[9], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[9]}, common={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[6], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[6]}, is={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[4], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[4]}, of={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[8], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[8]}, type={http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html=[7], http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html=[7]}}
-19:29:43:528 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html will be parsed
-19:29:43:528 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html will be parsed
-19:29:43:528 [debug] LinkTraverser.java:103 Thread-28: Pending is now 13
-19:29:43:528 [debug] LinkTraverser.java:103 Thread-28: Pending is now 13
-19:29:43:529 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html will be parsed
-19:29:43:529 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html will be parsed
-19:29:43:529 [debug] LinkTraverser.java:103 Thread-29: Pending is now 12
-19:29:43:529 [debug] LinkTraverser.java:103 Thread-29: Pending is now 12
-19:29:43:530 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html will be parsed
-19:29:43:530 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html will be parsed
-19:29:43:530 [debug] LinkTraverser.java:103 Thread-32: Pending is now 11
-19:29:43:530 [debug] LinkTraverser.java:103 Thread-32: Pending is now 11
-19:29:43:533 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html will be parsed
-19:29:43:533 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html will be parsed
-19:29:43:533 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html will be parsed
-19:29:43:533 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html will be parsed
-19:29:43:534 [debug] LinkTraverser.java:103 Thread-30: Pending is now 10
-19:29:43:534 [debug] LinkTraverser.java:103 Thread-30: Pending is now 10
-19:29:43:534 [debug] LinkTraverser.java:103 Thread-31: Pending is now 9
-19:29:43:534 [debug] LinkTraverser.java:103 Thread-31: Pending is now 9
-19:29:43:535 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html will be parsed
-19:29:43:535 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html will be parsed
-19:29:43:535 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html will be parsed
-19:29:43:535 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html will be parsed
-19:29:43:535 [debug] LinkTraverser.java:103 Thread-29: Pending is now 8
-19:29:43:535 [debug] LinkTraverser.java:103 Thread-29: Pending is now 8
-19:29:43:536 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html will be parsed
-19:29:43:536 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html will be parsed
-19:29:43:536 [debug] LinkTraverser.java:103 Thread-32: Pending is now 7
-19:29:43:536 [debug] LinkTraverser.java:103 Thread-32: Pending is now 7
-19:29:43:536 [debug] LinkTraverser.java:103 Thread-28: Pending is now 6
-19:29:43:536 [debug] LinkTraverser.java:103 Thread-28: Pending is now 6
-19:29:43:540 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/turkey.html will be parsed
-19:29:43:540 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/vulture.html will be parsed
-19:29:43:540 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/turkey.html will be parsed
-19:29:43:540 [debug] LinkTraverser.java:45 Thread-31: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/vulture.html will be parsed
-19:29:43:540 [debug] LinkTraverser.java:103 Thread-30: Pending is now 5
-19:29:43:540 [debug] LinkTraverser.java:103 Thread-30: Pending is now 5
-19:29:43:541 [debug] LinkTraverser.java:103 Thread-31: Pending is now 4
-19:29:43:541 [debug] LinkTraverser.java:103 Thread-31: Pending is now 4
-19:29:43:541 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/woodpecker.html will be parsed
-19:29:43:542 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/wren.html will be parsed
-19:29:43:541 [debug] LinkTraverser.java:45 Thread-32: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/woodpecker.html will be parsed
-19:29:43:542 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/warbler.html will be parsed
-19:29:43:542 [debug] LinkTraverser.java:45 Thread-28: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/wren.html will be parsed
-19:29:43:542 [debug] LinkTraverser.java:45 Thread-29: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/warbler.html will be parsed
-19:29:43:542 [debug] LinkTraverser.java:103 Thread-32: Pending is now 3
-19:29:43:542 [debug] LinkTraverser.java:103 Thread-32: Pending is now 3
-19:29:43:542 [debug] LinkTraverser.java:103 Thread-29: Pending is now 2
-19:29:43:542 [debug] LinkTraverser.java:103 Thread-29: Pending is now 2
-19:29:43:542 [debug] LinkTraverser.java:103 Thread-28: Pending is now 1
-19:29:43:542 [debug] LinkTraverser.java:103 Thread-28: Pending is now 1
-19:29:43:546 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html will be parsed
-19:29:43:546 [debug] LinkTraverser.java:45 Thread-30: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html will be parsed
-19:29:43:546 [debug] LinkTraverser.java:103 Thread-30: Pending is now 0
-19:29:43:546 [debug] LinkTraverser.java:103 Thread-30: Pending is now 0
-19:29:43:567 [debug] Driver.java:140 Thread-17: Search results being printed to: results/search-birds.txt
-19:29:43:567 [debug] Driver.java:140 Thread-17: Search results being printed to: results/search-birds.txt
-19:29:43:590 [debug] Driver.java:50 Thread-33: Finished traversing links
-19:29:43:590 [debug] Driver.java:50 Thread-33: Finished traversing links
-19:29:43:591 [debug] Driver.java:51 Thread-33: {}
-19:29:43:591 [debug] Driver.java:51 Thread-33: {}
-19:29:43:595 [debug] Driver.java:140 Thread-33: Search results being printed to: results/search-gutenweb.txt
-19:29:43:595 [debug] Driver.java:140 Thread-33: Search results being printed to: results/search-gutenweb.txt
-19:29:43:604 [debug] Driver.java:50 Thread-49: Finished traversing links
-19:29:43:604 [debug] Driver.java:50 Thread-49: Finished traversing links
-19:29:43:605 [debug] Driver.java:51 Thread-49: {}
-19:29:43:605 [debug] Driver.java:51 Thread-49: {}
-19:29:43:609 [debug] Driver.java:140 Thread-49: Search results being printed to: results/search-recurse.txt
-19:29:43:609 [debug] Driver.java:140 Thread-49: Search results being printed to: results/search-recurse.txt
-19:29:43:618 [debug] Driver.java:50 Thread-65: Finished traversing links
-19:29:43:618 [debug] Driver.java:50 Thread-65: Finished traversing links
-19:29:43:618 [debug] Driver.java:51 Thread-65: {}
-19:29:43:618 [debug] Driver.java:51 Thread-65: {}
-19:29:43:619 [debug] Driver.java:95 Thread-65: WordIndex being printed to: results/index-birds.txt
-19:29:43:619 [debug] Driver.java:95 Thread-65: WordIndex being printed to: results/index-birds.txt
-19:29:43:619 [debug] Driver.java:96 Thread-65: {}
-19:29:43:619 [debug] Driver.java:96 Thread-65: {}
-19:29:43:627 [debug] Driver.java:50 Thread-81: Finished traversing links
-19:29:43:627 [debug] Driver.java:50 Thread-81: Finished traversing links
-19:29:43:627 [debug] Driver.java:51 Thread-81: {}
-19:29:43:627 [debug] Driver.java:51 Thread-81: {}
-19:29:43:627 [debug] Driver.java:95 Thread-81: WordIndex being printed to: results/index-gutenweb.txt
-19:29:43:627 [debug] Driver.java:95 Thread-81: WordIndex being printed to: results/index-gutenweb.txt
-19:29:43:628 [debug] Driver.java:96 Thread-81: {}
-19:29:43:628 [debug] Driver.java:96 Thread-81: {}
-19:29:43:710 [debug] Driver.java:50 Thread-97: Finished traversing links
-19:29:43:710 [debug] Driver.java:50 Thread-97: Finished traversing links
-19:29:43:710 [debug] Driver.java:51 Thread-97: {}
-19:29:43:710 [debug] Driver.java:51 Thread-97: {}
-19:29:43:710 [debug] Driver.java:95 Thread-97: WordIndex being printed to: results/index-holmes.txt
-19:29:43:710 [debug] Driver.java:95 Thread-97: WordIndex being printed to: results/index-holmes.txt
-19:29:43:711 [debug] Driver.java:96 Thread-97: {}
-19:29:43:711 [debug] Driver.java:96 Thread-97: {}
-19:29:43:779 [debug] Driver.java:50 Thread-113: Finished traversing links
-19:29:43:779 [debug] Driver.java:50 Thread-113: Finished traversing links
-19:29:43:779 [debug] Driver.java:51 Thread-113: {}
-19:29:43:779 [debug] Driver.java:51 Thread-113: {}
-19:29:43:783 [debug] Driver.java:140 Thread-113: Search results being printed to: results/search-holmes.txt
-19:29:43:783 [debug] Driver.java:140 Thread-113: Search results being printed to: results/search-holmes.txt
-19:29:43:792 [debug] Driver.java:50 Thread-129: Finished traversing links
-19:29:43:792 [debug] Driver.java:50 Thread-129: Finished traversing links
-19:29:43:792 [debug] Driver.java:51 Thread-129: {}
-19:29:43:792 [debug] Driver.java:51 Thread-129: {}
-19:29:43:792 [debug] Driver.java:95 Thread-129: WordIndex being printed to: results/index-yellow.txt
-19:29:43:792 [debug] Driver.java:95 Thread-129: WordIndex being printed to: results/index-yellow.txt
-19:29:43:793 [debug] Driver.java:96 Thread-129: {}
-19:29:43:793 [debug] Driver.java:96 Thread-129: {}
-19:29:43:801 [debug] Driver.java:50 Thread-145: Finished traversing links
-19:29:43:801 [debug] Driver.java:50 Thread-145: Finished traversing links
-19:29:43:802 [debug] Driver.java:51 Thread-145: {}
-19:29:43:802 [debug] Driver.java:51 Thread-145: {}
-19:29:43:805 [debug] Driver.java:140 Thread-145: Search results being printed to: results/search-yellow.txt
-19:29:43:805 [debug] Driver.java:140 Thread-145: Search results being printed to: results/search-yellow.txt
+20:03:16:700 [debug] LinkTraverser.java:31 Thread-0: Worker will be executed
+20:03:16:700 [debug] LinkTraverser.java:31 Thread-0: Worker will be executed
+20:03:16:704 [debug] LinkTraverser.java:72 Thread-0: Worker created for link02.html
+20:03:16:704 [debug] LinkTraverser.java:72 Thread-0: Worker created for link02.html
+20:03:16:704 [debug] Driver.java:50 Thread-0: Finished traversing links
+20:03:16:704 [debug] Driver.java:50 Thread-0: Finished traversing links
+20:03:16:705 [debug] LinkTraverser.java:56 Thread-16: java.net.MalformedURLException: no protocol: link02.html
+20:03:16:705 [debug] LinkTraverser.java:56 Thread-16: java.net.MalformedURLException: no protocol: link02.html
+20:03:16:706 [debug] LinkTraverser.java:109 Thread-16: Pending is now 0
+20:03:16:706 [debug] LinkTraverser.java:109 Thread-16: Pending is now 0
+20:03:16:706 [debug] LinkTraverser.java:85 Thread-16: Worker finished link02.html
+20:03:16:706 [debug] LinkTraverser.java:85 Thread-16: Worker finished link02.html
+20:03:16:706 [debug] Driver.java:94 Thread-0: WordIndex being printed to: results/index-recurse.txt
+20:03:16:706 [debug] Driver.java:94 Thread-0: WordIndex being printed to: results/index-recurse.txt
+20:03:16:707 [debug] Driver.java:95 Thread-0: {}
+20:03:16:707 [debug] Driver.java:95 Thread-0: {}
+20:03:28:793 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:793 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:793 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/1342-h.htm
+20:03:28:793 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/1342-h.htm
+20:03:28:794 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/1342-h.htm
+20:03:28:794 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/1342-h.htm
+20:03:28:794 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:794 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:794 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:794 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:794 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/1342-h.htm
+20:03:28:794 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/1342-h.htm
+20:03:28:794 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/1322-h.htm
+20:03:28:794 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/1322-h.htm
+20:03:28:794 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/1322-h.htm
+20:03:28:794 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/1322-h.htm
+20:03:28:795 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:795 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:795 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/1322-h.htm
+20:03:28:795 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/1322-h.htm
+20:03:28:795 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:795 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:795 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/11-h.htm
+20:03:28:795 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/11-h.htm
+20:03:28:795 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/11-h.htm
+20:03:28:795 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/11-h.htm
+20:03:28:796 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:796 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:796 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:796 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/11-h.htm
+20:03:28:796 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:796 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/11-h.htm
+20:03:28:796 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/2701-h.htm
+20:03:28:796 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/2701-h.htm
+20:03:28:796 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/2701-h.htm
+20:03:28:796 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/2701-h.htm
+20:03:28:796 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:796 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:797 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/2701-h.htm
+20:03:28:797 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:797 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/2701-h.htm
+20:03:28:797 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:797 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/1661-h.htm
+20:03:28:797 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/1661-h.htm
+20:03:28:797 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/1661-h.htm
+20:03:28:797 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/1661-h.htm
+20:03:28:797 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:797 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:798 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/1661-h.htm
+20:03:28:798 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:798 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/1661-h.htm
+20:03:28:798 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:798 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/98-h.htm
+20:03:28:798 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/98-h.htm
+20:03:28:798 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/98-h.htm
+20:03:28:798 [debug] LinkTraverser.java:56 Thread-48: java.net.MalformedURLException: no protocol: ../gutenberg/98-h.htm
+20:03:28:798 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:798 [debug] LinkTraverser.java:109 Thread-48: Pending is now 0
+20:03:28:798 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/98-h.htm
+20:03:28:798 [debug] LinkTraverser.java:85 Thread-48: Worker finished ../gutenberg/98-h.htm
+20:03:28:799 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:799 [debug] LinkTraverser.java:31 Thread-33: Worker will be executed
+20:03:28:799 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/4300-h.htm
+20:03:28:799 [debug] LinkTraverser.java:72 Thread-33: Worker created for ../gutenberg/4300-h.htm
+20:03:28:799 [debug] Driver.java:50 Thread-33: Finished traversing links
+20:03:28:799 [debug] LinkTraverser.java:56 Thread-47: java.net.MalformedURLException: no protocol: ../gutenberg/4300-h.htm
+20:03:28:799 [debug] Driver.java:50 Thread-33: Finished traversing links
+20:03:28:799 [debug] LinkTraverser.java:56 Thread-47: java.net.MalformedURLException: no protocol: ../gutenberg/4300-h.htm
+20:03:28:799 [debug] LinkTraverser.java:109 Thread-47: Pending is now 0
+20:03:28:799 [debug] LinkTraverser.java:109 Thread-47: Pending is now 0
+20:03:28:799 [debug] LinkTraverser.java:85 Thread-47: Worker finished ../gutenberg/4300-h.htm
+20:03:28:799 [debug] LinkTraverser.java:85 Thread-47: Worker finished ../gutenberg/4300-h.htm
+20:03:28:889 [debug] Driver.java:139 Thread-33: Search results being printed to: results/search-gutenweb.txt
+20:03:28:889 [debug] Driver.java:139 Thread-33: Search results being printed to: results/search-gutenweb.txt
+20:03:28:933 [debug] LinkTraverser.java:31 Thread-49: Worker will be executed
+20:03:28:933 [debug] LinkTraverser.java:31 Thread-49: Worker will be executed
+20:03:28:934 [debug] LinkTraverser.java:72 Thread-49: Worker created for link02.html
+20:03:28:934 [debug] LinkTraverser.java:72 Thread-49: Worker created for link02.html
+20:03:28:934 [debug] Driver.java:50 Thread-49: Finished traversing links
+20:03:28:934 [debug] LinkTraverser.java:56 Thread-64: java.net.MalformedURLException: no protocol: link02.html
+20:03:28:934 [debug] Driver.java:50 Thread-49: Finished traversing links
+20:03:28:934 [debug] LinkTraverser.java:56 Thread-64: java.net.MalformedURLException: no protocol: link02.html
+20:03:28:934 [debug] LinkTraverser.java:109 Thread-64: Pending is now 0
+20:03:28:934 [debug] LinkTraverser.java:109 Thread-64: Pending is now 0
+20:03:28:934 [debug] LinkTraverser.java:85 Thread-64: Worker finished link02.html
+20:03:28:934 [debug] LinkTraverser.java:85 Thread-64: Worker finished link02.html
+20:03:28:940 [debug] Driver.java:139 Thread-49: Search results being printed to: results/search-recurse.txt
+20:03:28:940 [debug] Driver.java:139 Thread-49: Search results being printed to: results/search-recurse.txt
+20:03:40:262 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:262 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:262 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/1342-h.htm
+20:03:40:262 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/1342-h.htm
+20:03:40:263 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/1342-h.htm
+20:03:40:263 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/1342-h.htm
+20:03:40:263 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:263 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:263 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:263 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:263 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/1322-h.htm
+20:03:40:263 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/1342-h.htm
+20:03:40:263 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/1322-h.htm
+20:03:40:263 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/1342-h.htm
+20:03:40:263 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/1322-h.htm
+20:03:40:263 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/1322-h.htm
+20:03:40:264 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:264 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:264 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:264 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:264 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/1322-h.htm
+20:03:40:264 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/1322-h.htm
+20:03:40:264 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/11-h.htm
+20:03:40:264 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/11-h.htm
+20:03:40:264 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/11-h.htm
+20:03:40:264 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/11-h.htm
+20:03:40:264 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:264 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:264 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:265 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/11-h.htm
+20:03:40:264 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:265 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/11-h.htm
+20:03:40:265 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/2701-h.htm
+20:03:40:265 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/2701-h.htm
+20:03:40:265 [debug] LinkTraverser.java:56 Thread-94: java.net.MalformedURLException: no protocol: ../gutenberg/2701-h.htm
+20:03:40:265 [debug] LinkTraverser.java:56 Thread-94: java.net.MalformedURLException: no protocol: ../gutenberg/2701-h.htm
+20:03:40:265 [debug] LinkTraverser.java:109 Thread-94: Pending is now 0
+20:03:40:265 [debug] LinkTraverser.java:109 Thread-94: Pending is now 0
+20:03:40:265 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:265 [debug] LinkTraverser.java:85 Thread-94: Worker finished ../gutenberg/2701-h.htm
+20:03:40:265 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:265 [debug] LinkTraverser.java:85 Thread-94: Worker finished ../gutenberg/2701-h.htm
+20:03:40:265 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/1661-h.htm
+20:03:40:265 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/1661-h.htm
+20:03:40:266 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/1661-h.htm
+20:03:40:266 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/1661-h.htm
+20:03:40:266 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:266 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:266 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:266 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:266 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/1661-h.htm
+20:03:40:266 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/1661-h.htm
+20:03:40:266 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/98-h.htm
+20:03:40:266 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/98-h.htm
+20:03:40:267 [debug] LinkTraverser.java:56 Thread-94: java.net.MalformedURLException: no protocol: ../gutenberg/98-h.htm
+20:03:40:267 [debug] LinkTraverser.java:56 Thread-94: java.net.MalformedURLException: no protocol: ../gutenberg/98-h.htm
+20:03:40:267 [debug] LinkTraverser.java:109 Thread-94: Pending is now 0
+20:03:40:267 [debug] LinkTraverser.java:109 Thread-94: Pending is now 0
+20:03:40:267 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:267 [debug] LinkTraverser.java:31 Thread-81: Worker will be executed
+20:03:40:267 [debug] LinkTraverser.java:85 Thread-94: Worker finished ../gutenberg/98-h.htm
+20:03:40:267 [debug] LinkTraverser.java:85 Thread-94: Worker finished ../gutenberg/98-h.htm
+20:03:40:267 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/4300-h.htm
+20:03:40:267 [debug] LinkTraverser.java:72 Thread-81: Worker created for ../gutenberg/4300-h.htm
+20:03:40:267 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/4300-h.htm
+20:03:40:267 [debug] Driver.java:50 Thread-81: Finished traversing links
+20:03:40:267 [debug] LinkTraverser.java:56 Thread-96: java.net.MalformedURLException: no protocol: ../gutenberg/4300-h.htm
+20:03:40:267 [debug] Driver.java:50 Thread-81: Finished traversing links
+20:03:40:267 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:267 [debug] LinkTraverser.java:109 Thread-96: Pending is now 0
+20:03:40:268 [debug] Driver.java:94 Thread-81: WordIndex being printed to: results/index-gutenweb.txt
+20:03:40:268 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/4300-h.htm
+20:03:40:268 [debug] LinkTraverser.java:85 Thread-96: Worker finished ../gutenberg/4300-h.htm
+20:03:40:268 [debug] Driver.java:94 Thread-81: WordIndex being printed to: results/index-gutenweb.txt
+20:03:40:268 [debug] Driver.java:95 Thread-81: {}
+20:03:40:268 [debug] Driver.java:95 Thread-81: {}
+20:03:40:388 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:388 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:389 [debug] LinkTraverser.java:72 Thread-97: Worker created for #1
+20:03:40:389 [debug] LinkTraverser.java:72 Thread-97: Worker created for #1
+20:03:40:389 [debug] LinkTraverser.java:56 Thread-112: java.net.MalformedURLException: no protocol: #1
+20:03:40:389 [debug] LinkTraverser.java:56 Thread-112: java.net.MalformedURLException: no protocol: #1
+20:03:40:390 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:390 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:390 [debug] LinkTraverser.java:109 Thread-112: Pending is now 0
+20:03:40:390 [debug] LinkTraverser.java:109 Thread-112: Pending is now 0
+20:03:40:390 [debug] LinkTraverser.java:72 Thread-97: Worker created for #2
+20:03:40:390 [debug] LinkTraverser.java:85 Thread-112: Worker finished #1
+20:03:40:390 [debug] LinkTraverser.java:72 Thread-97: Worker created for #2
+20:03:40:390 [debug] LinkTraverser.java:85 Thread-112: Worker finished #1
+20:03:40:390 [debug] LinkTraverser.java:56 Thread-112: java.net.MalformedURLException: no protocol: #2
+20:03:40:390 [debug] LinkTraverser.java:56 Thread-112: java.net.MalformedURLException: no protocol: #2
+20:03:40:391 [debug] LinkTraverser.java:109 Thread-112: Pending is now 0
+20:03:40:391 [debug] LinkTraverser.java:109 Thread-112: Pending is now 0
+20:03:40:391 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:391 [debug] LinkTraverser.java:85 Thread-112: Worker finished #2
+20:03:40:391 [debug] LinkTraverser.java:85 Thread-112: Worker finished #2
+20:03:40:391 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:391 [debug] LinkTraverser.java:72 Thread-97: Worker created for #3
+20:03:40:391 [debug] LinkTraverser.java:72 Thread-97: Worker created for #3
+20:03:40:392 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:392 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:392 [debug] LinkTraverser.java:72 Thread-97: Worker created for #4
+20:03:40:392 [debug] LinkTraverser.java:72 Thread-97: Worker created for #4
+20:03:40:392 [debug] LinkTraverser.java:56 Thread-108: java.net.MalformedURLException: no protocol: #3
+20:03:40:392 [debug] LinkTraverser.java:56 Thread-108: java.net.MalformedURLException: no protocol: #3
+20:03:40:392 [debug] LinkTraverser.java:109 Thread-108: Pending is now 1
+20:03:40:392 [debug] LinkTraverser.java:109 Thread-108: Pending is now 1
+20:03:40:393 [debug] LinkTraverser.java:85 Thread-108: Worker finished #3
+20:03:40:393 [debug] LinkTraverser.java:85 Thread-108: Worker finished #3
+20:03:40:393 [debug] LinkTraverser.java:56 Thread-108: java.net.MalformedURLException: no protocol: #4
+20:03:40:393 [debug] LinkTraverser.java:56 Thread-108: java.net.MalformedURLException: no protocol: #4
+20:03:40:393 [debug] LinkTraverser.java:109 Thread-108: Pending is now 0
+20:03:40:393 [debug] LinkTraverser.java:109 Thread-108: Pending is now 0
+20:03:40:393 [debug] LinkTraverser.java:85 Thread-108: Worker finished #4
+20:03:40:393 [debug] LinkTraverser.java:85 Thread-108: Worker finished #4
+20:03:40:394 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:394 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:394 [debug] LinkTraverser.java:72 Thread-97: Worker created for #5
+20:03:40:394 [debug] LinkTraverser.java:72 Thread-97: Worker created for #5
+20:03:40:394 [debug] LinkTraverser.java:56 Thread-111: java.net.MalformedURLException: no protocol: #5
+20:03:40:394 [debug] LinkTraverser.java:56 Thread-111: java.net.MalformedURLException: no protocol: #5
+20:03:40:394 [debug] LinkTraverser.java:109 Thread-111: Pending is now 0
+20:03:40:394 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:394 [debug] LinkTraverser.java:109 Thread-111: Pending is now 0
+20:03:40:394 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:395 [debug] LinkTraverser.java:85 Thread-111: Worker finished #5
+20:03:40:395 [debug] LinkTraverser.java:72 Thread-97: Worker created for #6
+20:03:40:395 [debug] LinkTraverser.java:72 Thread-97: Worker created for #6
+20:03:40:395 [debug] LinkTraverser.java:85 Thread-111: Worker finished #5
+20:03:40:395 [debug] LinkTraverser.java:56 Thread-111: java.net.MalformedURLException: no protocol: #6
+20:03:40:395 [debug] LinkTraverser.java:56 Thread-111: java.net.MalformedURLException: no protocol: #6
+20:03:40:395 [debug] LinkTraverser.java:109 Thread-111: Pending is now 0
+20:03:40:395 [debug] LinkTraverser.java:109 Thread-111: Pending is now 0
+20:03:40:395 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:395 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:395 [debug] LinkTraverser.java:85 Thread-111: Worker finished #6
+20:03:40:395 [debug] LinkTraverser.java:85 Thread-111: Worker finished #6
+20:03:40:395 [debug] LinkTraverser.java:72 Thread-97: Worker created for #7
+20:03:40:395 [debug] LinkTraverser.java:72 Thread-97: Worker created for #7
+20:03:40:396 [debug] LinkTraverser.java:56 Thread-111: java.net.MalformedURLException: no protocol: #7
+20:03:40:396 [debug] LinkTraverser.java:56 Thread-111: java.net.MalformedURLException: no protocol: #7
+20:03:40:396 [debug] LinkTraverser.java:109 Thread-111: Pending is now 0
+20:03:40:396 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:396 [debug] LinkTraverser.java:109 Thread-111: Pending is now 0
+20:03:40:396 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:396 [debug] LinkTraverser.java:85 Thread-111: Worker finished #7
+20:03:40:396 [debug] LinkTraverser.java:85 Thread-111: Worker finished #7
+20:03:40:396 [debug] LinkTraverser.java:72 Thread-97: Worker created for #8
+20:03:40:396 [debug] LinkTraverser.java:72 Thread-97: Worker created for #8
+20:03:40:397 [debug] LinkTraverser.java:56 Thread-109: java.net.MalformedURLException: no protocol: #8
+20:03:40:397 [debug] LinkTraverser.java:56 Thread-109: java.net.MalformedURLException: no protocol: #8
+20:03:40:397 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:397 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:397 [debug] LinkTraverser.java:109 Thread-109: Pending is now 0
+20:03:40:397 [debug] LinkTraverser.java:109 Thread-109: Pending is now 0
+20:03:40:397 [debug] LinkTraverser.java:72 Thread-97: Worker created for #9
+20:03:40:397 [debug] LinkTraverser.java:72 Thread-97: Worker created for #9
+20:03:40:397 [debug] LinkTraverser.java:85 Thread-109: Worker finished #8
+20:03:40:397 [debug] LinkTraverser.java:85 Thread-109: Worker finished #8
+20:03:40:397 [debug] LinkTraverser.java:56 Thread-108: java.net.MalformedURLException: no protocol: #9
+20:03:40:397 [debug] LinkTraverser.java:56 Thread-108: java.net.MalformedURLException: no protocol: #9
+20:03:40:397 [debug] LinkTraverser.java:109 Thread-108: Pending is now 0
+20:03:40:397 [debug] LinkTraverser.java:109 Thread-108: Pending is now 0
+20:03:40:398 [debug] LinkTraverser.java:85 Thread-108: Worker finished #9
+20:03:40:398 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:398 [debug] LinkTraverser.java:85 Thread-108: Worker finished #9
+20:03:40:398 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:398 [debug] LinkTraverser.java:72 Thread-97: Worker created for #10
+20:03:40:398 [debug] LinkTraverser.java:72 Thread-97: Worker created for #10
+20:03:40:399 [debug] LinkTraverser.java:56 Thread-110: java.net.MalformedURLException: no protocol: #10
+20:03:40:399 [debug] LinkTraverser.java:56 Thread-110: java.net.MalformedURLException: no protocol: #10
+20:03:40:400 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:400 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:400 [debug] LinkTraverser.java:109 Thread-110: Pending is now 0
+20:03:40:400 [debug] LinkTraverser.java:109 Thread-110: Pending is now 0
+20:03:40:400 [debug] LinkTraverser.java:72 Thread-97: Worker created for #11
+20:03:40:400 [debug] LinkTraverser.java:72 Thread-97: Worker created for #11
+20:03:40:400 [debug] LinkTraverser.java:85 Thread-110: Worker finished #10
+20:03:40:400 [debug] LinkTraverser.java:85 Thread-110: Worker finished #10
+20:03:40:400 [debug] LinkTraverser.java:56 Thread-110: java.net.MalformedURLException: no protocol: #11
+20:03:40:400 [debug] LinkTraverser.java:56 Thread-110: java.net.MalformedURLException: no protocol: #11
+20:03:40:400 [debug] LinkTraverser.java:109 Thread-110: Pending is now 0
+20:03:40:400 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:400 [debug] LinkTraverser.java:109 Thread-110: Pending is now 0
+20:03:40:400 [debug] LinkTraverser.java:31 Thread-97: Worker will be executed
+20:03:40:401 [debug] LinkTraverser.java:85 Thread-110: Worker finished #11
+20:03:40:401 [debug] LinkTraverser.java:72 Thread-97: Worker created for #12
+20:03:40:401 [debug] LinkTraverser.java:85 Thread-110: Worker finished #11
+20:03:40:401 [debug] LinkTraverser.java:72 Thread-97: Worker created for #12
+20:03:40:401 [debug] Driver.java:50 Thread-97: Finished traversing links
+20:03:40:401 [debug] Driver.java:50 Thread-97: Finished traversing links
+20:03:40:401 [debug] LinkTraverser.java:56 Thread-112: java.net.MalformedURLException: no protocol: #12
+20:03:40:401 [debug] LinkTraverser.java:56 Thread-112: java.net.MalformedURLException: no protocol: #12
+20:03:40:401 [debug] LinkTraverser.java:109 Thread-112: Pending is now 0
+20:03:40:401 [debug] LinkTraverser.java:109 Thread-112: Pending is now 0
+20:03:40:401 [debug] LinkTraverser.java:85 Thread-112: Worker finished #12
+20:03:40:401 [debug] LinkTraverser.java:85 Thread-112: Worker finished #12
+20:03:40:401 [debug] Driver.java:94 Thread-97: WordIndex being printed to: results/index-holmes.txt
+20:03:40:401 [debug] Driver.java:94 Thread-97: WordIndex being printed to: results/index-holmes.txt
+20:03:40:402 [debug] Driver.java:95 Thread-97: {}
+20:03:40:402 [debug] Driver.java:95 Thread-97: {}
+20:03:40:486 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:486 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:487 [debug] LinkTraverser.java:72 Thread-113: Worker created for #1
+20:03:40:487 [debug] LinkTraverser.java:72 Thread-113: Worker created for #1
+20:03:40:487 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #1
+20:03:40:487 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #1
+20:03:40:487 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:487 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:488 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:488 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:488 [debug] LinkTraverser.java:72 Thread-113: Worker created for #2
+20:03:40:488 [debug] LinkTraverser.java:85 Thread-128: Worker finished #1
+20:03:40:488 [debug] LinkTraverser.java:72 Thread-113: Worker created for #2
+20:03:40:488 [debug] LinkTraverser.java:85 Thread-128: Worker finished #1
+20:03:40:488 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #2
+20:03:40:488 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #2
+20:03:40:488 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:488 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:488 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:488 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:488 [debug] LinkTraverser.java:85 Thread-128: Worker finished #2
+20:03:40:488 [debug] LinkTraverser.java:85 Thread-128: Worker finished #2
+20:03:40:488 [debug] LinkTraverser.java:72 Thread-113: Worker created for #3
+20:03:40:488 [debug] LinkTraverser.java:72 Thread-113: Worker created for #3
+20:03:40:489 [debug] LinkTraverser.java:56 Thread-127: java.net.MalformedURLException: no protocol: #3
+20:03:40:489 [debug] LinkTraverser.java:56 Thread-127: java.net.MalformedURLException: no protocol: #3
+20:03:40:489 [debug] LinkTraverser.java:109 Thread-127: Pending is now 0
+20:03:40:489 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:489 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:489 [debug] LinkTraverser.java:72 Thread-113: Worker created for #4
+20:03:40:489 [debug] LinkTraverser.java:72 Thread-113: Worker created for #4
+20:03:40:489 [debug] LinkTraverser.java:109 Thread-127: Pending is now 0
+20:03:40:489 [debug] LinkTraverser.java:85 Thread-127: Worker finished #3
+20:03:40:489 [debug] LinkTraverser.java:85 Thread-127: Worker finished #3
+20:03:40:490 [debug] LinkTraverser.java:56 Thread-124: java.net.MalformedURLException: no protocol: #4
+20:03:40:490 [debug] LinkTraverser.java:56 Thread-124: java.net.MalformedURLException: no protocol: #4
+20:03:40:490 [debug] LinkTraverser.java:109 Thread-124: Pending is now 0
+20:03:40:490 [debug] LinkTraverser.java:109 Thread-124: Pending is now 0
+20:03:40:490 [debug] LinkTraverser.java:85 Thread-124: Worker finished #4
+20:03:40:490 [debug] LinkTraverser.java:85 Thread-124: Worker finished #4
+20:03:40:490 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:490 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:507 [debug] LinkTraverser.java:72 Thread-113: Worker created for #5
+20:03:40:507 [debug] LinkTraverser.java:72 Thread-113: Worker created for #5
+20:03:40:508 [debug] LinkTraverser.java:56 Thread-124: java.net.MalformedURLException: no protocol: #5
+20:03:40:508 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:508 [debug] LinkTraverser.java:56 Thread-124: java.net.MalformedURLException: no protocol: #5
+20:03:40:508 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:509 [debug] LinkTraverser.java:109 Thread-124: Pending is now 0
+20:03:40:509 [debug] LinkTraverser.java:109 Thread-124: Pending is now 0
+20:03:40:509 [debug] LinkTraverser.java:85 Thread-124: Worker finished #5
+20:03:40:509 [debug] LinkTraverser.java:85 Thread-124: Worker finished #5
+20:03:40:509 [debug] LinkTraverser.java:72 Thread-113: Worker created for #6
+20:03:40:509 [debug] LinkTraverser.java:72 Thread-113: Worker created for #6
+20:03:40:510 [debug] LinkTraverser.java:56 Thread-124: java.net.MalformedURLException: no protocol: #6
+20:03:40:510 [debug] LinkTraverser.java:56 Thread-124: java.net.MalformedURLException: no protocol: #6
+20:03:40:510 [debug] LinkTraverser.java:109 Thread-124: Pending is now 0
+20:03:40:510 [debug] LinkTraverser.java:109 Thread-124: Pending is now 0
+20:03:40:510 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:510 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:510 [debug] LinkTraverser.java:85 Thread-124: Worker finished #6
+20:03:40:510 [debug] LinkTraverser.java:85 Thread-124: Worker finished #6
+20:03:40:510 [debug] LinkTraverser.java:72 Thread-113: Worker created for #7
+20:03:40:510 [debug] LinkTraverser.java:72 Thread-113: Worker created for #7
+20:03:40:511 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #7
+20:03:40:511 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #7
+20:03:40:511 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:511 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:511 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:511 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:511 [debug] LinkTraverser.java:85 Thread-128: Worker finished #7
+20:03:40:511 [debug] LinkTraverser.java:85 Thread-128: Worker finished #7
+20:03:40:511 [debug] LinkTraverser.java:72 Thread-113: Worker created for #8
+20:03:40:511 [debug] LinkTraverser.java:72 Thread-113: Worker created for #8
+20:03:40:512 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #8
+20:03:40:512 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #8
+20:03:40:512 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:512 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:512 [debug] LinkTraverser.java:85 Thread-128: Worker finished #8
+20:03:40:512 [debug] LinkTraverser.java:85 Thread-128: Worker finished #8
+20:03:40:512 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:512 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:513 [debug] LinkTraverser.java:72 Thread-113: Worker created for #9
+20:03:40:513 [debug] LinkTraverser.java:72 Thread-113: Worker created for #9
+20:03:40:513 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #9
+20:03:40:513 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #9
+20:03:40:513 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:513 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:513 [debug] LinkTraverser.java:85 Thread-128: Worker finished #9
+20:03:40:513 [debug] LinkTraverser.java:85 Thread-128: Worker finished #9
+20:03:40:514 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:514 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:514 [debug] LinkTraverser.java:72 Thread-113: Worker created for #10
+20:03:40:514 [debug] LinkTraverser.java:72 Thread-113: Worker created for #10
+20:03:40:514 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #10
+20:03:40:514 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #10
+20:03:40:514 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:514 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:515 [debug] LinkTraverser.java:85 Thread-128: Worker finished #10
+20:03:40:515 [debug] LinkTraverser.java:85 Thread-128: Worker finished #10
+20:03:40:515 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:515 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:515 [debug] LinkTraverser.java:72 Thread-113: Worker created for #11
+20:03:40:515 [debug] LinkTraverser.java:72 Thread-113: Worker created for #11
+20:03:40:516 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #11
+20:03:40:516 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #11
+20:03:40:516 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:516 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:516 [debug] LinkTraverser.java:85 Thread-128: Worker finished #11
+20:03:40:516 [debug] LinkTraverser.java:85 Thread-128: Worker finished #11
+20:03:40:525 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:525 [debug] LinkTraverser.java:31 Thread-113: Worker will be executed
+20:03:40:525 [debug] LinkTraverser.java:72 Thread-113: Worker created for #12
+20:03:40:525 [debug] LinkTraverser.java:72 Thread-113: Worker created for #12
+20:03:40:526 [debug] Driver.java:50 Thread-113: Finished traversing links
+20:03:40:526 [debug] Driver.java:50 Thread-113: Finished traversing links
+20:03:40:526 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #12
+20:03:40:526 [debug] LinkTraverser.java:56 Thread-128: java.net.MalformedURLException: no protocol: #12
+20:03:40:526 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:526 [debug] LinkTraverser.java:109 Thread-128: Pending is now 0
+20:03:40:526 [debug] LinkTraverser.java:85 Thread-128: Worker finished #12
+20:03:40:526 [debug] LinkTraverser.java:85 Thread-128: Worker finished #12
+20:03:40:530 [debug] Driver.java:139 Thread-113: Search results being printed to: results/search-holmes.txt
+20:03:40:530 [debug] Driver.java:139 Thread-113: Search results being printed to: results/search-holmes.txt
