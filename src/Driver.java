@@ -42,6 +42,20 @@ public class Driver {
             ThreadSafeQueryParser parseQuery;
             tsbuilder = new ThreadSafeInvertedIndexBuilder(threads);
             parseQuery = new ThreadSafeQueryParser(threads);
+            
+            if (parser.hasFlag("-u") && parser.hasValue("-u")) {
+                LinkTraverser traverser = new LinkTraverser(threads);
+                String urlPath = parser.getValue("-u");
+                traverser.traverse(urlPath, index);
+                logger.debug("Finished traversing links");
+                traverser.shutdown();
+                
+                //TODO Create a class that has parameter the link and cleans, traverses, etc.
+                //TODO Catch getAllComponents
+                
+
+
+            }
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
                 String directoryPath = parser.getValue("-d");
@@ -78,6 +92,7 @@ public class Driver {
             if (parser.hasFlag("-i") && parser.hasValue("-i")) {
                 outputPath = parser.getValue("-i");
                 logger.debug("WordIndex being printed to: {}", outputPath);
+                logger.debug(index);
                 try {
                     index.print(outputPath);
                 } catch (IOException e) {
@@ -137,21 +152,6 @@ public class Driver {
         else {
             InvertedIndex index = new InvertedIndex();
             QueryParser parseQuery = new QueryParser();
-            
-            if (parser.hasFlag("-u") && parser.hasValue("-u")) {
-                String urlPath = parser.getValue("-u");
-                String html;
-                try {
-                    html = HTTPFetcher.fetchHTML(urlPath);
-                    ArrayList<String> links = HTMLLinkParser.listLinks(html);
-                    String text = HTMLCleaner.cleanHTML(html);
-                    
-                } catch (IOException e) {
-
-                    e.printStackTrace();
-                }
-
-            }
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
                 String directoryPath = parser.getValue("-d");

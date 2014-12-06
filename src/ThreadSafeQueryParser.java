@@ -5,7 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
-// TODO Javadoc or add @Override annotation.
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

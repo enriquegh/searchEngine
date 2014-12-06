@@ -1,3 +1,5 @@
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,7 +28,7 @@ public class HTMLLinkParser {
 	/**
 	 * The regular expression used to parse the HTML for links.
 	 *
-	 * TODO: FILL THIS IN
+	 *
 	 */
 	public static final String REGEX = "(?is)<a[^>]*?href[^>]*?=[^>]*?\"([^\"]*?)\"([^>]*?)?>";
 
@@ -34,7 +36,7 @@ public class HTMLLinkParser {
 	 * The group in the regular expression that captures the raw link. This
 	 * will usually be 1, depending on your specific regex.
 	 *
-	 * TODO: FILL THIS IN
+	 *
 	 */
 	public static final int GROUP = 1;
 
@@ -44,8 +46,9 @@ public class HTMLLinkParser {
 	 *
 	 * @param html - valid HTML code, with quoted attributes and URL encoded links
 	 * @return list of links found in HTML code
+	 * @throws MalformedURLException 
 	 */
-	public static ArrayList<String> listLinks(String html) {
+	public static ArrayList<String> listLinks(String html) throws MalformedURLException {
 		// list to store links
 		ArrayList<String> links = new ArrayList<String>();
 

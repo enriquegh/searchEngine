@@ -46,6 +46,11 @@
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
+        
+        <Logger name="LinkTraverser" level="ALL">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>          
+        </Logger>
 
         <Root level="OFF">
             <AppenderRef ref="Console" level="INFO" />
