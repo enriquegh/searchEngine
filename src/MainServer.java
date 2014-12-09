@@ -23,6 +23,7 @@ public class MainServer {
 		handler.addServletWithMapping(new ServletHolder(new SearchServlet(index)),
 				"/search");
 		server.setHandler(handler);
+		//TODO add login functionality
 		try {
 			server.start();
 			server.join();
