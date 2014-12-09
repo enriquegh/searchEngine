@@ -75,5 +75,9 @@ public class SearchResult implements Comparable<SearchResult> {
             this.position = num;
         }
     }
+    
+    public String getPath() {
+    	return path;
+    }
 
 }

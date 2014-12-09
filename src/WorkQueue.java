@@ -130,7 +130,7 @@ public class WorkQueue {
                     r.run();
                 } catch (RuntimeException ex) {
                     System.err.println("Warning: Work queue encountered an "
-                            + "exception while running.");
+                            + "exception while running. " + ex);
                 }
             }
         }

@@ -24,6 +24,7 @@ public class Driver {
         String outputPath;
         int threads;
         ArgumentParser parser = new ArgumentParser(args);
+        
 
         if (parser.hasFlag("-t")) {
             ThreadSafeInvertedIndex index = new ThreadSafeInvertedIndex(); //Need to call here if not traverse uses parent method
@@ -51,6 +52,24 @@ public class Driver {
                 logger.debug("Finished traversing links");
                 traverser.shutdown();
                 
+            }
+            
+            if (parser.hasFlag("-p")) {
+                int port;
+                
+                if (parser.hasValue("-p")) {
+
+                    try {
+                        port = Integer.parseInt(parser.getValue("-p"));
+                    } catch (NumberFormatException e) {
+                        port = 8080;
+                    }
+                } else {
+                    port = 8080;
+                }
+                
+                MainServer server = new MainServer(port);
+                server.run(index);
             }
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
