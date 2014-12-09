@@ -45,6 +45,7 @@ public class SearchServlet extends HttpServlet {
 		out.printf("<html>%n");
 		out.printf("<head><title>%s</title></head>%n", TITLE);
 		out.printf("<body background=\"http://cs.usfca.edu/usf-in-pictures/IMG_3515.jpg\" link=\"white\" vlink=\"#A5AAB6\">%n");
+		out.printf("<p><b>Login:</b><a href=\"/welcome\" style=\"color: white\">Here</a></p>");
 		out.printf("<center>");
 		out.printf("<h1>ChaChing</h1>%n%n");
 		printSearchBar(request, response);
