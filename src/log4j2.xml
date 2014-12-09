@@ -37,12 +37,12 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="ThreadSafeInvertedIndexBuilder" level="ALL">
+        <Logger name="ThreadSafeInvertedIndexBuilder" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="Driver" level="ALL">
+        <Logger name="Driver" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
@@ -51,6 +51,12 @@
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
+        
+        <Logger name="HTMLLinkParser" level="OFF">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>          
+        </Logger>
+        
 
         <Root level="OFF">
             <AppenderRef ref="Console" level="INFO" />

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * For this homework assignment, you must create a regular expression that
  * is able to parse links from HTML. Your code may assume the HTML is valid,
@@ -24,13 +27,14 @@ import java.util.regex.Pattern;
  * @see HTMLLinkParserExtraTest
  */
 public class HTMLLinkParser {
+    private static Logger logger = LogManager.getLogger();
 
 	/**
 	 * The regular expression used to parse the HTML for links.
 	 *
 	 *
 	 */
-	public static final String REGEX = "(?is)<a[^>]*?href[^>]*?=[^>]*?\"([^\"]*?)\"([^>]*?)?>";
+	public static final String REGEX = "(?is)<a[^>]*?href[^>]*?=[^>]*?\"([^\"]*?)\"(?:[^>]*?)?>";
 
 	/**
 	 * The group in the regular expression that captures the raw link. This
@@ -48,20 +52,50 @@ public class HTMLLinkParser {
 	 * @return list of links found in HTML code
 	 * @throws MalformedURLException 
 	 */
-	public static ArrayList<String> listLinks(String html) throws MalformedURLException {
+	public static ArrayList<String> listLinks(String html, String urlPath) {
 		// list to store links
 		ArrayList<String> links = new ArrayList<String>();
+		URL base = null;
+		try {
+			base = new URL(urlPath);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		// compile string into regular expression
 		Pattern p = Pattern.compile(REGEX);
 
-		// match provided text against regular expression
+		// match provided textgainst regular expression
+
+		if (html == null) {
+			logger.debug("HTML is null! " + urlPath);
+		}
+
 		Matcher m = p.matcher(html);
 
 		// loop through every match found in text
 		while(m.find()) {
 			// add the appropriate group from regular expression to list
-			links.add(m.group(GROUP));
+//			if (!m.group(GROUP).endsWith("pdf") ) {
+				if (m.group(GROUP).startsWith("http")) {
+					links.add(m.group(GROUP));
+				}
+				else {
+					URL absolute;
+					try {
+						absolute = new URL(base,m.group(GROUP));
+						String path = absolute.getProtocol() + "://" +  absolute.getHost() + absolute.getPath();
+						links.add(path);
+					} catch (MalformedURLException e) {
+						// TODO Auto-generated catch block
+						logger.debug(e);
+					}
+
+
+				}
+//			}
+
 		}
 
 		return links;

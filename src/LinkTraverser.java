@@ -1,5 +1,9 @@
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeSet;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,57 +13,46 @@ public class LinkTraverser {
     private static Logger logger = LogManager.getLogger();
     private final WorkQueue workers;
     private int pending;
-    private static int urlCount = 0;
+    private TreeSet<String> listLinks;
+    private final ReadWriteLock lock;
     
     public LinkTraverser(){
         workers = new WorkQueue();
+        listLinks = new TreeSet<String>();
+        lock = new ReadWriteLock();
     }
     
     public LinkTraverser(int threads) {
         workers = new WorkQueue(threads);
+        listLinks = new TreeSet<String>();
+        lock = new ReadWriteLock();
     }
     
     public void traverse(String urlPath, ThreadSafeInvertedIndex index) {
-        String html;
-        try {
-            html = HTTPFetcher.fetchHTML(urlPath);
-            ArrayList<String> links = HTMLLinkParser.listLinks(html);
-            if (links.size() > 0) {
-                for (String link :links) {
-                    traverse(link,index);
-                    if (urlCount <= 50) {
-                        logger.debug("Worker will be executed");
-                        workers.execute(new LinkWorker(link,index));
-                        urlCount++;
-                    }
-                }
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        lock.lockWrite();
+        listLinks.add(urlPath); //Seed is added
+        lock.unlockWrite();
+        workers.execute(new LinkWorker(urlPath,index));
     }
     
     public void parsePath(String urlPath, InvertedIndex index) {
-        try {
+        	// add the initial (seed) link
+        	// create a minion that processes the link
             String html = HTTPFetcher.fetchHTML(urlPath);
             String text = HTMLCleaner.cleanHTML(html);
-            String[] textWords = text.split(" ");
             int i = 1;
             logger.debug("Path {} will be parsed",urlPath);
-            for (String word : textWords) {
-                index.add(word,urlPath, i);
-                i++;
-            }
-        }
-        catch (IOException e) {
-            logger.debug(e);
-        }
+        	List<String> words = WordParser.parseText(text);
+        	for (String word : words) {
+        		index.add(word, urlPath, i);
+        		i++;
+        	}
+
     }
     
-    public static void printLinks(ArrayList<String> links) {
-        for (String url : links) {
-            System.out.println(url);
+    public void printLinks() {
+        for (String url : listLinks) {
+            logger.debug(url);
         }
     }
     
@@ -68,7 +61,6 @@ public class LinkTraverser {
         private final ThreadSafeInvertedIndex mainIndex;
         private final InvertedIndex tempIndex;
         public LinkWorker(String urlPath, ThreadSafeInvertedIndex index) {
-            // TODO Auto-generated constructor stub
             logger.debug("Worker created for {}", urlPath);
             this.urlPath = urlPath;
             this.mainIndex = index;
@@ -78,8 +70,27 @@ public class LinkTraverser {
         }
         @Override
         public void run() {
-            parsePath(urlPath,tempIndex);
 
+			String html = HTTPFetcher.fetchHTML(urlPath);
+        	for (String link : HTMLLinkParser.listLinks(html,urlPath)) {
+        		if (!listLinks.contains(link) && listLinks.size() < 50) {
+            		lock.lockWrite();
+            		listLinks.add(link);
+            		lock.unlockWrite();
+                    logger.debug("Worker will be executed");
+                    workers.execute(new LinkWorker(link,mainIndex));
+        		}
+        	}
+        	
+            String text = HTMLCleaner.cleanHTML(html);
+            int i = 1;
+            logger.debug("Path {} will be parsed",urlPath);
+        	List<String> words = WordParser.parseText(text);
+        	for (String word : words) {
+        		mainIndex.add(word, urlPath, i);
+        		i++;
+        	}
+            
             mainIndex.addAll(tempIndex);
             decrementPending();
             logger.debug("Worker finished {}",urlPath);

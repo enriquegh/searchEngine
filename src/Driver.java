@@ -46,11 +46,12 @@ public class Driver {
             if (parser.hasFlag("-u") && parser.hasValue("-u")) {
                 LinkTraverser traverser = new LinkTraverser(threads);
                 String urlPath = parser.getValue("-u");
+                
                 traverser.traverse(urlPath, index);
                 logger.debug("Finished traversing links");
                 traverser.shutdown();
                 
-                //TODO Create a class that has parameter the link and cleans, traverses, etc.
+                //TODO urlPath here is the seed (base)
                 //TODO Catch getAllComponents
                 
 

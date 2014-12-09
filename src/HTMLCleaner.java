@@ -34,15 +34,8 @@ public class HTMLCleaner {
 	 */
 	public static String fetchHTML(String url) {
 	    String html = "";
-        try {
-            html = HTTPFetcher.fetchHTML(url);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        html = HTTPFetcher.fetchHTML(url);
+
 	    return html;
 	}
 
