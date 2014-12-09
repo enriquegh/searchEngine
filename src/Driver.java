@@ -51,11 +51,6 @@ public class Driver {
                 logger.debug("Finished traversing links");
                 traverser.shutdown();
                 
-                //TODO urlPath here is the seed (base)
-                //TODO Catch getAllComponents
-                
-
-
             }
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {

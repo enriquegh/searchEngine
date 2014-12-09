@@ -1,7 +1,11 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
-
+/**
+ * 
+ * Multithreaded representation of InvertedIndex.
+ *
+ */
 public class ThreadSafeInvertedIndex extends InvertedIndex {
     private final ReadWriteLock lock;
 

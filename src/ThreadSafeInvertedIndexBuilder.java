@@ -5,7 +5,11 @@ import java.nio.file.Path;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+/**
+ * 
+ * Multithreaded representation of the InvertedIndexBuilder
+ *
+ */
 public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     private static Logger logger = LogManager.getLogger();
     private final WorkQueue workers;
@@ -78,8 +82,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
             // Indicate that we no longer have "pending" work to do.
             mainIndex.addAll(tempIndex);
             decrementPending();
-            // mainIndex.addAll(list, file, start)
-//            logger.debug("Worker finished {}", directory);
+            logger.debug("Worker finished {}", directory);
         }
     }
 
@@ -93,7 +96,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
      */
     private synchronized void incrementPending() {
         pending++;
-//        logger.debug("Pending is now {}", pending);
+        logger.debug("Pending is now {}", pending);
     }
 
     /**
@@ -117,11 +120,11 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     public synchronized void finish() {
         try {
             while (pending > 0) {
-//                logger.debug("Waiting until finished");
+                logger.debug("Waiting until finished");
                 this.wait();
             }
         } catch (InterruptedException e) {
-//            logger.debug("Finish interrupted", e);
+            logger.debug("Finish interrupted", e);
         }
     }
 
@@ -131,7 +134,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
      * background.
      */
     public synchronized void shutdown() {
-//        logger.debug("Shutting down");
+        logger.debug("Shutting down");
         finish();
         workers.shutdown();
     }
