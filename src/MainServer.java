@@ -22,8 +22,12 @@ public class MainServer {
 		ServletHandler handler = new ServletHandler();
 		handler.addServletWithMapping(new ServletHolder(new SearchServlet(index)),
 				"/search");
+		
+		handler.addServletWithMapping(LoginUserServlet.class,     "/login");
+		handler.addServletWithMapping(LoginRegisterServlet.class, "/register");
+		handler.addServletWithMapping(LoginWelcomeServlet.class,  "/welcome");
+		handler.addServletWithMapping(LoginRedirectServlet.class, "/*");
 		server.setHandler(handler);
-		//TODO add login functionality
 		try {
 			server.start();
 			server.join();

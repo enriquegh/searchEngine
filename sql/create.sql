@@ -1,0 +1,5 @@
+CREATE TABLE Login_Users (
+userid INTEGER AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(32) NOT NULL,
+password CHAR(32) NOT NULL
+);
