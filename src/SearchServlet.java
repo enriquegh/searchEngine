@@ -25,6 +25,7 @@ public class SearchServlet extends HttpServlet {
 	private LinkedList<String> messages;
 	private final ThreadSafeInvertedIndex index;
 	ArrayList<SearchResult> results;
+	private static boolean firstTime = true;
 
 	public SearchServlet(ThreadSafeInvertedIndex index) {
 		super();
@@ -43,26 +44,23 @@ public class SearchServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.printf("<html>%n");
 		out.printf("<head><title>%s</title></head>%n", TITLE);
-		out.printf("<body>%n");
+		out.printf("<body background=\"http://cs.usfca.edu/usf-in-pictures/IMG_3515.jpg\" link=\"white\" vlink=\"#A5AAB6\">%n");
 		out.printf("<center>");
 		out.printf("<h1>ChaChing</h1>%n%n");
 		printSearchBar(request, response);
-//		synchronized (messages) {
-//			for (String message : messages) {
-//				out.printf("<p><a href= \"%s\">%s</a></p>%n%n", message, message);
-//			}
-//		}
+
 		synchronized (results) {
 			for (SearchResult result : results) {
 				out.printf("<p><a href= \"%s\">%s</a></p>%n%n", result.getPath(), result.getPath());
 			}
+			if (results.size() == 0 && !firstTime) {
+				out.printf("<p>Yikes! Looks like there are no results for your query.</p>%n%n");
+			}
 		}
 		out.printf("</center>");
-
-		out.printf("<p>This request was handled by thread %s.</p>%n", Thread
-				.currentThread().getName());
 		out.printf("</body>%n");
 		out.printf("</html>%n");
+		firstTime = true;
 		response.setStatus(HttpServletResponse.SC_OK);
 	}
 
@@ -77,38 +75,13 @@ public class SearchServlet extends HttpServlet {
 		results.clear(); //Each search is new
 		String searchQuery = request.getParameter("searchBar");
 		String[] queryList = searchQuery.split(" ");
-		System.out.println(queryList.length);
-		System.out.println(queryList[0]);
-//		String username = request.getParameter("username");
-//		String message = request.getParameter("message");
-//		username = username == null ? "anonymous" : username;
-//		message = message == null ? "" : message;
-		// Avoid XSS attacks using Apache Commons StringUtils
-		// Comment out if you don't have this library installed
-		
-		// username = StringEscapeUtils.escapeHtml4(username);
-		// message = StringEscapeUtils.escapeHtml4(message);
-		
-		System.out.println(searchQuery);
+		firstTime = false;
 		synchronized(results) {
 			if (!searchQuery.equals("")) {
 				results.addAll(index.search(queryList));
 			}
 		}
 
-//		synchronized (messages) {
-////			messages.push(searchQuery);
-////			if (messages.size() > 20) {
-////				messages.pop();
-////			}
-//			for (SearchResult result : results) {
-//				messages.push(result.getPath());	
-//			}
-//
-////			for (SearchResult result : results) {
-////				messages.push(result.toString());
-////			}
-//		}
 		response.setStatus(HttpServletResponse.SC_OK);
 		response.sendRedirect(request.getServletPath());
 	}

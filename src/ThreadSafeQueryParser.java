@@ -37,7 +37,7 @@ public class ThreadSafeQueryParser extends QueryParser {
         lock.unlockWrite();
     }
     /**
-     * This method 
+     * This method parses the file and adds an emptyResult at first to keep position, then it calls a new Worker.
      * @param file
      * @param index
      * @throws IOException

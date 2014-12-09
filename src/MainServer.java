@@ -20,10 +20,6 @@ public class MainServer {
 	public void run(ThreadSafeInvertedIndex index) {
 		Server server = new Server(PORT);
 		ServletHandler handler = new ServletHandler();
-		handler.addServletWithMapping(new ServletHolder(new MessageServlet()),
-				"/pie");
-		handler.addServletWithMapping(new ServletHolder(new MessageServlet()),
-				"/cake");
 		handler.addServletWithMapping(new ServletHolder(new SearchServlet(index)),
 				"/search");
 		server.setHandler(handler);
@@ -31,7 +27,6 @@ public class MainServer {
 			server.start();
 			server.join();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			logger.debug(e);
 		}
 
