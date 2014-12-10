@@ -22,8 +22,7 @@ public class Driver {
     public static void main(String[] args) {
         String outputPath;
         int threads;
-        ArgumentParser parser = new ArgumentParser(args);
-        
+        ArgumentParser parser = new ArgumentParser(args);  
 
         if (parser.hasFlag("-t")) {
             ThreadSafeInvertedIndex index = new ThreadSafeInvertedIndex(); //Need to call here if not traverse uses parent method
