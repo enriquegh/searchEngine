@@ -74,7 +74,6 @@ public class LoginDatabaseHandler {
 		random = new Random(System.currentTimeMillis());
 
 		try {
-		    // TODO Change to "database.properties" or whatever your file is called
 			db = new DatabaseConnector("database.properties");
 			status = db.testConnection() ? setupTables() : Status.CONNECTION_FAILED;
 		}

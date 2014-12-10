@@ -168,7 +168,7 @@ public class DatabaseConnector {
 	 */
 	public static void main(String[] args) {
 		try {
-		    // TODO Change to database.properties (or whatever you named your properties file)!
+
 			DatabaseConnector test = new DatabaseConnector("database.properties");
 			System.out.println("Connecting to " + test.uri);
 

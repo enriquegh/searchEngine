@@ -1,602 +1,602 @@
-14:54:41:225 [debug] LinkTraverser.java:73 main: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl
-14:54:41:225 [debug] LinkTraverser.java:73 main: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl
-14:54:41:227 [debug] LinkTraverser.java:121 main: Pending is now 1
-14:54:41:227 [debug] LinkTraverser.java:121 main: Pending is now 1
-14:54:41:228 [debug] LinkTraverser.java:159 main: Shutting down
-14:54:41:228 [debug] LinkTraverser.java:159 main: Shutting down
-14:54:41:228 [debug] LinkTraverser.java:145 main: Waiting until finished
-14:54:41:228 [debug] LinkTraverser.java:145 main: Waiting until finished
-14:54:41:238 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
-14:54:41:238 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
-14:54:41:238 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/
-14:54:41:238 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/
-14:54:41:238 [debug] LinkTraverser.java:121 Thread-15: Pending is now 2
-14:54:41:238 [debug] LinkTraverser.java:121 Thread-15: Pending is now 2
-14:54:41:241 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl will be parsed
-14:54:41:241 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl will be parsed
-14:54:41:242 [debug] LinkTraverser.java:130 Thread-15: Pending is now 1
-14:54:41:242 [debug] LinkTraverser.java:130 Thread-15: Pending is now 1
-14:54:41:242 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl
-14:54:41:242 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl
-14:54:41:257 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:257 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:258 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/
-14:54:41:258 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/
-14:54:41:258 [debug] LinkTraverser.java:121 Thread-11: Pending is now 2
-14:54:41:258 [debug] LinkTraverser.java:121 Thread-11: Pending is now 2
-14:54:41:258 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:258 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:259 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html
-14:54:41:259 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html
-14:54:41:259 [debug] LinkTraverser.java:121 Thread-11: Pending is now 3
-14:54:41:259 [debug] LinkTraverser.java:121 Thread-11: Pending is now 3
-14:54:41:259 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:259 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:259 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html
-14:54:41:259 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html
-14:54:41:260 [debug] LinkTraverser.java:121 Thread-11: Pending is now 4
-14:54:41:260 [debug] LinkTraverser.java:121 Thread-11: Pending is now 4
-14:54:41:260 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:260 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:260 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html
-14:54:41:260 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html
-14:54:41:260 [debug] LinkTraverser.java:121 Thread-11: Pending is now 5
-14:54:41:260 [debug] LinkTraverser.java:121 Thread-11: Pending is now 5
-14:54:41:260 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:260 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:260 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html
-14:54:41:260 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html
-14:54:41:260 [debug] LinkTraverser.java:121 Thread-11: Pending is now 6
-14:54:41:260 [debug] LinkTraverser.java:121 Thread-11: Pending is now 6
-14:54:41:261 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:261 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:261 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html
-14:54:41:261 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html
-14:54:41:261 [debug] LinkTraverser.java:121 Thread-11: Pending is now 7
-14:54:41:261 [debug] LinkTraverser.java:121 Thread-11: Pending is now 7
-14:54:41:261 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:261 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:261 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html
-14:54:41:261 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html
-14:54:41:261 [debug] LinkTraverser.java:121 Thread-11: Pending is now 8
-14:54:41:261 [debug] LinkTraverser.java:121 Thread-11: Pending is now 8
-14:54:41:261 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:261 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:261 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html
-14:54:41:261 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html
-14:54:41:261 [debug] LinkTraverser.java:121 Thread-11: Pending is now 9
-14:54:41:261 [debug] LinkTraverser.java:121 Thread-11: Pending is now 9
-14:54:41:262 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:262 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:262 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html
-14:54:41:262 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html
-14:54:41:262 [debug] LinkTraverser.java:121 Thread-11: Pending is now 10
-14:54:41:262 [debug] LinkTraverser.java:121 Thread-11: Pending is now 10
-14:54:41:262 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:262 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:262 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html
-14:54:41:262 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html
-14:54:41:262 [debug] LinkTraverser.java:121 Thread-11: Pending is now 11
-14:54:41:262 [debug] LinkTraverser.java:121 Thread-11: Pending is now 11
-14:54:41:262 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:262 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html
-14:54:41:263 [debug] LinkTraverser.java:121 Thread-11: Pending is now 12
-14:54:41:263 [debug] LinkTraverser.java:121 Thread-11: Pending is now 12
-14:54:41:263 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html
-14:54:41:263 [debug] LinkTraverser.java:121 Thread-11: Pending is now 13
-14:54:41:263 [debug] LinkTraverser.java:121 Thread-11: Pending is now 13
-14:54:41:263 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html
-14:54:41:263 [debug] LinkTraverser.java:121 Thread-11: Pending is now 14
-14:54:41:263 [debug] LinkTraverser.java:121 Thread-11: Pending is now 14
-14:54:41:263 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html
-14:54:41:263 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html
-14:54:41:264 [debug] LinkTraverser.java:121 Thread-11: Pending is now 15
-14:54:41:264 [debug] LinkTraverser.java:121 Thread-11: Pending is now 15
-14:54:41:264 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:264 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:264 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html
-14:54:41:264 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html
-14:54:41:264 [debug] LinkTraverser.java:121 Thread-11: Pending is now 16
-14:54:41:264 [debug] LinkTraverser.java:121 Thread-11: Pending is now 16
-14:54:41:264 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:264 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:264 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html
-14:54:41:264 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html
-14:54:41:264 [debug] LinkTraverser.java:121 Thread-11: Pending is now 17
-14:54:41:264 [debug] LinkTraverser.java:121 Thread-11: Pending is now 17
-14:54:41:264 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:264 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:264 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html
-14:54:41:264 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 18
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 18
-14:54:41:265 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:265 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:265 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html
-14:54:41:265 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 19
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 19
-14:54:41:265 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:265 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:265 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html
-14:54:41:265 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 20
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 20
-14:54:41:265 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:265 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:265 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html
-14:54:41:265 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 21
-14:54:41:265 [debug] LinkTraverser.java:121 Thread-11: Pending is now 21
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 22
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 22
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 23
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 23
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 24
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 24
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html
-14:54:41:266 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 25
-14:54:41:266 [debug] LinkTraverser.java:121 Thread-11: Pending is now 25
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html
-14:54:41:267 [debug] LinkTraverser.java:121 Thread-11: Pending is now 26
-14:54:41:267 [debug] LinkTraverser.java:121 Thread-11: Pending is now 26
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html
-14:54:41:267 [debug] LinkTraverser.java:121 Thread-11: Pending is now 27
-14:54:41:267 [debug] LinkTraverser.java:121 Thread-11: Pending is now 27
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html
-14:54:41:267 [debug] LinkTraverser.java:121 Thread-11: Pending is now 28
-14:54:41:267 [debug] LinkTraverser.java:121 Thread-11: Pending is now 28
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html
-14:54:41:267 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 29
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 29
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 30
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 30
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 31
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 31
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 32
-14:54:41:268 [debug] LinkTraverser.java:121 Thread-11: Pending is now 32
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html
-14:54:41:268 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 33
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 33
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html
-14:54:41:269 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 34
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 34
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html
-14:54:41:269 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 35
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 35
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html
-14:54:41:269 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 36
-14:54:41:269 [debug] LinkTraverser.java:121 Thread-11: Pending is now 36
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:269 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 37
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 37
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 38
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 38
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 39
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 39
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/rfcs.html
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/rfcs.html
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 40
-14:54:41:270 [debug] LinkTraverser.java:121 Thread-11: Pending is now 40
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html
-14:54:41:270 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 41
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 41
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html
-14:54:41:271 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 42
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 42
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html
-14:54:41:271 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 43
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 43
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html
-14:54:41:271 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 44
-14:54:41:271 [debug] LinkTraverser.java:121 Thread-11: Pending is now 44
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:271 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 45
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 45
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 46
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 46
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 47
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 47
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html
-14:54:41:272 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 48
-14:54:41:272 [debug] LinkTraverser.java:121 Thread-11: Pending is now 48
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:272 [debug] LinkTraverser.java:89 Thread-11: Worker will be executed
-14:54:41:273 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html
-14:54:41:273 [debug] LinkTraverser.java:73 Thread-11: Worker created for http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html
-14:54:41:273 [debug] LinkTraverser.java:121 Thread-11: Pending is now 49
-14:54:41:273 [debug] LinkTraverser.java:121 Thread-11: Pending is now 49
-14:54:41:274 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html will be parsed
-14:54:41:274 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html will be parsed
-14:54:41:274 [debug] LinkTraverser.java:130 Thread-12: Pending is now 48
-14:54:41:274 [debug] LinkTraverser.java:130 Thread-12: Pending is now 48
-14:54:41:274 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html
-14:54:41:274 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/albatross.html
-14:54:41:275 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/ will be parsed
-14:54:41:275 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/ will be parsed
-14:54:41:275 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html will be parsed
-14:54:41:275 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html will be parsed
-14:54:41:275 [debug] LinkTraverser.java:130 Thread-14: Pending is now 47
-14:54:41:275 [debug] LinkTraverser.java:130 Thread-14: Pending is now 47
-14:54:41:275 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html
-14:54:41:275 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/blackbird.html
-14:54:41:276 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html will be parsed
-14:54:41:276 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html will be parsed
-14:54:41:276 [debug] LinkTraverser.java:130 Thread-15: Pending is now 46
-14:54:41:276 [debug] LinkTraverser.java:130 Thread-15: Pending is now 46
-14:54:41:276 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/
-14:54:41:276 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/
-14:54:41:277 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html will be parsed
-14:54:41:277 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html will be parsed
-14:54:41:277 [debug] LinkTraverser.java:130 Thread-13: Pending is now 45
-14:54:41:277 [debug] LinkTraverser.java:130 Thread-13: Pending is now 45
-14:54:41:277 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html
-14:54:41:277 [debug] LinkTraverser.java:130 Thread-12: Pending is now 44
-14:54:41:277 [debug] LinkTraverser.java:130 Thread-12: Pending is now 44
-14:54:41:277 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html
-14:54:41:277 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html
-14:54:41:277 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/bluebird.html
-14:54:41:278 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html will be parsed
-14:54:41:278 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html will be parsed
-14:54:41:278 [debug] LinkTraverser.java:130 Thread-14: Pending is now 43
-14:54:41:278 [debug] LinkTraverser.java:130 Thread-14: Pending is now 43
-14:54:41:278 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html
-14:54:41:278 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/cardinal.html
-14:54:41:279 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html will be parsed
-14:54:41:279 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html will be parsed
-14:54:41:279 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/ will be parsed
-14:54:41:279 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/ will be parsed
-14:54:41:279 [debug] LinkTraverser.java:130 Thread-15: Pending is now 42
-14:54:41:279 [debug] LinkTraverser.java:130 Thread-15: Pending is now 42
-14:54:41:279 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html
-14:54:41:279 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/chickadee.html
-14:54:41:280 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html will be parsed
-14:54:41:280 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html will be parsed
-14:54:41:280 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html will be parsed
-14:54:41:280 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html will be parsed
-14:54:41:280 [debug] LinkTraverser.java:130 Thread-13: Pending is now 41
-14:54:41:280 [debug] LinkTraverser.java:130 Thread-13: Pending is now 41
-14:54:41:280 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html
-14:54:41:280 [debug] LinkTraverser.java:130 Thread-12: Pending is now 40
-14:54:41:280 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/crane.html
-14:54:41:280 [debug] LinkTraverser.java:130 Thread-12: Pending is now 40
-14:54:41:280 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html will be parsed
-14:54:41:280 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html
-14:54:41:280 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html will be parsed
-14:54:41:280 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/crow.html
-14:54:41:281 [debug] LinkTraverser.java:130 Thread-14: Pending is now 39
-14:54:41:281 [debug] LinkTraverser.java:130 Thread-14: Pending is now 39
-14:54:41:281 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html
-14:54:41:281 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/cuckoo.html
-14:54:41:281 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html will be parsed
-14:54:41:281 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html will be parsed
-14:54:41:281 [debug] LinkTraverser.java:130 Thread-15: Pending is now 38
-14:54:41:281 [debug] LinkTraverser.java:130 Thread-15: Pending is now 38
-14:54:41:281 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html
-14:54:41:281 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/dove.html
-14:54:41:282 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html will be parsed
-14:54:41:282 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html will be parsed
-14:54:41:282 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html will be parsed
-14:54:41:282 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html will be parsed
-14:54:41:283 [debug] LinkTraverser.java:130 Thread-12: Pending is now 37
-14:54:41:283 [debug] LinkTraverser.java:130 Thread-12: Pending is now 37
-14:54:41:283 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html
-14:54:41:283 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/eagle.html
-14:54:41:283 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html will be parsed
-14:54:41:283 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html will be parsed
-14:54:41:283 [debug] LinkTraverser.java:130 Thread-13: Pending is now 36
-14:54:41:283 [debug] LinkTraverser.java:130 Thread-13: Pending is now 36
-14:54:41:283 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html will be parsed
-14:54:41:283 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html will be parsed
-14:54:41:283 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html
-14:54:41:283 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/duck.html
-14:54:41:284 [debug] LinkTraverser.java:130 Thread-14: Pending is now 35
-14:54:41:284 [debug] LinkTraverser.java:130 Thread-14: Pending is now 35
-14:54:41:284 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html
-14:54:41:284 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/egret.html
-14:54:41:284 [debug] LinkTraverser.java:130 Thread-15: Pending is now 34
-14:54:41:284 [debug] LinkTraverser.java:130 Thread-15: Pending is now 34
-14:54:41:284 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html
-14:54:41:284 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/falcon.html
-14:54:41:285 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html will be parsed
-14:54:41:285 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html will be parsed
-14:54:41:286 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html will be parsed
-14:54:41:286 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html will be parsed
-14:54:41:286 [debug] LinkTraverser.java:130 Thread-12: Pending is now 33
-14:54:41:286 [debug] LinkTraverser.java:130 Thread-12: Pending is now 33
-14:54:41:286 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html
-14:54:41:286 [debug] LinkTraverser.java:130 Thread-14: Pending is now 32
-14:54:41:286 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/finch.html
-14:54:41:286 [debug] LinkTraverser.java:130 Thread-14: Pending is now 32
-14:54:41:286 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html will be parsed
-14:54:41:286 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html
-14:54:41:286 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html will be parsed
-14:54:41:286 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/gull.html
-14:54:41:287 [debug] LinkTraverser.java:130 Thread-13: Pending is now 31
-14:54:41:287 [debug] LinkTraverser.java:130 Thread-13: Pending is now 31
-14:54:41:287 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html will be parsed
-14:54:41:287 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html will be parsed
-14:54:41:287 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html
-14:54:41:287 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/goose.html
-14:54:41:287 [debug] LinkTraverser.java:130 Thread-15: Pending is now 30
-14:54:41:287 [debug] LinkTraverser.java:130 Thread-15: Pending is now 30
-14:54:41:287 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html
-14:54:41:287 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html
-14:54:41:287 [debug] LinkTraverser.java:130 Thread-11: Pending is now 29
-14:54:41:287 [debug] LinkTraverser.java:130 Thread-11: Pending is now 29
-14:54:41:287 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/
-14:54:41:287 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/
-14:54:41:288 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html will be parsed
-14:54:41:289 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html will be parsed
-14:54:41:288 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html will be parsed
-14:54:41:289 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html will be parsed
-14:54:41:289 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html will be parsed
-14:54:41:289 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html will be parsed
-14:54:41:289 [debug] LinkTraverser.java:130 Thread-12: Pending is now 28
-14:54:41:289 [debug] LinkTraverser.java:130 Thread-12: Pending is now 28
-14:54:41:289 [debug] LinkTraverser.java:130 Thread-14: Pending is now 27
-14:54:41:289 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html
-14:54:41:289 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/hawk.html
-14:54:41:289 [debug] LinkTraverser.java:130 Thread-14: Pending is now 27
-14:54:41:289 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html
-14:54:41:289 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/heron.html
-14:54:41:290 [debug] LinkTraverser.java:130 Thread-13: Pending is now 26
-14:54:41:290 [debug] LinkTraverser.java:130 Thread-13: Pending is now 26
-14:54:41:290 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html will be parsed
-14:54:41:290 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html will be parsed
-14:54:41:290 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html
-14:54:41:290 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/hummingbird.html
-14:54:41:290 [debug] LinkTraverser.java:130 Thread-15: Pending is now 25
-14:54:41:290 [debug] LinkTraverser.java:130 Thread-15: Pending is now 25
-14:54:41:290 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html
-14:54:41:290 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/ibis.html
-14:54:41:291 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html will be parsed
-14:54:41:291 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html will be parsed
-14:54:41:291 [debug] LinkTraverser.java:130 Thread-11: Pending is now 24
-14:54:41:291 [debug] LinkTraverser.java:130 Thread-11: Pending is now 24
-14:54:41:291 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html
-14:54:41:291 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/kingfisher.html
-14:54:41:292 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html will be parsed
-14:54:41:292 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html will be parsed
-14:54:41:292 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html will be parsed
-14:54:41:292 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html will be parsed
-14:54:41:292 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html will be parsed
-14:54:41:292 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html will be parsed
-14:54:41:292 [debug] LinkTraverser.java:130 Thread-12: Pending is now 23
-14:54:41:292 [debug] LinkTraverser.java:130 Thread-12: Pending is now 23
-14:54:41:292 [debug] LinkTraverser.java:130 Thread-15: Pending is now 22
-14:54:41:292 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html
-14:54:41:292 [debug] LinkTraverser.java:130 Thread-15: Pending is now 22
-14:54:41:292 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/loon.html
-14:54:41:293 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html
-14:54:41:293 [debug] LinkTraverser.java:130 Thread-13: Pending is now 21
-14:54:41:293 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/meadowlark.html
-14:54:41:293 [debug] LinkTraverser.java:130 Thread-13: Pending is now 21
-14:54:41:293 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html
-14:54:41:293 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/mallard.html
-14:54:41:293 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html will be parsed
-14:54:41:293 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html will be parsed
-14:54:41:294 [debug] LinkTraverser.java:130 Thread-14: Pending is now 20
-14:54:41:294 [debug] LinkTraverser.java:130 Thread-14: Pending is now 20
-14:54:41:294 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html
-14:54:41:294 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/magpie.html
-14:54:41:295 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html will be parsed
-14:54:41:295 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html will be parsed
-14:54:41:295 [debug] LinkTraverser.java:130 Thread-11: Pending is now 19
-14:54:41:295 [debug] LinkTraverser.java:130 Thread-11: Pending is now 19
-14:54:41:295 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html will be parsed
-14:54:41:295 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html will be parsed
-14:54:41:295 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html
-14:54:41:295 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/mockingbird.html
-14:54:41:295 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html will be parsed
-14:54:41:295 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html will be parsed
-14:54:41:295 [debug] LinkTraverser.java:130 Thread-12: Pending is now 18
-14:54:41:295 [debug] LinkTraverser.java:130 Thread-12: Pending is now 18
-14:54:41:295 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html
-14:54:41:295 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/nighthawk.html
-14:54:41:295 [debug] LinkTraverser.java:130 Thread-13: Pending is now 17
-14:54:41:295 [debug] LinkTraverser.java:130 Thread-13: Pending is now 17
-14:54:41:295 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html
-14:54:41:295 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/owl.html
-14:54:41:296 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html will be parsed
-14:54:41:296 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html will be parsed
-14:54:41:296 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html will be parsed
-14:54:41:296 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html will be parsed
-14:54:41:296 [debug] LinkTraverser.java:130 Thread-15: Pending is now 16
-14:54:41:296 [debug] LinkTraverser.java:130 Thread-15: Pending is now 16
-14:54:41:296 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html
-14:54:41:296 [debug] LinkTraverser.java:130 Thread-14: Pending is now 15
-14:54:41:296 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/osprey.html
-14:54:41:296 [debug] LinkTraverser.java:130 Thread-14: Pending is now 15
-14:54:41:296 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html
-14:54:41:296 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/pelican.html
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:130 Thread-12: Pending is now 14
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:130 Thread-12: Pending is now 14
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/pigeon.html
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-11: Pending is now 13
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-11: Pending is now 13
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-15: Pending is now 12
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-15: Pending is now 12
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/pheasant.html
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html will be parsed
-14:54:41:298 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html will be parsed
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-14: Pending is now 11
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-14: Pending is now 11
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/quail.html
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/raven.html
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-13: Pending is now 10
-14:54:41:299 [debug] LinkTraverser.java:130 Thread-13: Pending is now 10
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html
-14:54:41:299 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/puffin.html
-14:54:41:301 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html will be parsed
-14:54:41:301 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html will be parsed
-14:54:41:301 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html will be parsed
-14:54:41:301 [debug] LinkTraverser.java:130 Thread-11: Pending is now 9
-14:54:41:301 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html will be parsed
-14:54:41:301 [debug] LinkTraverser.java:130 Thread-11: Pending is now 9
-14:54:41:301 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html
-14:54:41:301 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/roadrunner.html
-14:54:41:301 [debug] LinkTraverser.java:130 Thread-15: Pending is now 8
-14:54:41:301 [debug] LinkTraverser.java:130 Thread-15: Pending is now 8
-14:54:41:301 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html will be parsed
-14:54:41:301 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html will be parsed
-14:54:41:301 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html
-14:54:41:301 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/robin.html
-14:54:41:302 [debug] LinkTraverser.java:130 Thread-13: Pending is now 7
-14:54:41:302 [debug] LinkTraverser.java:130 Thread-13: Pending is now 7
-14:54:41:302 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html
-14:54:41:302 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/sparrow.html
-14:54:41:302 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html will be parsed
-14:54:41:302 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html will be parsed
-14:54:41:302 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/rfcs.html will be parsed
-14:54:41:302 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/rfcs.html will be parsed
-14:54:41:302 [debug] LinkTraverser.java:130 Thread-14: Pending is now 6
-14:54:41:302 [debug] LinkTraverser.java:130 Thread-14: Pending is now 6
-14:54:41:303 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html
-14:54:41:303 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/sandpiper.html
-14:54:41:303 [debug] LinkTraverser.java:130 Thread-12: Pending is now 5
-14:54:41:303 [debug] LinkTraverser.java:130 Thread-12: Pending is now 5
-14:54:41:303 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/rfcs.html
-14:54:41:303 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/rfcs.html
-14:54:41:303 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html will be parsed
-14:54:41:303 [debug] LinkTraverser.java:97 Thread-15: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html will be parsed
-14:54:41:304 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html will be parsed
-14:54:41:304 [debug] LinkTraverser.java:130 Thread-15: Pending is now 4
-14:54:41:304 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html will be parsed
-14:54:41:304 [debug] LinkTraverser.java:97 Thread-11: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html will be parsed
-14:54:41:304 [debug] LinkTraverser.java:130 Thread-15: Pending is now 4
-14:54:41:304 [debug] LinkTraverser.java:97 Thread-13: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html will be parsed
-14:54:41:304 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html
-14:54:41:304 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/stork.html
-14:54:41:304 [debug] LinkTraverser.java:130 Thread-11: Pending is now 3
-14:54:41:304 [debug] LinkTraverser.java:130 Thread-11: Pending is now 3
-14:54:41:304 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html
-14:54:41:304 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/starling.html
-14:54:41:304 [debug] LinkTraverser.java:130 Thread-13: Pending is now 2
-14:54:41:304 [debug] LinkTraverser.java:130 Thread-13: Pending is now 2
-14:54:41:304 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html
-14:54:41:304 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/swallow.html
-14:54:41:305 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html will be parsed
-14:54:41:305 [debug] LinkTraverser.java:97 Thread-14: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html will be parsed
-14:54:41:305 [debug] LinkTraverser.java:130 Thread-14: Pending is now 1
-14:54:41:305 [debug] LinkTraverser.java:130 Thread-14: Pending is now 1
-14:54:41:305 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html will be parsed
-14:54:41:305 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html
-14:54:41:305 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/swan.html
-14:54:41:305 [debug] LinkTraverser.java:97 Thread-12: Path http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html will be parsed
-14:54:41:305 [debug] LinkTraverser.java:130 Thread-12: Pending is now 0
-14:54:41:305 [debug] LinkTraverser.java:130 Thread-12: Pending is now 0
-14:54:41:305 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html
-14:54:41:305 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://www.cs.usfca.edu/~sjengle/cs212/crawl/tern.html
+16:17:46:610 [debug] LinkTraverser.java:73 main: Worker created for http://htmlhelp.com/reference/html40/olist.html
+16:17:46:610 [debug] LinkTraverser.java:73 main: Worker created for http://htmlhelp.com/reference/html40/olist.html
+16:17:46:612 [debug] LinkTraverser.java:121 main: Pending is now 1
+16:17:46:612 [debug] LinkTraverser.java:121 main: Pending is now 1
+16:17:46:613 [debug] LinkTraverser.java:159 main: Shutting down
+16:17:46:613 [debug] LinkTraverser.java:159 main: Shutting down
+16:17:46:613 [debug] LinkTraverser.java:145 main: Waiting until finished
+16:17:46:613 [debug] LinkTraverser.java:145 main: Waiting until finished
+16:17:46:936 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:936 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:936 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/alist.html
+16:17:46:936 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/alist.html
+16:17:46:936 [debug] LinkTraverser.java:121 Thread-15: Pending is now 2
+16:17:46:936 [debug] LinkTraverser.java:121 Thread-15: Pending is now 2
+16:17:46:936 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:936 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:937 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/html/html.html
+16:17:46:937 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/html/html.html
+16:17:46:937 [debug] LinkTraverser.java:121 Thread-15: Pending is now 3
+16:17:46:937 [debug] LinkTraverser.java:121 Thread-15: Pending is now 3
+16:17:46:937 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:937 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:937 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/head.html
+16:17:46:937 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/head.html
+16:17:46:937 [debug] LinkTraverser.java:121 Thread-15: Pending is now 4
+16:17:46:937 [debug] LinkTraverser.java:121 Thread-15: Pending is now 4
+16:17:46:937 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:937 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:938 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/html/body.html
+16:17:46:938 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/html/body.html
+16:17:46:938 [debug] LinkTraverser.java:121 Thread-15: Pending is now 5
+16:17:46:938 [debug] LinkTraverser.java:121 Thread-15: Pending is now 5
+16:17:46:938 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:938 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:938 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/frames/frameset.html
+16:17:46:938 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/frames/frameset.html
+16:17:46:938 [debug] LinkTraverser.java:121 Thread-15: Pending is now 6
+16:17:46:938 [debug] LinkTraverser.java:121 Thread-15: Pending is now 6
+16:17:46:938 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:938 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:938 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/base.html
+16:17:46:938 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/base.html
+16:17:46:939 [debug] LinkTraverser.java:121 Thread-15: Pending is now 7
+16:17:46:939 [debug] LinkTraverser.java:121 Thread-15: Pending is now 7
+16:17:46:939 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:939 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:939 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/isindex.html
+16:17:46:939 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/isindex.html
+16:17:46:939 [debug] LinkTraverser.java:121 Thread-15: Pending is now 8
+16:17:46:939 [debug] LinkTraverser.java:121 Thread-15: Pending is now 8
+16:17:46:939 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:939 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:939 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/link.html
+16:17:46:939 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/link.html
+16:17:46:940 [debug] LinkTraverser.java:121 Thread-15: Pending is now 9
+16:17:46:940 [debug] LinkTraverser.java:121 Thread-15: Pending is now 9
+16:17:46:940 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:940 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:940 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/meta.html
+16:17:46:940 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/meta.html
+16:17:46:940 [debug] LinkTraverser.java:121 Thread-15: Pending is now 10
+16:17:46:940 [debug] LinkTraverser.java:121 Thread-15: Pending is now 10
+16:17:46:940 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:940 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:940 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/special/script.html
+16:17:46:940 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/special/script.html
+16:17:46:940 [debug] LinkTraverser.java:121 Thread-15: Pending is now 11
+16:17:46:940 [debug] LinkTraverser.java:121 Thread-15: Pending is now 11
+16:17:46:941 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:941 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:941 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/style.html
+16:17:46:941 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/style.html
+16:17:46:941 [debug] LinkTraverser.java:121 Thread-15: Pending is now 12
+16:17:46:941 [debug] LinkTraverser.java:121 Thread-15: Pending is now 12
+16:17:46:941 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:941 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:941 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/title.html
+16:17:46:941 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/head/title.html
+16:17:46:941 [debug] LinkTraverser.java:121 Thread-15: Pending is now 13
+16:17:46:941 [debug] LinkTraverser.java:121 Thread-15: Pending is now 13
+16:17:46:941 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:941 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:942 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/address.html
+16:17:46:942 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/address.html
+16:17:46:942 [debug] LinkTraverser.java:121 Thread-15: Pending is now 14
+16:17:46:942 [debug] LinkTraverser.java:121 Thread-15: Pending is now 14
+16:17:46:942 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:942 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:942 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/blockquote.html
+16:17:46:942 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/blockquote.html
+16:17:46:942 [debug] LinkTraverser.java:121 Thread-15: Pending is now 15
+16:17:46:942 [debug] LinkTraverser.java:121 Thread-15: Pending is now 15
+16:17:46:942 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:942 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:942 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/center.html
+16:17:46:942 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/center.html
+16:17:46:943 [debug] LinkTraverser.java:121 Thread-15: Pending is now 16
+16:17:46:943 [debug] LinkTraverser.java:121 Thread-15: Pending is now 16
+16:17:46:943 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:943 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:943 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/phrase/del.html
+16:17:46:943 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/phrase/del.html
+16:17:46:943 [debug] LinkTraverser.java:121 Thread-15: Pending is now 17
+16:17:46:943 [debug] LinkTraverser.java:121 Thread-15: Pending is now 17
+16:17:46:943 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:943 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:943 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/div.html
+16:17:46:943 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/div.html
+16:17:46:943 [debug] LinkTraverser.java:121 Thread-15: Pending is now 18
+16:17:46:943 [debug] LinkTraverser.java:121 Thread-15: Pending is now 18
+16:17:46:943 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:943 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:944 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h1.html
+16:17:46:944 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h1.html
+16:17:46:944 [debug] LinkTraverser.java:121 Thread-15: Pending is now 19
+16:17:46:944 [debug] LinkTraverser.java:121 Thread-15: Pending is now 19
+16:17:46:944 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:944 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:944 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h2.html
+16:17:46:944 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h2.html
+16:17:46:944 [debug] LinkTraverser.java:121 Thread-15: Pending is now 20
+16:17:46:944 [debug] LinkTraverser.java:121 Thread-15: Pending is now 20
+16:17:46:944 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:944 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:944 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h3.html
+16:17:46:944 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h3.html
+16:17:46:945 [debug] LinkTraverser.java:121 Thread-15: Pending is now 21
+16:17:46:945 [debug] LinkTraverser.java:121 Thread-15: Pending is now 21
+16:17:46:945 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:945 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:945 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h4.html
+16:17:46:945 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h4.html
+16:17:46:945 [debug] LinkTraverser.java:121 Thread-15: Pending is now 22
+16:17:46:945 [debug] LinkTraverser.java:121 Thread-15: Pending is now 22
+16:17:46:945 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:945 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:945 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h5.html
+16:17:46:945 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h5.html
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 23
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 23
+16:17:46:946 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:946 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:946 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h6.html
+16:17:46:946 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/h6.html
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 24
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 24
+16:17:46:946 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:946 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:946 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/hr.html
+16:17:46:946 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/hr.html
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 25
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 25
+16:17:46:946 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:946 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:946 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/phrase/ins.html
+16:17:46:946 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/phrase/ins.html
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 26
+16:17:46:946 [debug] LinkTraverser.java:121 Thread-15: Pending is now 26
+16:17:46:947 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:947 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:947 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/noscript.html
+16:17:46:947 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/noscript.html
+16:17:46:947 [debug] LinkTraverser.java:121 Thread-15: Pending is now 27
+16:17:46:947 [debug] LinkTraverser.java:121 Thread-15: Pending is now 27
+16:17:46:947 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:947 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:947 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/p.html
+16:17:46:947 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/p.html
+16:17:46:947 [debug] LinkTraverser.java:121 Thread-15: Pending is now 28
+16:17:46:947 [debug] LinkTraverser.java:121 Thread-15: Pending is now 28
+16:17:46:947 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:947 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:947 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/pre.html
+16:17:46:947 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/block/pre.html
+16:17:46:948 [debug] LinkTraverser.java:121 Thread-15: Pending is now 29
+16:17:46:948 [debug] LinkTraverser.java:121 Thread-15: Pending is now 29
+16:17:46:948 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:948 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:948 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dir.html
+16:17:46:948 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dir.html
+16:17:46:948 [debug] LinkTraverser.java:121 Thread-15: Pending is now 30
+16:17:46:948 [debug] LinkTraverser.java:121 Thread-15: Pending is now 30
+16:17:46:948 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:948 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:948 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dl.html
+16:17:46:948 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dl.html
+16:17:46:948 [debug] LinkTraverser.java:121 Thread-15: Pending is now 31
+16:17:46:948 [debug] LinkTraverser.java:121 Thread-15: Pending is now 31
+16:17:46:948 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:948 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:949 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dt.html
+16:17:46:949 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dt.html
+16:17:46:949 [debug] LinkTraverser.java:121 Thread-15: Pending is now 32
+16:17:46:949 [debug] LinkTraverser.java:121 Thread-15: Pending is now 32
+16:17:46:949 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:949 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:949 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dd.html
+16:17:46:949 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/dd.html
+16:17:46:949 [debug] LinkTraverser.java:121 Thread-15: Pending is now 33
+16:17:46:949 [debug] LinkTraverser.java:121 Thread-15: Pending is now 33
+16:17:46:949 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:949 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:949 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/li.html
+16:17:46:949 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/li.html
+16:17:46:949 [debug] LinkTraverser.java:121 Thread-15: Pending is now 34
+16:17:46:949 [debug] LinkTraverser.java:121 Thread-15: Pending is now 34
+16:17:46:950 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:950 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:950 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/menu.html
+16:17:46:950 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/menu.html
+16:17:46:950 [debug] LinkTraverser.java:121 Thread-15: Pending is now 35
+16:17:46:950 [debug] LinkTraverser.java:121 Thread-15: Pending is now 35
+16:17:46:950 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:950 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:950 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/ol.html
+16:17:46:950 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/ol.html
+16:17:46:950 [debug] LinkTraverser.java:121 Thread-15: Pending is now 36
+16:17:46:950 [debug] LinkTraverser.java:121 Thread-15: Pending is now 36
+16:17:46:950 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:950 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:950 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/ul.html
+16:17:46:950 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/lists/ul.html
+16:17:46:951 [debug] LinkTraverser.java:121 Thread-15: Pending is now 37
+16:17:46:951 [debug] LinkTraverser.java:121 Thread-15: Pending is now 37
+16:17:46:951 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:951 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:951 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/table.html
+16:17:46:951 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/table.html
+16:17:46:951 [debug] LinkTraverser.java:121 Thread-15: Pending is now 38
+16:17:46:951 [debug] LinkTraverser.java:121 Thread-15: Pending is now 38
+16:17:46:951 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:951 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:951 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/caption.html
+16:17:46:951 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/caption.html
+16:17:46:951 [debug] LinkTraverser.java:121 Thread-15: Pending is now 39
+16:17:46:951 [debug] LinkTraverser.java:121 Thread-15: Pending is now 39
+16:17:46:951 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:951 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:952 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/colgroup.html
+16:17:46:952 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/colgroup.html
+16:17:46:952 [debug] LinkTraverser.java:121 Thread-15: Pending is now 40
+16:17:46:952 [debug] LinkTraverser.java:121 Thread-15: Pending is now 40
+16:17:46:952 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:952 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:952 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/col.html
+16:17:46:952 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/col.html
+16:17:46:952 [debug] LinkTraverser.java:121 Thread-15: Pending is now 41
+16:17:46:952 [debug] LinkTraverser.java:121 Thread-15: Pending is now 41
+16:17:46:952 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:952 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:952 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/thead.html
+16:17:46:952 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/thead.html
+16:17:46:952 [debug] LinkTraverser.java:121 Thread-15: Pending is now 42
+16:17:46:952 [debug] LinkTraverser.java:121 Thread-15: Pending is now 42
+16:17:46:953 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:953 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:953 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/tfoot.html
+16:17:46:953 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/tfoot.html
+16:17:46:953 [debug] LinkTraverser.java:121 Thread-15: Pending is now 43
+16:17:46:953 [debug] LinkTraverser.java:121 Thread-15: Pending is now 43
+16:17:46:953 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:953 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:953 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/tbody.html
+16:17:46:953 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/tbody.html
+16:17:46:953 [debug] LinkTraverser.java:121 Thread-15: Pending is now 44
+16:17:46:953 [debug] LinkTraverser.java:121 Thread-15: Pending is now 44
+16:17:46:953 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:953 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:953 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/tr.html
+16:17:46:953 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/tr.html
+16:17:46:954 [debug] LinkTraverser.java:121 Thread-15: Pending is now 45
+16:17:46:954 [debug] LinkTraverser.java:121 Thread-15: Pending is now 45
+16:17:46:954 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:954 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:954 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/td.html
+16:17:46:954 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/td.html
+16:17:46:954 [debug] LinkTraverser.java:121 Thread-15: Pending is now 46
+16:17:46:954 [debug] LinkTraverser.java:121 Thread-15: Pending is now 46
+16:17:46:954 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:954 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:954 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/th.html
+16:17:46:954 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/tables/th.html
+16:17:46:954 [debug] LinkTraverser.java:121 Thread-15: Pending is now 47
+16:17:46:954 [debug] LinkTraverser.java:121 Thread-15: Pending is now 47
+16:17:46:954 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:954 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:955 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/forms/form.html
+16:17:46:955 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/forms/form.html
+16:17:46:955 [debug] LinkTraverser.java:121 Thread-15: Pending is now 48
+16:17:46:955 [debug] LinkTraverser.java:121 Thread-15: Pending is now 48
+16:17:46:955 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:955 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:955 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/forms/button.html
+16:17:46:955 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/forms/button.html
+16:17:46:955 [debug] LinkTraverser.java:121 Thread-15: Pending is now 49
+16:17:46:955 [debug] LinkTraverser.java:121 Thread-15: Pending is now 49
+16:17:46:955 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:955 [debug] LinkTraverser.java:89 Thread-15: Worker will be executed
+16:17:46:955 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/forms/fieldset.html
+16:17:46:955 [debug] LinkTraverser.java:73 Thread-15: Worker created for http://htmlhelp.com/reference/html40/forms/fieldset.html
+16:17:46:955 [debug] LinkTraverser.java:121 Thread-15: Pending is now 50
+16:17:46:955 [debug] LinkTraverser.java:121 Thread-15: Pending is now 50
+16:17:46:960 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/olist.html will be parsed
+16:17:46:960 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/olist.html will be parsed
+16:17:46:967 [debug] LinkTraverser.java:130 Thread-15: Pending is now 49
+16:17:46:967 [debug] LinkTraverser.java:130 Thread-15: Pending is now 49
+16:17:46:967 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/olist.html
+16:17:46:967 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/olist.html
+16:17:47:180 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/head/head.html will be parsed
+16:17:47:180 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/head/head.html will be parsed
+16:17:47:180 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/alist.html will be parsed
+16:17:47:180 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/alist.html will be parsed
+16:17:47:189 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/html/body.html will be parsed
+16:17:47:189 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/html/body.html will be parsed
+16:17:47:190 [debug] LinkTraverser.java:130 Thread-11: Pending is now 48
+16:17:47:190 [debug] LinkTraverser.java:130 Thread-11: Pending is now 48
+16:17:47:190 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/alist.html
+16:17:47:190 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/alist.html
+16:17:47:190 [debug] LinkTraverser.java:130 Thread-13: Pending is now 47
+16:17:47:190 [debug] LinkTraverser.java:130 Thread-13: Pending is now 47
+16:17:47:191 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/head/head.html
+16:17:47:191 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/head/head.html
+16:17:47:191 [debug] LinkTraverser.java:130 Thread-12: Pending is now 46
+16:17:47:191 [debug] LinkTraverser.java:130 Thread-12: Pending is now 46
+16:17:47:191 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/html/body.html
+16:17:47:191 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/html/body.html
+16:17:47:191 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/html/html.html will be parsed
+16:17:47:191 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/html/html.html will be parsed
+16:17:47:192 [debug] LinkTraverser.java:130 Thread-14: Pending is now 45
+16:17:47:192 [debug] LinkTraverser.java:130 Thread-14: Pending is now 45
+16:17:47:192 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/html/html.html
+16:17:47:192 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/html/html.html
+16:17:47:206 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/frames/frameset.html will be parsed
+16:17:47:206 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/frames/frameset.html will be parsed
+16:17:47:207 [debug] LinkTraverser.java:130 Thread-15: Pending is now 44
+16:17:47:207 [debug] LinkTraverser.java:130 Thread-15: Pending is now 44
+16:17:47:208 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/frames/frameset.html
+16:17:47:208 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/frames/frameset.html
+16:17:47:431 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/block/isindex.html will be parsed
+16:17:47:431 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/block/isindex.html will be parsed
+16:17:47:432 [debug] LinkTraverser.java:130 Thread-13: Pending is now 43
+16:17:47:432 [debug] LinkTraverser.java:130 Thread-13: Pending is now 43
+16:17:47:432 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/block/isindex.html
+16:17:47:432 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/block/isindex.html
+16:17:47:437 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/head/base.html will be parsed
+16:17:47:437 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/head/base.html will be parsed
+16:17:47:440 [debug] LinkTraverser.java:130 Thread-11: Pending is now 42
+16:17:47:440 [debug] LinkTraverser.java:130 Thread-11: Pending is now 42
+16:17:47:440 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/head/base.html
+16:17:47:440 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/head/base.html
+16:17:47:508 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/head/link.html will be parsed
+16:17:47:508 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/head/link.html will be parsed
+16:17:47:511 [debug] LinkTraverser.java:130 Thread-12: Pending is now 41
+16:17:47:511 [debug] LinkTraverser.java:130 Thread-12: Pending is now 41
+16:17:47:511 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/head/link.html
+16:17:47:511 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/head/link.html
+16:17:47:513 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/head/meta.html will be parsed
+16:17:47:513 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/head/meta.html will be parsed
+16:17:47:515 [debug] LinkTraverser.java:130 Thread-14: Pending is now 40
+16:17:47:515 [debug] LinkTraverser.java:130 Thread-14: Pending is now 40
+16:17:47:515 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/head/meta.html
+16:17:47:515 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/head/meta.html
+16:17:47:518 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/special/script.html will be parsed
+16:17:47:518 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/special/script.html will be parsed
+16:17:47:519 [debug] LinkTraverser.java:130 Thread-15: Pending is now 39
+16:17:47:519 [debug] LinkTraverser.java:130 Thread-15: Pending is now 39
+16:17:47:519 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/special/script.html
+16:17:47:519 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/special/script.html
+16:17:47:670 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/head/style.html will be parsed
+16:17:47:670 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/head/style.html will be parsed
+16:17:47:672 [debug] LinkTraverser.java:130 Thread-13: Pending is now 38
+16:17:47:672 [debug] LinkTraverser.java:130 Thread-13: Pending is now 38
+16:17:47:672 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/head/style.html
+16:17:47:672 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/head/style.html
+16:17:47:673 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/head/title.html will be parsed
+16:17:47:673 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/head/title.html will be parsed
+16:17:47:674 [debug] LinkTraverser.java:130 Thread-11: Pending is now 37
+16:17:47:674 [debug] LinkTraverser.java:130 Thread-11: Pending is now 37
+16:17:47:675 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/head/title.html
+16:17:47:675 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/head/title.html
+16:17:47:758 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/blockquote.html will be parsed
+16:17:47:758 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/blockquote.html will be parsed
+16:17:47:760 [debug] LinkTraverser.java:130 Thread-14: Pending is now 36
+16:17:47:760 [debug] LinkTraverser.java:130 Thread-14: Pending is now 36
+16:17:47:761 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/blockquote.html
+16:17:47:761 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/blockquote.html
+16:17:47:763 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/center.html will be parsed
+16:17:47:763 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/center.html will be parsed
+16:17:47:764 [debug] LinkTraverser.java:130 Thread-15: Pending is now 35
+16:17:47:764 [debug] LinkTraverser.java:130 Thread-15: Pending is now 35
+16:17:47:764 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/center.html
+16:17:47:764 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/center.html
+16:17:47:909 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/phrase/del.html will be parsed
+16:17:47:909 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/phrase/del.html will be parsed
+16:17:47:910 [debug] LinkTraverser.java:130 Thread-13: Pending is now 34
+16:17:47:910 [debug] LinkTraverser.java:130 Thread-13: Pending is now 34
+16:17:47:910 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/phrase/del.html
+16:17:47:910 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/phrase/del.html
+16:17:47:922 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/block/div.html will be parsed
+16:17:47:922 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/block/div.html will be parsed
+16:17:47:923 [debug] LinkTraverser.java:130 Thread-11: Pending is now 33
+16:17:47:923 [debug] LinkTraverser.java:130 Thread-11: Pending is now 33
+16:17:47:923 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/block/div.html
+16:17:47:923 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/block/div.html
+16:17:47:998 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/h1.html will be parsed
+16:17:47:998 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/h1.html will be parsed
+16:17:48:000 [debug] LinkTraverser.java:130 Thread-14: Pending is now 32
+16:17:48:000 [debug] LinkTraverser.java:130 Thread-14: Pending is now 32
+16:17:48:000 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/h1.html
+16:17:48:000 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/h1.html
+16:17:48:004 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/h2.html will be parsed
+16:17:48:004 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/h2.html will be parsed
+16:17:48:005 [debug] LinkTraverser.java:130 Thread-15: Pending is now 31
+16:17:48:005 [debug] LinkTraverser.java:130 Thread-15: Pending is now 31
+16:17:48:005 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/h2.html
+16:17:48:005 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/h2.html
+16:17:48:101 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/block/address.html will be parsed
+16:17:48:101 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/block/address.html will be parsed
+16:17:48:103 [debug] LinkTraverser.java:130 Thread-12: Pending is now 30
+16:17:48:103 [debug] LinkTraverser.java:130 Thread-12: Pending is now 30
+16:17:48:103 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/block/address.html
+16:17:48:103 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/block/address.html
+16:17:48:145 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/block/h3.html will be parsed
+16:17:48:145 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/block/h3.html will be parsed
+16:17:48:146 [debug] LinkTraverser.java:130 Thread-13: Pending is now 29
+16:17:48:146 [debug] LinkTraverser.java:130 Thread-13: Pending is now 29
+16:17:48:146 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/block/h3.html
+16:17:48:146 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/block/h3.html
+16:17:48:158 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/block/h4.html will be parsed
+16:17:48:158 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/block/h4.html will be parsed
+16:17:48:159 [debug] LinkTraverser.java:130 Thread-11: Pending is now 28
+16:17:48:159 [debug] LinkTraverser.java:130 Thread-11: Pending is now 28
+16:17:48:159 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/block/h4.html
+16:17:48:159 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/block/h4.html
+16:17:48:240 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/h5.html will be parsed
+16:17:48:240 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/h5.html will be parsed
+16:17:48:241 [debug] LinkTraverser.java:130 Thread-14: Pending is now 27
+16:17:48:241 [debug] LinkTraverser.java:130 Thread-14: Pending is now 27
+16:17:48:241 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/h5.html
+16:17:48:241 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/h5.html
+16:17:48:243 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/h6.html will be parsed
+16:17:48:243 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/h6.html will be parsed
+16:17:48:244 [debug] LinkTraverser.java:130 Thread-15: Pending is now 26
+16:17:48:244 [debug] LinkTraverser.java:130 Thread-15: Pending is now 26
+16:17:48:244 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/h6.html
+16:17:48:244 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/h6.html
+16:17:48:339 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/block/hr.html will be parsed
+16:17:48:339 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/block/hr.html will be parsed
+16:17:48:340 [debug] LinkTraverser.java:130 Thread-12: Pending is now 25
+16:17:48:340 [debug] LinkTraverser.java:130 Thread-12: Pending is now 25
+16:17:48:341 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/block/hr.html
+16:17:48:341 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/block/hr.html
+16:17:48:381 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/phrase/ins.html will be parsed
+16:17:48:381 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/phrase/ins.html will be parsed
+16:17:48:382 [debug] LinkTraverser.java:130 Thread-13: Pending is now 24
+16:17:48:382 [debug] LinkTraverser.java:130 Thread-13: Pending is now 24
+16:17:48:383 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/phrase/ins.html
+16:17:48:383 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/phrase/ins.html
+16:17:48:399 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/block/noscript.html will be parsed
+16:17:48:399 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/block/noscript.html will be parsed
+16:17:48:400 [debug] LinkTraverser.java:130 Thread-11: Pending is now 23
+16:17:48:400 [debug] LinkTraverser.java:130 Thread-11: Pending is now 23
+16:17:48:400 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/block/noscript.html
+16:17:48:400 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/block/noscript.html
+16:17:48:481 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/pre.html will be parsed
+16:17:48:481 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/block/pre.html will be parsed
+16:17:48:483 [debug] LinkTraverser.java:130 Thread-15: Pending is now 22
+16:17:48:483 [debug] LinkTraverser.java:130 Thread-15: Pending is now 22
+16:17:48:484 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/pre.html
+16:17:48:484 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/block/pre.html
+16:17:48:489 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/p.html will be parsed
+16:17:48:489 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/block/p.html will be parsed
+16:17:48:491 [debug] LinkTraverser.java:130 Thread-14: Pending is now 21
+16:17:48:491 [debug] LinkTraverser.java:130 Thread-14: Pending is now 21
+16:17:48:491 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/p.html
+16:17:48:491 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/block/p.html
+16:17:48:575 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/lists/dir.html will be parsed
+16:17:48:575 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/lists/dir.html will be parsed
+16:17:48:584 [debug] LinkTraverser.java:130 Thread-12: Pending is now 20
+16:17:48:584 [debug] LinkTraverser.java:130 Thread-12: Pending is now 20
+16:17:48:585 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/lists/dir.html
+16:17:48:585 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/lists/dir.html
+16:17:48:621 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/lists/dl.html will be parsed
+16:17:48:621 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/lists/dl.html will be parsed
+16:17:48:623 [debug] LinkTraverser.java:130 Thread-13: Pending is now 19
+16:17:48:623 [debug] LinkTraverser.java:130 Thread-13: Pending is now 19
+16:17:48:623 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/lists/dl.html
+16:17:48:623 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/lists/dl.html
+16:17:48:637 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/lists/dt.html will be parsed
+16:17:48:637 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/lists/dt.html will be parsed
+16:17:48:637 [debug] LinkTraverser.java:130 Thread-11: Pending is now 18
+16:17:48:637 [debug] LinkTraverser.java:130 Thread-11: Pending is now 18
+16:17:48:637 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/lists/dt.html
+16:17:48:637 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/lists/dt.html
+16:17:48:718 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/lists/dd.html will be parsed
+16:17:48:718 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/lists/dd.html will be parsed
+16:17:48:719 [debug] LinkTraverser.java:130 Thread-15: Pending is now 17
+16:17:48:719 [debug] LinkTraverser.java:130 Thread-15: Pending is now 17
+16:17:48:719 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/lists/dd.html
+16:17:48:719 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/lists/dd.html
+16:17:48:728 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/lists/li.html will be parsed
+16:17:48:728 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/lists/li.html will be parsed
+16:17:48:729 [debug] LinkTraverser.java:130 Thread-14: Pending is now 16
+16:17:48:729 [debug] LinkTraverser.java:130 Thread-14: Pending is now 16
+16:17:48:729 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/lists/li.html
+16:17:48:729 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/lists/li.html
+16:17:48:819 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/lists/menu.html will be parsed
+16:17:48:819 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/lists/menu.html will be parsed
+16:17:48:819 [debug] LinkTraverser.java:130 Thread-12: Pending is now 15
+16:17:48:819 [debug] LinkTraverser.java:130 Thread-12: Pending is now 15
+16:17:48:819 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/lists/menu.html
+16:17:48:819 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/lists/menu.html
+16:17:48:858 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/lists/ol.html will be parsed
+16:17:48:858 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/lists/ol.html will be parsed
+16:17:48:859 [debug] LinkTraverser.java:130 Thread-13: Pending is now 14
+16:17:48:859 [debug] LinkTraverser.java:130 Thread-13: Pending is now 14
+16:17:48:860 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/lists/ol.html
+16:17:48:860 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/lists/ol.html
+16:17:48:870 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/lists/ul.html will be parsed
+16:17:48:870 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/lists/ul.html will be parsed
+16:17:48:871 [debug] LinkTraverser.java:130 Thread-11: Pending is now 13
+16:17:48:871 [debug] LinkTraverser.java:130 Thread-11: Pending is now 13
+16:17:48:871 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/lists/ul.html
+16:17:48:871 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/lists/ul.html
+16:17:48:965 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/tables/caption.html will be parsed
+16:17:48:965 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/tables/caption.html will be parsed
+16:17:48:966 [debug] LinkTraverser.java:130 Thread-14: Pending is now 12
+16:17:48:966 [debug] LinkTraverser.java:130 Thread-14: Pending is now 12
+16:17:48:967 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/tables/caption.html
+16:17:48:967 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/tables/caption.html
+16:17:49:036 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/tables/table.html will be parsed
+16:17:49:036 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/tables/table.html will be parsed
+16:17:49:040 [debug] LinkTraverser.java:130 Thread-15: Pending is now 11
+16:17:49:040 [debug] LinkTraverser.java:130 Thread-15: Pending is now 11
+16:17:49:040 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/tables/table.html
+16:17:49:040 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/tables/table.html
+16:17:49:097 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/tables/col.html will be parsed
+16:17:49:097 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/tables/col.html will be parsed
+16:17:49:099 [debug] LinkTraverser.java:130 Thread-13: Pending is now 10
+16:17:49:099 [debug] LinkTraverser.java:130 Thread-13: Pending is now 10
+16:17:49:099 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/tables/col.html
+16:17:49:099 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/tables/col.html
+16:17:49:107 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/tables/thead.html will be parsed
+16:17:49:107 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/tables/thead.html will be parsed
+16:17:49:108 [debug] LinkTraverser.java:130 Thread-11: Pending is now 9
+16:17:49:108 [debug] LinkTraverser.java:130 Thread-11: Pending is now 9
+16:17:49:108 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/tables/thead.html
+16:17:49:108 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/tables/thead.html
+16:17:49:127 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/tables/colgroup.html will be parsed
+16:17:49:127 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/tables/colgroup.html will be parsed
+16:17:49:130 [debug] LinkTraverser.java:130 Thread-12: Pending is now 8
+16:17:49:130 [debug] LinkTraverser.java:130 Thread-12: Pending is now 8
+16:17:49:130 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/tables/colgroup.html
+16:17:49:130 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/tables/colgroup.html
+16:17:49:204 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/tables/tfoot.html will be parsed
+16:17:49:204 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/tables/tfoot.html will be parsed
+16:17:49:206 [debug] LinkTraverser.java:130 Thread-14: Pending is now 7
+16:17:49:206 [debug] LinkTraverser.java:130 Thread-14: Pending is now 7
+16:17:49:206 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/tables/tfoot.html
+16:17:49:206 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/tables/tfoot.html
+16:17:49:276 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/tables/tbody.html will be parsed
+16:17:49:276 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/tables/tbody.html will be parsed
+16:17:49:278 [debug] LinkTraverser.java:130 Thread-15: Pending is now 6
+16:17:49:278 [debug] LinkTraverser.java:130 Thread-15: Pending is now 6
+16:17:49:278 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/tables/tbody.html
+16:17:49:278 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/tables/tbody.html
+16:17:49:336 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/tables/tr.html will be parsed
+16:17:49:336 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/tables/tr.html will be parsed
+16:17:49:337 [debug] LinkTraverser.java:130 Thread-13: Pending is now 5
+16:17:49:337 [debug] LinkTraverser.java:130 Thread-13: Pending is now 5
+16:17:49:338 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/tables/tr.html
+16:17:49:338 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/tables/tr.html
+16:17:49:422 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/tables/td.html will be parsed
+16:17:49:422 [debug] LinkTraverser.java:97 Thread-11: Path http://htmlhelp.com/reference/html40/tables/td.html will be parsed
+16:17:49:424 [debug] LinkTraverser.java:130 Thread-11: Pending is now 4
+16:17:49:424 [debug] LinkTraverser.java:130 Thread-11: Pending is now 4
+16:17:49:425 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/tables/td.html
+16:17:49:425 [debug] LinkTraverser.java:106 Thread-11: Worker finished http://htmlhelp.com/reference/html40/tables/td.html
+16:17:49:448 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/tables/th.html will be parsed
+16:17:49:448 [debug] LinkTraverser.java:97 Thread-12: Path http://htmlhelp.com/reference/html40/tables/th.html will be parsed
+16:17:49:450 [debug] LinkTraverser.java:130 Thread-12: Pending is now 3
+16:17:49:450 [debug] LinkTraverser.java:130 Thread-12: Pending is now 3
+16:17:49:450 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/tables/th.html
+16:17:49:450 [debug] LinkTraverser.java:106 Thread-12: Worker finished http://htmlhelp.com/reference/html40/tables/th.html
+16:17:49:515 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/forms/button.html will be parsed
+16:17:49:515 [debug] LinkTraverser.java:97 Thread-15: Path http://htmlhelp.com/reference/html40/forms/button.html will be parsed
+16:17:49:516 [debug] LinkTraverser.java:130 Thread-15: Pending is now 2
+16:17:49:516 [debug] LinkTraverser.java:130 Thread-15: Pending is now 2
+16:17:49:517 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/forms/button.html
+16:17:49:517 [debug] LinkTraverser.java:106 Thread-15: Worker finished http://htmlhelp.com/reference/html40/forms/button.html
+16:17:49:521 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/forms/form.html will be parsed
+16:17:49:521 [debug] LinkTraverser.java:97 Thread-14: Path http://htmlhelp.com/reference/html40/forms/form.html will be parsed
+16:17:49:524 [debug] LinkTraverser.java:130 Thread-14: Pending is now 1
+16:17:49:524 [debug] LinkTraverser.java:130 Thread-14: Pending is now 1
+16:17:49:525 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/forms/form.html
+16:17:49:525 [debug] LinkTraverser.java:106 Thread-14: Worker finished http://htmlhelp.com/reference/html40/forms/form.html
+16:17:49:573 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/forms/fieldset.html will be parsed
+16:17:49:573 [debug] LinkTraverser.java:97 Thread-13: Path http://htmlhelp.com/reference/html40/forms/fieldset.html will be parsed
+16:17:49:575 [debug] LinkTraverser.java:130 Thread-13: Pending is now 0
+16:17:49:575 [debug] LinkTraverser.java:130 Thread-13: Pending is now 0
+16:17:49:575 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/forms/fieldset.html
+16:17:49:575 [debug] LinkTraverser.java:106 Thread-13: Worker finished http://htmlhelp.com/reference/html40/forms/fieldset.html

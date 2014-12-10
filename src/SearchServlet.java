@@ -22,15 +22,13 @@ import org.eclipse.jetty.util.log.Logger;
 public class SearchServlet extends HttpServlet {
 	private static final String TITLE = "Welcome to ChaChing";
 	private static Logger log = Log.getRootLogger();
-	private LinkedList<String> messages;
 	private final ThreadSafeInvertedIndex index;
-	ArrayList<SearchResult> results;
+	private final ArrayList<SearchResult> results;
 	private static boolean firstTime = true;
 
 	public SearchServlet(ThreadSafeInvertedIndex index) {
 		super();
 		this.index = index;
-		messages = new LinkedList<>();
 		results = new ArrayList<>();
 	}
 
