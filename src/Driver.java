@@ -13,6 +13,8 @@ import org.apache.logging.log4j.Logger;
  * that the flag -d and a directory are entered. If flag -i is entered an output
  * directory will be included. If flag is included but no directory it will be
  * saved to "index.txt"
+ * 
+ * Example run config: -u http://logging.apache.org/log4j/1.2/apidocs/allclasses-noframe.html -t 5 -p
  */
 
 public class Driver {
