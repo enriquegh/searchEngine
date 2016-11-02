@@ -1,4 +1,6 @@
 language: java
+
 script: mvn -Dtest=Project4Test test
+
 jdk:
   - oraclejdk8
