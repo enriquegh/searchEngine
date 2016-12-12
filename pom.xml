@@ -39,7 +39,6 @@
                 <version>2.19.1</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/Project*Test.java</exclude>
                         <exclude>**/ThreadStressTest.java</exclude>
                     </excludes>
                 </configuration>
