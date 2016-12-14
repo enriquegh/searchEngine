@@ -58,7 +58,7 @@
         </Logger>
         
 
-        <Root level="DEBUG">
+        <Root level="OFF">
             <AppenderRef ref="Console" level="OFF" />
             <AppenderRef ref="FileLog" level="DEBUG"  />
         </Root>
