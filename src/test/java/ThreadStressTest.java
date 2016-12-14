@@ -88,6 +88,6 @@ public class ThreadStressTest {
     					"Benchmark: " + numThreads, writer.toString()));
     		}
 
-    		return (double) total / TIME_RUNS;
+		return (double) total / TIME_RUNS;
 	}
 }

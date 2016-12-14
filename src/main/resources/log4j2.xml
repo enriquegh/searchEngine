@@ -17,7 +17,7 @@
 
     <Loggers>
     
-        <Logger name="QueryParser" level="OFF">
+        <Logger name="QueryParser" level="ALL">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>
         </Logger>
@@ -32,7 +32,7 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="WorkQueue" level="OFF">
+        <Logger name="WorkQueue" level="ALL">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
@@ -47,7 +47,7 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="LinkTraverser" level="OFF">
+        <Logger name="LinkTraverser" level="ALL">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
@@ -58,9 +58,9 @@
         </Logger>
         
 
-        <Root level="OFF">
+        <Root level="DEBUG">
             <AppenderRef ref="Console" level="OFF" />
-            <AppenderRef ref="FileLog" level="OFF"  />
+            <AppenderRef ref="FileLog" level="DEBUG"  />
         </Root>
     </Loggers>
 </Configuration>
