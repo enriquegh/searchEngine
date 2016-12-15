@@ -1,8 +1,8 @@
 -- Testing if user already exists.
-SELECT username FROM Login_Users WHERE user = ?
+SELECT username FROM login_users WHERE user = ?
 
 -- Adding a new user to database.
-INSERT INTO Login_Users (username, password) VALUES (?, ?);
+INSERT INTO login_users (username, password) VALUES (?, ?);
 
 -- Testing if correct username and password provided.
-SELECT username FROM Login_Users WHERE username = ? AND password = ?
+SELECT username FROM login_users WHERE username = ? AND password = ?
