@@ -68,7 +68,6 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <!--<finalName>searchi</finalName>-->
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
