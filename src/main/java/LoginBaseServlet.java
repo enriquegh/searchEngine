@@ -96,14 +96,12 @@ public class LoginBaseServlet extends HttpServlet {
 		}
 
 		for(Cookie cookie : cookies) {
-			cookie.setValue("");
-			cookie.setMaxAge(0);
-			response.addCookie(cookie);
+			clearCookie(cookie,response);
 		}
 	}
 
-	protected void clearCookie(String cookieName, HttpServletResponse response) {
-		Cookie cookie = new Cookie(cookieName, null);
+	protected void clearCookie(Cookie cookie, HttpServletResponse response) {
+		cookie.setValue("");
 		cookie.setMaxAge(0);
 		response.addCookie(cookie);
 	}
