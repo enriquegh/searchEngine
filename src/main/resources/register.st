@@ -4,6 +4,6 @@ $if(nullError)$
     <p style="color: red;">$errorMessage$</p>
 $endif$
 
-$form()$
+$form(action,actionValue)$
 
 $end(date)$

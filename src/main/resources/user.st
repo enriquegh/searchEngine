@@ -16,6 +16,6 @@ $if(logout)$
 
 $endif$
 
-$form()$
+$form(action,actionValue)$
 
 $end(date)$

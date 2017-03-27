@@ -14,29 +14,39 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.stringtemplate.v4.ST;
+import org.stringtemplate.v4.STGroup;
+import org.stringtemplate.v4.STRawGroupDir;
 
 /**
  * Provides base functionality to all servlets in this example.
  *
- * @see LoginServer
+ *
  */
 @SuppressWarnings("serial")
 public class LoginBaseServlet extends HttpServlet {
 
 	protected static Logger log = LogManager.getLogger();
 	protected static final LoginDatabaseHandler dbhandler = LoginDatabaseHandler.getInstance();
+	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+
 
 	protected void prepareResponse(String title, HttpServletResponse response) {
 		try {
 			PrintWriter writer = response.getWriter();
 
-			writer.printf("<!DOCTYPE html>%n%n");
-			writer.printf("<html lang=\"en\">%n%n");
-			writer.printf("<head>%n");
-			writer.printf("\t<title>%s</title>%n", title);
-			writer.printf("\t<meta charset=\"utf-8\">%n");
-			writer.printf("</head>%n%n");
-			writer.printf("<body>%n%n");
+//			writer.printf("<!DOCTYPE html>%n%n");
+//			writer.printf("<html lang=\"en\">%n%n");
+//			writer.printf("<head>%n");
+//			writer.printf("\t<title>%s</title>%n", title);
+//			writer.printf("\t<meta charset=\"utf-8\">%n");
+//			writer.printf("</head>%n%n");
+//			writer.printf("<body>%n%n");
+			ST start = templates.getInstanceOf("start");
+			start.add("title",title);
+			writer.print(start.render());
+
+
 		}
 		catch (IOException ex) {
 			log.warn("Unable to prepare HTTP response.");
@@ -48,14 +58,16 @@ public class LoginBaseServlet extends HttpServlet {
 		try {
 			PrintWriter writer = response.getWriter();
 
-			writer.printf("%n");
-			writer.printf("<p style=\"font-size: 10pt; font-style: italic;\">");
-			writer.printf("Last updated at %s.", getDate());
-			writer.printf("</p>%n%n");
-
-			writer.printf("</body>%n");
-			writer.printf("</html>%n");
-
+			ST end = templates.getInstanceOf("end");
+			end.add("date",getDate());
+//			writer.printf("%n");
+//			writer.printf("<p style=\"font-size: 10pt; font-style: italic;\">");
+//			writer.printf("Last updated at %s.", getDate());
+//			writer.printf("</p>%n%n");
+//
+//			writer.printf("</body>%n");
+//			writer.printf("</html>%n");
+            writer.print(end.render());
 			writer.flush();
 
 			response.setStatus(HttpServletResponse.SC_OK);

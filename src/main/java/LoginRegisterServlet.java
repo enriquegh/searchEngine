@@ -1,3 +1,7 @@
+import org.stringtemplate.v4.ST;
+import org.stringtemplate.v4.STGroup;
+import org.stringtemplate.v4.STRawGroupDir;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -8,22 +12,34 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class LoginRegisterServlet extends LoginBaseServlet {
 
+	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException {
 
-		prepareResponse("Register New User", response);
+//		prepareResponse("Register New User", response);
+
+        ST register = templates.getInstanceOf("register");
+        register.add("title","Register New User");
+        register.add("nullError",false);
+        register.add("date",getDate());
 
 		PrintWriter out = response.getWriter();
 		String error = request.getParameter("error");
 
 		if(error != null) {
 			String errorMessage = getStatusMessage(error);
-			out.println("<p style=\"color: red;\">" + errorMessage + "</p>");
+			register.add("nullError",true);
+			register.add("errorMessage",errorMessage);
+//			out.println("<p style=\"color: red;\">" + errorMessage + "</p>");
 		}
 
-		printForm(out);
-		finishResponse(response);
+		register.add("action","/register");
+		register.add("actionValue","Register");
+        out.print(register.render());
+//		printForm(out);
+//		finishResponse(response);
 	}
 
 	@Override

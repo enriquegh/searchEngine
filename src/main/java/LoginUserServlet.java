@@ -1,3 +1,7 @@
+import org.stringtemplate.v4.ST;
+import org.stringtemplate.v4.STGroup;
+import org.stringtemplate.v4.STRawGroupDir;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -8,14 +12,24 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Handles login requests.
  *
- * @see LoginServer
+ *
  */
 @SuppressWarnings("serial")
 public class LoginUserServlet extends LoginBaseServlet {
 
+	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+
+
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		prepareResponse("Login", response);
+
+		ST user = templates.getInstanceOf("user");
+		user.add("title","Login");
+		user.add("nullError",false);
+        user.add("date",getDate());
+
+
+//		prepareResponse("Login", response);
 
 		PrintWriter out = response.getWriter();
 		String error = request.getParameter("error");
@@ -30,21 +44,31 @@ public class LoginUserServlet extends LoginBaseServlet {
 			}
 
 			String errorMessage = getStatusMessage(code);
-			out.println("<p style=\"color: red;\">" + errorMessage + "</p>");
+//			out.println("<p style=\"color: red;\">" + errorMessage + "</p>");
+			user.add("nullError",true);
+			user.add("errorMessage",errorMessage);
 		}
 
-		if (request.getParameter("newuser") != null) {
-			out.println("<p>Registration was successful!");
-			out.println("Login with your new username and password below.</p>");
-		}
+		user.add("newUser", request.getParameter("newuser") != null);
 
+
+//		if (request.getParameter("newuser") != null) {
+//			out.println("<p>Registration was successful!");
+//			out.println("Login with your new username and password below.</p>");
+//		}
+//
 		if (request.getParameter("logout") != null) {
 			clearCookies(request, response);
-			out.println("<p>Successfully logged out.</p>");
+            user.add("logout", true);
 		}
 
-		printForm(out);
-		finishResponse(response);
+        user.add("action","/login");
+        user.add("actionValue","Login");
+        user.add("registerLink",true);
+
+		out.print(user.render());
+//		printForm(out);
+//		finishResponse(response);
 	}
 
 	@Override

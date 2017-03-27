@@ -1,7 +1,7 @@
 <html>
     <head><title>$title$</title></head>
     <body background="http://cs.usfca.edu/usf-in-pictures/IMG_3515.jpg" link="white" vlink="#A5AAB6">
-        <p><b>Login:</b><a href="/welcome" style="color: white">Here</a></p>
+        <p><b>Login: </b><a href="/welcome" style="color: white">Here</a></p>
         <center>
 
             <h1> ChaChing </h1>

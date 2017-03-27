@@ -1,4 +1,4 @@
-    <form action="/login" method="post">
+    <form action="$action$" method="post">
         <table border="0">
             <tr>
                 <td>Usename:</td>
@@ -10,6 +10,8 @@
             </tr>
         </table>
 
-        <p><input type="submit" value="Login"></p>
+        <p><input type="submit" value="$actionValue$"></p>
     </form>
+    $if(registerLink)$
     <p>(<a href="/register">new user? register here.</a>)</p>
+    $endif$
