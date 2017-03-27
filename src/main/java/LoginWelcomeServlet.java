@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Handles display of user information.
  *
- * @see LoginServer
  */
 @SuppressWarnings("serial")
 public class LoginWelcomeServlet extends LoginBaseServlet {
@@ -24,18 +23,13 @@ public class LoginWelcomeServlet extends LoginBaseServlet {
 		String user = getUsername(request);
 
 		if (user != null) {
-//			prepareResponse("Welcome", response);
+
             ST welcome = templates.getInstanceOf("welcome");
 			PrintWriter out = response.getWriter();
 
             welcome.add("title","Welcome");
             welcome.add("user",user);
             welcome.add("date",getDate());
-//			out.println("<p>Hello " + user + "!</p>");
-//			out.println("<p><a href=\"/search\">Go Search</a></p>");
-//			out.println("<p><a href=\"/login?logout\">(logout)</a></p>");
-//
-//			finishResponse(response);
 
             out.print(welcome.render());
 		}

@@ -42,37 +42,22 @@ public class SearchServlet extends HttpServlet {
 						 HttpServletResponse response) throws ServletException, IOException {
 
         ST search = templates.getInstanceOf("search");
+        PrintWriter out = response.getWriter();
 
-		response.setContentType("text/html");
+        response.setContentType("text/html");
 		response.setStatus(HttpServletResponse.SC_OK);
 		log.info("MessageServlet ID " + this.hashCode()
 				+ " handling GET request.");
-		PrintWriter out = response.getWriter();
 
 		search.add("title",TITLE);
 		search.add("requestPath",request.getServletPath());
-//		out.printf("<html>%n");
-//		out.printf("<head><title>%s</title></head>%n", TITLE);
-//		out.printf("<body background=\"http://cs.usfca.edu/usf-in-pictures/IMG_3515.jpg\" link=\"white\" vlink=\"#A5AAB6\">%n");
-//		out.printf("<p><b>Login:</b><a href=\"/welcome\" style=\"color: white\">Here</a></p>");
-//		out.printf("<center>");
-//		out.printf("<h1>ChaChing</h1>%n%n");
-//		printSearchBar(request, response);
 
 		synchronized (results) {
 		    search.add("results",results);
 		    search.add("firstTime",firstTime);
 		    search.add("isSizeZero",results.size() == 0);
-//			for (SearchResult result : results) {
-//				out.printf("<p><a href= \"%s\">%s</a></p>%n%n", result.getPath(), result.getPath());
-//			}
-//			if (results.size() == 0 && !firstTime) {
-//				out.printf("<p>Yikes! Looks like there are no results for your query.</p>%n%n");
-//			}
 		}
-//		out.printf("</center>");
-//		out.printf("</body>%n");
-//		out.printf("</html>%n");
+
         out.print(search.render());
 		firstTime = true;
 		response.setStatus(HttpServletResponse.SC_OK);
@@ -98,23 +83,5 @@ public class SearchServlet extends HttpServlet {
 
 		response.setStatus(HttpServletResponse.SC_OK);
 		response.sendRedirect(request.getServletPath());
-	}
-
-	
-	private static void printSearchBar(HttpServletRequest request,
-			HttpServletResponse response) throws IOException {
-		PrintWriter out = response.getWriter();
-		out.printf("<form method=\"post\" action=\"%s\">%n",
-				request.getServletPath());
-		out.printf("<input type=\"text\" name=\"searchBar\" maxlength=\"50\" size=\"20\">%n");
-		out.printf("<p><input type=\"submit\" value=\"Search\"></p>\n%n");
-		out.printf("</form>\n%n");
-		
-	}
-
-	private static String getDate() {
-		String format = "hh:mm a 'on' EEEE, MMMM dd yyyy";
-		DateFormat formatter = new SimpleDateFormat(format);
-		return formatter.format(new Date());
 	}
 }

@@ -30,56 +30,6 @@ public class LoginBaseServlet extends HttpServlet {
 	protected static final LoginDatabaseHandler dbhandler = LoginDatabaseHandler.getInstance();
 	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
 
-
-	protected void prepareResponse(String title, HttpServletResponse response) {
-		try {
-			PrintWriter writer = response.getWriter();
-
-//			writer.printf("<!DOCTYPE html>%n%n");
-//			writer.printf("<html lang=\"en\">%n%n");
-//			writer.printf("<head>%n");
-//			writer.printf("\t<title>%s</title>%n", title);
-//			writer.printf("\t<meta charset=\"utf-8\">%n");
-//			writer.printf("</head>%n%n");
-//			writer.printf("<body>%n%n");
-			ST start = templates.getInstanceOf("start");
-			start.add("title",title);
-			writer.print(start.render());
-
-
-		}
-		catch (IOException ex) {
-			log.warn("Unable to prepare HTTP response.");
-			return;
-		}
-	}
-
-	protected void finishResponse(HttpServletResponse response) {
-		try {
-			PrintWriter writer = response.getWriter();
-
-			ST end = templates.getInstanceOf("end");
-			end.add("date",getDate());
-//			writer.printf("%n");
-//			writer.printf("<p style=\"font-size: 10pt; font-style: italic;\">");
-//			writer.printf("Last updated at %s.", getDate());
-//			writer.printf("</p>%n%n");
-//
-//			writer.printf("</body>%n");
-//			writer.printf("</html>%n");
-            writer.print(end.render());
-			writer.flush();
-
-			response.setStatus(HttpServletResponse.SC_OK);
-			response.flushBuffer();
-		}
-		catch (IOException ex) {
-			log.warn("Unable to finish HTTP response.");
-			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-			return;
-		}
-	}
-
 	protected String getDate() {
 		String format = "hh:mm a 'on' EEE, MMM dd, yyyy";
 		DateFormat dateFormat = new SimpleDateFormat(format);

@@ -28,9 +28,6 @@ public class LoginUserServlet extends LoginBaseServlet {
 		user.add("nullError",false);
         user.add("date",getDate());
 
-
-//		prepareResponse("Login", response);
-
 		PrintWriter out = response.getWriter();
 		String error = request.getParameter("error");
 		int code = 0;
@@ -44,19 +41,12 @@ public class LoginUserServlet extends LoginBaseServlet {
 			}
 
 			String errorMessage = getStatusMessage(code);
-//			out.println("<p style=\"color: red;\">" + errorMessage + "</p>");
 			user.add("nullError",true);
 			user.add("errorMessage",errorMessage);
 		}
 
 		user.add("newUser", request.getParameter("newuser") != null);
 
-
-//		if (request.getParameter("newuser") != null) {
-//			out.println("<p>Registration was successful!");
-//			out.println("Login with your new username and password below.</p>");
-//		}
-//
 		if (request.getParameter("logout") != null) {
 			clearCookies(request, response);
             user.add("logout", true);
@@ -67,8 +57,6 @@ public class LoginUserServlet extends LoginBaseServlet {
         user.add("registerLink",true);
 
 		out.print(user.render());
-//		printForm(out);
-//		finishResponse(response);
 	}
 
 	@Override
@@ -94,25 +82,5 @@ public class LoginUserServlet extends LoginBaseServlet {
 		catch (Exception ex) {
 			log.error("Unable to process login form.", ex);
 		}
-	}
-
-	private void printForm(PrintWriter out) {
-		assert out != null;
-
-		out.println("<form action=\"/login\" method=\"post\">");
-		out.println("<table border=\"0\">");
-		out.println("\t<tr>");
-		out.println("\t\t<td>Usename:</td>");
-		out.println("\t\t<td><input type=\"text\" name=\"user\" size=\"30\"></td>");
-		out.println("\t</tr>");
-		out.println("\t<tr>");
-		out.println("\t\t<td>Password:</td>");
-		out.println("\t\t<td><input type=\"password\" name=\"pass\" size=\"30\"></td>");
-		out.println("</tr>");
-		out.println("</table>");
-		out.println("<p><input type=\"submit\" value=\"Login\"></p>");
-		out.println("</form>");
-
-		out.println("<p>(<a href=\"/register\">new user? register here.</a>)</p>");
 	}
 }
