@@ -38,9 +38,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
-                    <excludes>
-                        <exclude>**/ThreadStressTest.java</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
 
