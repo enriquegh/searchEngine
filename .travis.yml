@@ -1,12 +1,11 @@
 language: java
-
 sudo: required
-
-script: "mvn cobertura:cobertura"
+script: mvn cobertura:cobertura
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
-
+- bash <(curl -s https://codecov.io/bash)
+notifications:
+  slack:
+    secure: jfPkHPNkzeCetJP0RRhkyXtSjBWFGuYfvpeJ2vUzhcP38DHdyYNRWfstcE3mb7qp8VJcecmmyJZJ65s/s+rGcpaHTtHv4GsAFqKuySlya18d9/E1q8LOYisF6rKq/zgjbfyJhDuUQ7TCX8U/KiymlvEVaklzRRPpQdRGX53JbX0lPSmbF3jlk6XSV6gPhNihoymjgLiXFVoBMjAcPIMgx+N32CAyItgq8FOdaQ44njP5BFST+2xoRxlpdfeITD56n+eRHbFPwLL1qeyYaAmrVNg61EmjByFJezwm1GiETKCS2RQn55m69w2fysXafc2vqbNA1TfFEI/ZNb6VgK0N1KLN0nzXVdumFl6jX69udyhEMpRdEd6IEtjuPwtAB4kBLxd8zDAgzyD2qbdI9ylJnDxbdSEmf3SQ9pEhWXoeT1g9uaVkpAthZ8ycbaz8bJ5tTNkJ+XBddJdVOj8uAr3KKrouhZ9wSUNarFrxhRB3LzaUy1k39nfXZeyE/GHYxDRFITiP4MLgsgy6Pe7IOfsVzqs8DnwJ+DEni+oF5ciyKyH9PQ7QU8CKhlOfKbY6P/tsaaDFTqdPfwODTRQs1WiSm0/W3rqVvfxd+RRcr+/8Cf2v2WcPbD5uL7Fnl3BDfSbdhMLFuGOvTSILBIIktWsfnG7I3nzTjkSUzCokDS0KjCU=
+  email: false
