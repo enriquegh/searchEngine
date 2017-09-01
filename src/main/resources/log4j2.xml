@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Configuration status="WARN">
+<Configuration status="OFF">
     <Appenders>
 
         <Console name="Console" target="SYSTEM_OUT">
@@ -17,12 +17,17 @@
 
     <Loggers>
     
-        <Logger name="QueryParser" level="ALL">
+        <Logger name="ThreadSafeQueryParser" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>
         </Logger>
 
-        <Logger name="InvertedIndex" level="OFF">
+        <Logger name="ReadWriteLock" level="OFF">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>
+        </Logger>
+
+        <Logger name="ThreadSafeInvertedIndex" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
@@ -32,14 +37,14 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="WorkQueue" level="ALL">
+        <Logger name="WorkQueue" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
         <Logger name="ThreadSafeInvertedIndexBuilder" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
-            <AppenderRef ref="FileLog" level="ALL"/>          
+            <AppenderRef ref="FileLog" level="DEBUG"/>
         </Logger>
         
         <Logger name="Driver" level="OFF">
@@ -47,7 +52,7 @@
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
         
-        <Logger name="LinkTraverser" level="ALL">
+        <Logger name="LinkTraverser" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
             <AppenderRef ref="FileLog" level="ALL"/>          
         </Logger>
@@ -60,7 +65,7 @@
 
         <Root level="OFF">
             <AppenderRef ref="Console" level="OFF" />
-            <AppenderRef ref="FileLog" level="DEBUG"  />
+            <AppenderRef ref="FileLog" level="OFF"  />
         </Root>
     </Loggers>
 </Configuration>
