@@ -1,19 +1,11 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.MalformedURLException;
-import java.net.Socket;
 import java.net.URL;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
+import okhttp3.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,29 +31,24 @@ public class HTTPFetcher {
 	private static Logger logger = LogManager.getLogger();
 
 	/**
-	 * Will connect to the web server and fetch the URL using the HTTP request
-	 * provided. It would be more efficient to operate on each line as returned
+	 * Will fetch data from Response provided.
+	 * It would be more efficient to operate on each line as returned
 	 * instead of storing the entire result as a list.
-	 * 
+	 *
 	 * @param url
 	 *            - url to fetch
-	 * @param request
-	 *            - full HTTP request
-	 * 
+	 * @param response
+	 *            - full HTTP response
+	 *
 	 * @return the lines read from the web server
-	 * 
+	 *
 	 * @throws IOException
 	 *
 	 */
-	public static List<String> fetchLines(URL url, String request) {
+	public static Object fetchLines(URL url, Response response) {
 		ArrayList<String> lines = new ArrayList<>();
 
-		try (Socket socket = new Socket(url.getHost(), PORT);
-				BufferedReader reader = new BufferedReader(
-						new InputStreamReader(socket.getInputStream()));
-				PrintWriter writer = new PrintWriter(socket.getOutputStream());) {
-			writer.println(request);
-			writer.flush();
+		try (BufferedReader reader = new BufferedReader(response.body().charStream());) {
 
 			String line = null;
 
@@ -119,44 +106,54 @@ public class HTTPFetcher {
 
 	/**
 	 * Fetches the headers for the specified URL.
-	 * 
+	 *
 	 * @param url
 	 *            - url to fetch
 	 * @return headers as a single {@link String}
-	 * 
+	 *
 	 */
 	public static String fetchHeaders(String url) {
 		URL target;
-		List<String> lines = null;
+		Headers headers = null;
+		Response response = null;
 		try {
 			target = new URL(url);
-			String request = craftHTTPRequest(target, HTTP.HEAD);
-			lines = fetchLines(target, request);
+			Request request = craftHTTPRequest(target, HTTP.HEAD);
+			response = executeHTTP(request);
+			headers = response.headers();
+			response.close();
+
 		} catch (MalformedURLException e) {
 			logger.debug(e);
 		}
 
-		return String.join(System.lineSeparator(), lines);
+		return String.join(System.lineSeparator(), headers.toString());
 	}
 
 	/**
 	 * Fetches the headers and HTML for the specified URL.
-	 * 
+	 *
 	 * @param url
 	 *            - url to fetch
 	 * @return headers and HTML as a single {@link String}
-	 * 
-	 * @throws UnknownHostException
+	 *
 	 * @throws MalformedURLException
 	 * @throws IOException
 	 */
-	public static String fetchAll(String url) throws UnknownHostException,
-			MalformedURLException, IOException {
+	public static String fetchAll(String url) throws MalformedURLException, IOException {
 		URL target = new URL(url);
-		String request = craftHTTPRequest(target, HTTP.GET);
-		List<String> lines = fetchLines(target, request);
+		Request request = craftHTTPRequest(target, HTTP.GET);
+		Response response = executeHTTP(request);
+		Headers headers = response.headers();
 
-		return String.join(System.lineSeparator(), lines);
+		String headersString = String.join(System.lineSeparator(), headers.toString());
+
+		List<String> lines = (List<String>) fetchLines(target, response);
+
+		response.close();
+
+		String result = headersString + String.join(System.lineSeparator(), lines);
+		return result;
 	}
 
 	/**
@@ -169,93 +166,58 @@ public class HTTPFetcher {
 	 */
 	public static String fetchHTML(String url) {
 		URL target;
+		Response response = null;
 		try {
 			target = new URL(url);
-			String request = craftHTTPRequest(target, HTTP.GET);
-			List<String> lines = fetchLines(target, request);
-			int start = 0;
-			int end = lines.size();
+			Request request = craftHTTPRequest(target, HTTP.GET);
+			response = executeHTTP(request);
 
-			// Determines start of HTML versus headers.
-			while (!lines.get(start).trim().isEmpty() && (start < end)) {
-				start++;
-			}
 
 			// Double-check this is an HTML file.
-			Map<String, String> fields = parseHeaders(lines.subList(0,
-					start + 1));
-			String type = fields.get("Content-Type");
+			String type = response.header("Content-Type");
+			if (type != null && type.toLowerCase().contains("html")) {
 
-			if ((type != null) && type.toLowerCase().contains("html")) {
-				return String.join(System.lineSeparator(),
-						lines.subList(start + 1, end));
+				List<String> lines = (List<String>) fetchLines(target, response);
+				return String.join(System.lineSeparator(), lines);
 			}
+
+
 		} catch (MalformedURLException e) {
 			logger.debug(e);
+		} finally {
+			response.close();
 		}
 
 		return null;
 	}
 
 	/**
-	 * Helper method that parses HTTP headers into a map where the key is the
-	 * field name and the value is the field value. The status code will be
-	 * stored under the key "Status".
-	 * 
-	 * @param headers
-	 *            - HTTP/1.1 header lines
-	 * @return field names mapped to values if the headers are properly
-	 *         formatted
+	 * Makes a new HTTP call from Request received
+	 *
+	 * @param request
+	 *            - Request to be completed
+	 * @return {@link Response}
+	 *
 	 */
-	public static Map<String, String> parseHeaders(List<String> headers) {
-		Map<String, String> fields = new HashMap<>();
+	private static Response executeHTTP(Request request) {
 
-		if ((headers.size() > 0) && headers.get(0).startsWith(version)) {
-			fields.put("Status", headers.get(0).substring(version.length())
-					.trim());
+		try {
 
-			for (String line : headers.subList(1, headers.size())) {
-				String[] pair = line.split(":", 2);
+			Response response = client.newCall(request).execute();
+			return response;
 
-				if (pair.length == 2) {
-					fields.put(pair[0].trim(), pair[1].trim());
-				}
-			}
+		} catch (IOException e) {
+			logger.debug(e.getMessage());
+
 		}
-
-		return fields;
+		return null;
 	}
 
-	/**
-	 * Convenience method to get the header field names mapped to their values
-	 * for the specified URL.
-	 * 
-	 * @param url
-	 *            - url to fetch
-	 * @return field names mapped to values if the headers are properly
-	 *         formatted
-	 * 
-	 * @throws UnknownHostException
-	 * @throws MalformedURLException
-	 * @throws IOException
-	 */
-	public static Map<String, String> getHeaderFields(String url)
-			throws UnknownHostException, MalformedURLException, IOException {
-		URL target = new URL(url);
-		String request = craftHTTPRequest(target, HTTP.HEAD);
-		List<String> lines = fetchLines(target, request);
-
-		return parseHeaders(lines);
-	}
 
 	public static void main(String[] args) throws Exception {
-		String url = "http://www.cs.usfca.edu/~sjengle/archived.html";
+		String url = "https://www.cs.usfca.edu/~sjengle/archived.html";
 		System.out.println("***** HEADERS *****");
 		System.out.println(fetchHeaders(url));
-		System.out.println();
-
-		System.out.println("***** FIELDS *****");
-		System.out.println(getHeaderFields(url));
 		System.out.println();
 
 		System.out.println("***** HEADERS and HTML *****");
@@ -266,7 +228,7 @@ public class HTTPFetcher {
 		System.out.println(fetchHTML(url));
 		System.out.println();
 
-		String image = "http://www.cs.usfca.edu/~sjengle/images/olivetrees.jpg";
+		String image = "https://www.cs.usfca.edu/~sjengle/images/olivetrees.jpg";
 
 		System.out.println("**** IMAGE HEADERS *****");
 		System.out.println(fetchHeaders(image));
