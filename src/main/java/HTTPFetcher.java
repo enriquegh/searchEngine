@@ -11,6 +11,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,6 +32,9 @@ public class HTTPFetcher {
 	public static enum HTTP {
 		OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
 	};
+
+	/** HTTP client Singleton that will be reused */
+	private static OkHttpClient client = new OkHttpClient();
 
 	private static Logger logger = LogManager.getLogger();
 
@@ -69,27 +75,46 @@ public class HTTPFetcher {
 		return lines;
 	}
 
+
 	/**
-	 * Crafts a minimal HTTP/1.1 request for the provided method.
-	 * 
+	 * Crafts an HTTP request for the provided method.
+	 *
 	 * @param url
 	 *            - url to fetch
 	 * @param type
 	 *            - HTTP method to use
-	 * 
-	 * @return HTTP/1.1 request
-	 * 
+	 *
+	 * @param body
+	 * 			  - body to be sent
+	 *
+	 * @return Request instance
+	 *
 	 * @see {@link HTTP}
+	 * @see {@link Request}
 	 */
-	public static String craftHTTPRequest(URL url, HTTP type) {
-		String host = url.getHost();
-		String resource = url.getFile().isEmpty() ? "/" : url.getFile();
+	public static Request craftHTTPRequest(URL url, HTTP type, RequestBody body) {
 
-		// The specification is specific about where to use a new line
-		// versus a carriage return!
-		return String.format("%s %s %s\r\n" + "Host: %s\r\n"
-				+ "Connection: close\r\n" + "\r\n", type.name(), resource,
-				version, host);
+		return new Request.Builder().url(url).method(type.name(),body).build();
+
+	}
+
+	/**
+	 * Crafts an HTTP request for the provided method.
+	 *
+	 * @param url
+	 *            - url to fetch
+	 * @param type
+	 *            - HTTP method to use
+	 *
+	 * @return Request instance
+	 *
+	 * @see {@link HTTP}
+	 * @see {@link Request}
+	 */
+	public static Request craftHTTPRequest(URL url, HTTP type) {
+
+		return craftHTTPRequest(url, type, (RequestBody) null);
+
 	}
 
 	/**
