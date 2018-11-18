@@ -33,14 +33,14 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testJustURL() {
 			String[] args = new String[] {ProjectTest.URL_FLAG,
-			        "http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html"};
+			        "https://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html"};
 			ProjectTest.checkExceptions("Only URL", args);
 		}
 
 		@Test(timeout = TIMEOUT)
 		public void testBadURL() {
 			String[] args = new String[] {ProjectTest.URL_FLAG,
-			        "http://www.cs.usfca.edu/~sjengle/nowhere.html"};
+			        "https://www.cs.usfca.edu/~sjengle/nowhere.html"};
 			ProjectTest.checkExceptions("Invalid URL", args);
 		}
 	}
@@ -58,7 +58,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testIndexBirds() {
 			String test = "birds";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html";
 
 			testCrawlIndexOutput(test, link);
 		}
@@ -66,7 +66,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testSearchBirds() {
 			String test = "birds";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/crawl/birds.html";
 
 			testCrawlSearchOutput(test, link);
 		}
@@ -74,7 +74,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testIndexYellow() {
 			String test = "yellow";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html";
 
 			testCrawlIndexOutput(test, link);
 		}
@@ -82,7 +82,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testSearchYellow() {
 			String test = "yellow";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/crawl/yellowthroat.html";
 
 			testCrawlSearchOutput(test, link);
 		}
@@ -90,7 +90,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testIndexHolmes() {
 			String test = "holmes";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/gutenberg/1661-h.htm";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/gutenberg/1661-h.htm";
 
 			testCrawlIndexOutput(test, link);
 		}
@@ -98,7 +98,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testSearchHolmes() {
 			String test = "holmes";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/gutenberg/1661-h.htm";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/gutenberg/1661-h.htm";
 
 			testCrawlSearchOutput(test, link);
 		}
@@ -106,7 +106,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testIndexGuten() {
 			String test = "gutenweb";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html";
 
 			testCrawlIndexOutput(test, link);
 		}
@@ -114,7 +114,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testSearchGuten() {
 			String test = "gutenweb";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/crawl/gutenberg.html";
 
 			testCrawlSearchOutput(test, link);
 		}
@@ -122,7 +122,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testIndexRecurse() {
 			String test = "recurse";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/recurse/link01.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/recurse/link01.html";
 
 			testCrawlIndexOutput(test, link);
 		}
@@ -130,7 +130,7 @@ public class CrawlTest {
 		@Test(timeout = TIMEOUT)
 		public void testSearchRecurse() {
 			String test = "recurse";
-			String link = "http://www.cs.usfca.edu/~sjengle/cs212/recurse/link01.html";
+			String link = "https://www.cs.usfca.edu/~sjengle/cs212/recurse/link01.html";
 
 			testCrawlSearchOutput(test, link);
 		}
