@@ -104,7 +104,7 @@
                     <format>html</format>
                     <format>xml</format>
                 </formats>
-                <check />
+                <check/>
             </configuration>
         </plugin>
 
@@ -127,12 +127,12 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.4.0.RC1</version>
+            <version>9.4.11.v20180605</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>9.4.0.RC1</version>
+            <version>9.4.11.v20180605</version>
         </dependency>
 
         <dependency>
