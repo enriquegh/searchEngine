@@ -28,7 +28,7 @@ public class SearchServlet extends HttpServlet {
 	private final ThreadSafeInvertedIndex index;
 	private final ArrayList<SearchResult> results;
 	private static boolean firstTime = true;
-    STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+    STGroup templates = new STRawGroupDir("templates",'$', '$');
 
 
     public SearchServlet(ThreadSafeInvertedIndex index) {

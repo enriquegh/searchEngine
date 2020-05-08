@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class LoginRegisterServlet extends LoginBaseServlet {
 
-	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+	STGroup templates = new STRawGroupDir("templates",'$', '$');
 
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response)

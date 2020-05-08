@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class LoginUserServlet extends LoginBaseServlet {
 
-	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+	STGroup templates = new STRawGroupDir("templates",'$', '$');
 
 
 	@Override

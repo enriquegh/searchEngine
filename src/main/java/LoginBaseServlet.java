@@ -28,7 +28,7 @@ public class LoginBaseServlet extends HttpServlet {
 
 	protected static Logger log = LogManager.getLogger();
 	protected static final LoginDatabaseHandler dbhandler = LoginDatabaseHandler.getInstance();
-	STGroup templates = new STRawGroupDir("src/main/resources",'$', '$');
+	STGroup templates = new STRawGroupDir("templates",'$', '$');
 
 	protected String getDate() {
 		String format = "hh:mm a 'on' EEE, MMM dd, yyyy";
