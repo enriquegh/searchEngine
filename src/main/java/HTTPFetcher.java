@@ -158,11 +158,11 @@ public class HTTPFetcher {
 
 	/**
 	 * Fetches the HTML for the specified URL (without headers).
-	 * 
+	 *
 	 * @param url
 	 *            - url to fetch
 	 * @return HTML as a single {@link String}, or null if not HTML
-	 * 
+	 *
 	 */
 	public static String fetchHTML(String url) {
 		URL target;
@@ -182,9 +182,11 @@ public class HTTPFetcher {
 			}
 
 
-		} catch (MalformedURLException e) {
-			logger.debug(e);
-		} finally {
+        } catch (MalformedURLException e) {
+            logger.debug(e);
+        } catch (Exception e) {
+            logger.debug(e);
+        } finally {
 			response.close();
 		}
 
@@ -207,6 +209,7 @@ public class HTTPFetcher {
 			return response;
 
 		} catch (IOException e) {
+		    logger.debug("Could not complete request to " + request.url());
 			logger.debug(e.getMessage());
 
 		}
