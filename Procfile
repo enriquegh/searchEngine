@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/SearchEngine-1.0-SNAPSHOT.jar -u http://logging.apache.org/log4j/1.2/apidocs/allclasses-noframe.html -t 5 -p $PORT
+web: java -Ddatabase.username=$SEARCH_USERNAME -Ddatabase.hostname=$SEARCH_HOSTNAME -Ddatabase.database=$SEARCH_DATABASE -Ddatabase.password=$SEARCH_PASSWORD $JAVA_OPTS -jar target/SearchEngine-1.0-SNAPSHOT.jar -u $SEARCH_CRAWL_URL -t 5 -p $PORT

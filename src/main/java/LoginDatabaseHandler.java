@@ -74,7 +74,7 @@ public class LoginDatabaseHandler {
 		random = new Random(System.currentTimeMillis());
 
 		try {
-			db = new DatabaseConnector("database.properties");
+			db = new DatabaseConnector();
 			status = db.testConnection() ? setupTables() : Status.CONNECTION_FAILED;
 		}
 		catch (FileNotFoundException e) {
