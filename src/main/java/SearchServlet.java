@@ -49,9 +49,6 @@ public class SearchServlet extends HttpServlet {
 		log.info("MessageServlet ID " + this.hashCode()
 				+ " handling GET request.");
 
-        //TODO: Why is ST not getting templates when compiling to JAR?
-        // Why is the output getting two slashes?
-        // https://github.com/antlr/stringtemplate4/issues/49
         search.add("title",TITLE);
         search.add("requestPath",request.getServletPath());
 
