@@ -29,17 +29,16 @@ public class DatabaseConnector {
 	private Properties login;
 
 	/**
-	 * Creates a connector from a "database.*" properties
+	 * Creates a connector from JDBC_DATABASE_URL, JDBC_DATABASE_USERNAME and JDBC_DATABASE_PASSWORD variables
 	 *
 	 */
 	public DatabaseConnector() throws FileNotFoundException, IOException {
 
-        String hostname = System.getProperty("database.hostname");
-        String database = System.getProperty("database.database");
-        String username = System.getProperty("database.username");
-        String password = System.getProperty("database.password");
+        String dbUrl = System.getenv("JDBC_DATABASE_URL");
+        String username = System.getenv("JDBC_DATABASE_USERNAME");
+        String password = System.getenv("JDBC_DATABASE_PASSWORD");
 
-        initializeConnector(hostname, database, username, password);
+        initializeConnector(dbUrl, username, password);
 
 	}
 
@@ -68,9 +67,16 @@ public class DatabaseConnector {
 
     private void initializeConnector(String hostname, String database, String username, String password) {
         // Create database URI in proper format
-        uri = String.format("jdbc:mysql://%s/%s",
+        String dbURI = String.format("jdbc:mysql://%s/%s",
                 hostname,
                 database);
+
+        initializeConnector(dbURI, username, password);
+    }
+
+    private void initializeConnector(String databaseURI, String username, String password) {
+
+        uri = databaseURI;
 
         // Create database login properties
         login = new Properties();

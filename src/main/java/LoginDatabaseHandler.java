@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class LoginDatabaseHandler {
 
-	/** A {@link org.apache.log4j.Logger log4j} logger for debugging. */
+	/** A {@link org.apache.logging.log4j.Logger} logger for debugging. */
 	private static Logger log = LogManager.getLogger();
 
 	/** Makes sure only one database handler is instantiated. */
