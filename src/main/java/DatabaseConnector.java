@@ -23,20 +23,24 @@ public class DatabaseConnector {
 	 * URI to use when connecting to database. Should be in the format:
 	 * jdbc:subprotocol://hostname/database
 	 */
-	public final String uri;
+	public String uri;
 
 	/** Properties with username and password for connecting to database. */
-	private final Properties login;
+	private Properties login;
 
 	/**
-	 * Creates a connector from a "database.properties" file located in the
-	 * current working directory.
+	 * Creates a connector from a "database.*" properties
 	 *
-	 * @throws IOException if unable to properly parse properties file
-	 * @throws FileNotFoundException if properties file not found
 	 */
 	public DatabaseConnector() throws FileNotFoundException, IOException {
-		this("database.properties");
+
+        String hostname = System.getProperty("database.hostname");
+        String database = System.getProperty("database.database");
+        String username = System.getProperty("database.username");
+        String password = System.getProperty("database.password");
+
+        initializeConnector(hostname, database, username, password);
+
 	}
 
 	/**
@@ -52,16 +56,27 @@ public class DatabaseConnector {
 		// Try to load the configuration from file
 		Properties config = loadConfig(configPath);
 
-		// Create database URI in proper format
-		uri = String.format("jdbc:mysql://%s/%s",
-				config.getProperty("hostname"),
-				config.getProperty("database"));
+		String hostname = config.getProperty("hostname");
+        String database = config.getProperty("database");
+        String username = config.getProperty("username");
+        String password = config.getProperty("password");
 
-		// Create database login properties
-		login = new Properties();
-		login.put("user", config.getProperty("username"));
-		login.put("password", config.getProperty("password"));
+        initializeConnector(hostname, database, username, password);
+
 	}
+
+
+    private void initializeConnector(String hostname, String database, String username, String password) {
+        // Create database URI in proper format
+        uri = String.format("jdbc:mysql://%s/%s",
+                hostname,
+                database);
+
+        // Create database login properties
+        login = new Properties();
+        login.put("user", username);
+        login.put("password", password);
+    }
 
 	/**
 	 * Attempts to load properties file with database configuration. Must
