@@ -14,9 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.stringtemplate.v4.ST;
-import org.stringtemplate.v4.STGroup;
-import org.stringtemplate.v4.STRawGroupDir;
 
 /**
  * Provides base functionality to all servlets in this example.
@@ -28,7 +25,6 @@ public class LoginBaseServlet extends HttpServlet {
 
 	protected static Logger log = LogManager.getLogger();
 	protected static final LoginDatabaseHandler dbhandler = LoginDatabaseHandler.getInstance();
-	STGroup templates = new STRawGroupDir("templates",'$', '$');
 
 	protected String getDate() {
 		String format = "hh:mm a 'on' EEE, MMM dd, yyyy";

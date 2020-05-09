@@ -15,7 +15,6 @@ import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
-import org.stringtemplate.v4.STRawGroupDir;
 // More XSS Prevention:
 // https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
 // Apache Comments:
@@ -28,14 +27,15 @@ public class SearchServlet extends HttpServlet {
 	private final ThreadSafeInvertedIndex index;
 	private final ArrayList<SearchResult> results;
 	private static boolean firstTime = true;
-    STGroup templates = new STRawGroupDir("templates",'$', '$');
+    private STGroup templates;
 
 
     public SearchServlet(ThreadSafeInvertedIndex index) {
 		super();
 		this.index = index;
 		results = new ArrayList<>();
-	}
+        templates = new STRawGroupDirPatched("templates",'$', '$');
+    }
 
 	@Override
 	protected void doGet(HttpServletRequest request,
@@ -49,8 +49,9 @@ public class SearchServlet extends HttpServlet {
 		log.info("MessageServlet ID " + this.hashCode()
 				+ " handling GET request.");
 
-		search.add("title",TITLE);
-		search.add("requestPath",request.getServletPath());
+        search.add("title",TITLE);
+        search.add("requestPath",request.getServletPath());
+
 
 		synchronized (results) {
 		    search.add("results",results);
@@ -70,7 +71,7 @@ public class SearchServlet extends HttpServlet {
 		response.setStatus(HttpServletResponse.SC_OK);
 		log.info("MessageServlet ID " + this.hashCode()
 				+ " handling POST request.");
-		
+
 		results.clear(); //Each search is new
 		String searchQuery = request.getParameter("searchBar");
 		String[] queryList = searchQuery.split(" ");

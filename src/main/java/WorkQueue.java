@@ -31,7 +31,7 @@ public class WorkQueue {
 
     /**
      * Starts a work queue with the default number of threads.
-     * 
+     *
      * @see #WorkQueue(int)
      */
     public WorkQueue() {
@@ -111,8 +111,7 @@ public class WorkQueue {
                         try {
                             queue.wait();
                         } catch (InterruptedException ex) {
-                            System.err
-                                    .println("Warning: Work queue interrupted "
+                            logger.warn("Work queue interrupted "
                                             + "while waiting.");
                             Thread.currentThread().interrupt();
                         }
@@ -129,8 +128,8 @@ public class WorkQueue {
                 try {
                     r.run();
                 } catch (RuntimeException ex) {
-                    System.err.println("Warning: Work queue encountered an "
-                            + "exception while running. " + ex);
+                    logger.warn("Work queue encountered an "
+                            + "exception while running. ", ex);
                 }
             }
         }

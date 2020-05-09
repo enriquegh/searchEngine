@@ -59,7 +59,11 @@
         
         <Logger name="HTMLLinkParser" level="OFF">
             <AppenderRef ref="Console" level="INFO" />
-            <AppenderRef ref="FileLog" level="ALL"/>          
+            <AppenderRef ref="FileLog" level="ALL"/>
+        </Logger>
+        <Logger name="HTTPFetcher" level="ALL">
+            <AppenderRef ref="Console" level="INFO" />
+            <AppenderRef ref="FileLog" level="ALL"/>
         </Logger>
         
 
