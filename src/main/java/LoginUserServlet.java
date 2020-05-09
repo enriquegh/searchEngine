@@ -1,6 +1,5 @@
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
-import org.stringtemplate.v4.STRawGroupDir;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class LoginUserServlet extends LoginBaseServlet {
 
-	STGroup templates = new STRawGroupDir("templates",'$', '$');
+	STGroup templates = new STRawGroupDirPatched("templates",'$', '$');
 
 
 	@Override
