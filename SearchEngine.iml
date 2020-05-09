@@ -11,7 +11,7 @@
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="11.0.7" jdkType="JavaSDK" />
     <orderEntry type="module-library">
       <library name="junit4">
         <CLASSES>
@@ -21,9 +21,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="log4j2" level="project" />
-    <orderEntry type="library" exported="" name="jetty" level="project" />
-    <orderEntry type="library" exported="" name="jdbc" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.4.28.v20200408" level="project" />
