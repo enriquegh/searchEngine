@@ -74,7 +74,12 @@ public class LoginDatabaseHandler {
 		random = new Random(System.currentTimeMillis());
 
 		try {
-			db = new DatabaseConnector();
+            if(System.getProperty("searchDebug") != null && "true".equalsIgnoreCase(System.getProperty("searchDebug"))) {
+                db = new DatabaseConnector("database.properties");
+            } else {
+                db = new DatabaseConnector();
+            }
+
 			status = db.testConnection() ? setupTables() : Status.CONNECTION_FAILED;
 		}
 		catch (FileNotFoundException e) {
