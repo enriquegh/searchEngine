@@ -47,7 +47,7 @@ public class HTTPFetcher {
 	 * @throws IOException
 	 *
 	 */
-	public static Object fetchLines(URL url, Response response) {
+	public static List<String> fetchLines(URL url, Response response) {
 		ArrayList<String> lines = new ArrayList<>();
 
 		try (BufferedReader reader = new BufferedReader(response.body().charStream());) {
