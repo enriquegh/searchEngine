@@ -1,7 +1,9 @@
+package com.enriquegh.searchEngine;
+
 /**
  * This class is an object that contains the necessary elements of a search
  * results hit.
- * 
+ *
  * The class implements Comparable so it may be able to sort all the instances.
  *
  */
@@ -13,7 +15,7 @@ public class SearchResult implements Comparable<SearchResult> {
 
     /**
      * Stores frequency, position and path to the SearchResult instance.
-     * 
+     *
      * @param frequency
      * @param position
      * @param path
@@ -29,10 +31,10 @@ public class SearchResult implements Comparable<SearchResult> {
      * First compares by frequency, if equal then compares by the relative
      * position of each result and if that still isn't enough it compares by
      * their path.
-     * 
+     *
      * @param o
      *            SearchResult that will be compared.
-     * 
+     *
      */
     @Override
     public int compareTo(SearchResult o) {
@@ -55,7 +57,7 @@ public class SearchResult implements Comparable<SearchResult> {
 
     /**
      * Updates the frequency by adding wordAppeared.
-     * 
+     *
      * @param wordAppeared
      *            Number that will be added to frequency.
      */
@@ -66,7 +68,7 @@ public class SearchResult implements Comparable<SearchResult> {
     /**
      * Checks if position stored is less than position given. If it is, it saves
      * the new lowest value to position variable.
-     * 
+     *
      * @param num
      *            Number to be compared.
      */
@@ -75,7 +77,7 @@ public class SearchResult implements Comparable<SearchResult> {
             this.position = num;
         }
     }
-    
+
     public String getPath() {
     	return path;
     }

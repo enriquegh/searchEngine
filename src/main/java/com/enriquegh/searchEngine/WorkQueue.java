@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.util.LinkedList;
 
 import org.apache.logging.log4j.LogManager;

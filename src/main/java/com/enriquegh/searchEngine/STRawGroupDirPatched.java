@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import org.stringtemplate.v4.STGroupDir;
 import org.stringtemplate.v4.STRawGroupDir;
 

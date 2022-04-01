@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -16,7 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * 
+ *
  * This class contains a TreeMap with all the necessary data to make a WordIndex
  * of a file
  *
@@ -77,7 +79,7 @@ public class InvertedIndex {
 
     /**
      * Adds a whole List of type String into the WordIndex
-     * 
+     *
      * @param list
      *            - list to be added
      * @param file
@@ -108,7 +110,7 @@ public class InvertedIndex {
 
     /**
      * Tests whether the index contains the specified word.
-     * 
+     *
      * @param word
      *            - word to look for
      * @return true if the word is stored in the index

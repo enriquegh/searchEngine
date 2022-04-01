@@ -1,8 +1,10 @@
+package com.enriquegh.searchEngine;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * 
+ *
  * Multithreaded representation of InvertedIndex.
  *
  */
@@ -36,9 +38,9 @@ public class ThreadSafeInvertedIndex extends InvertedIndex {
         lock.lockRead();
         String string = super.toString();
         lock.unlockRead();
-        return string;        
+        return string;
     }
-    
+
     @Override
     public boolean contains(String word) {
         lock.lockRead();

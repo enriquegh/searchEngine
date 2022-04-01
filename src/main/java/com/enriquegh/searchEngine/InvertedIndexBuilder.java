@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -59,7 +61,7 @@ public class InvertedIndexBuilder {
     /**
      * Parses through the entire file reading line by line. It cleans text using
      * {@link WordParser} and stores word into a {@link WordIndex}
-     * 
+     *
      * @param path
      *            File that will be read
      * @param index

@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.math.BigInteger;

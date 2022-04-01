@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -26,9 +28,9 @@ public class ThreadSafeQueryParser extends QueryParser {
         super();
         workers = new WorkQueue(threads);
         lock = new ReadWriteLock();
-        
+
     }
-    
+
 
     @Override
     public void addResult(String line, java.util.ArrayList<SearchResult> tempResults) {
@@ -58,7 +60,7 @@ public class ThreadSafeQueryParser extends QueryParser {
     }
 
     private class LineWorker implements Runnable {
-        
+
         private final String line;
         private final ThreadSafeInvertedIndex index;
 

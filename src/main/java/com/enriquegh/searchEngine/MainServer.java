@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -5,7 +7,7 @@ import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
 
 /**
- * 
+ *
  * This class is the Main Server that controls all the servlets that are being used.
  *
  */

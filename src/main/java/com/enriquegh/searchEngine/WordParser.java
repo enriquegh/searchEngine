@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.util.ArrayList;
 import java.util.List;
 

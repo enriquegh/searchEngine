@@ -1,3 +1,4 @@
+package com.enriquegh.searchEngine;
 
 /**
  * Creates a Status enum type for tracking errors. Each Status enum type

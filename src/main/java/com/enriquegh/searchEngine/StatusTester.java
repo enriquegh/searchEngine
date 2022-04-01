@@ -1,3 +1,4 @@
+package com.enriquegh.searchEngine;
 
 /**
  * Demonstrates how to use the {@link Status} enum type. Includes how to

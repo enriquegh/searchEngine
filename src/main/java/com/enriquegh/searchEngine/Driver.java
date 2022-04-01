@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
@@ -13,7 +15,7 @@ import org.apache.logging.log4j.Logger;
  * that the flag -d and a directory are entered. If flag -i is entered an output
  * directory will be included. If flag is included but no directory it will be
  * saved to "index.txt"
- * 
+ *
  * Example run config: -u http://logging.apache.org/log4j/1.2/apidocs/allclasses-noframe.html -t 5 -p
  */
 
@@ -24,7 +26,7 @@ public class Driver {
     public static void main(String[] args) {
         String outputPath;
         int threads;
-        ArgumentParser parser = new ArgumentParser(args);  
+        ArgumentParser parser = new ArgumentParser(args);
 
         if (parser.hasFlag("-t")) {
             ThreadSafeInvertedIndex index = new ThreadSafeInvertedIndex(); //Need to call here if not traverse uses parent method
@@ -43,20 +45,20 @@ public class Driver {
             ThreadSafeQueryParser parseQuery;
             tsbuilder = new ThreadSafeInvertedIndexBuilder(threads);
             parseQuery = new ThreadSafeQueryParser(threads);
-            
+
             if (parser.hasFlag("-u") && parser.hasValue("-u")) {
                 LinkTraverser traverser = new LinkTraverser(threads);
                 String urlPath = parser.getValue("-u");
-                
+
                 traverser.traverse(urlPath, index);
                 logger.debug("Finished traversing links");
                 traverser.shutdown();
-                
+
             }
-            
+
             if (parser.hasFlag("-p")) {
                 int port;
-                
+
                 if (parser.hasValue("-p")) {
 
                     try {
@@ -67,7 +69,7 @@ public class Driver {
                 } else {
                     port = 8080;
                 }
-                
+
                 MainServer server = new MainServer(port);
                 server.run(index);
             }
@@ -161,7 +163,7 @@ public class Driver {
 
             tsbuilder.shutdown();
             parseQuery.shutdown();
-            
+
         }
 
         else {

@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;

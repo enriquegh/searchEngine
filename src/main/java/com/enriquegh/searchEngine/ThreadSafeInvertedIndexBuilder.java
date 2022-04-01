@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
@@ -6,7 +8,7 @@ import java.nio.file.Path;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 /**
- * 
+ *
  * Multithreaded representation of the InvertedIndexBuilder
  *
  */
@@ -14,11 +16,11 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     private static Logger logger = LogManager.getLogger();
     private final WorkQueue workers;
     private int pending;
-    
+
     public ThreadSafeInvertedIndexBuilder(int threads){
         workers = new WorkQueue(threads);
     }
-    
+
     public ThreadSafeInvertedIndexBuilder(){
         workers = new WorkQueue();
     }
@@ -26,7 +28,7 @@ public class ThreadSafeInvertedIndexBuilder extends InvertedIndexBuilder {
     /**
      * This function traverses over a list of files. If the file is a text file it assigns it to a
      * Directory Worker else if it is a Directory it access it recursively.
-     * 
+     *
      * @param path
      * @param index
      * @throws IOException

@@ -1,10 +1,12 @@
+package com.enriquegh.searchEngine;
+
 import java.util.List;
 import java.util.TreeSet;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 /**
- * 
+ *
  * This class is called for parsing a URL given on Driver.
  * Parses through link fetching HTML and traversing over more
  * links until it reaches numLinks.
@@ -17,7 +19,7 @@ public class LinkTraverser {
 	private TreeSet<String> listLinks;
 	private final ReadWriteLock lock;
 	private final int NUMLINKS;
-	
+
 	/**
 	 * Initializes all variables necessary for class assuming user
 	 * didn't enter a number for amount of threads.
@@ -30,7 +32,7 @@ public class LinkTraverser {
 	}
 	/**
 	 * Initializes all variables necessary for class
-	 * 
+	 *
 	 * @param threads - number of threads that will be used.
 	 */
 	public LinkTraverser(int threads) {
@@ -39,7 +41,7 @@ public class LinkTraverser {
 		lock = new ReadWriteLock();
 		NUMLINKS = 50;
 	}
-	
+
 	/**
 	 * Adds seed URL to list and starts the LinkWorker class
 	 *
@@ -112,7 +114,7 @@ public class LinkTraverser {
 	 * Indicates that we now have additional "pending" work to wait for. We need
 	 * this since we can no longer call join() on the threads. (The threads keep
 	 * running forever in the background.)
-	 * 
+	 *
 	 * We made this a synchronized method in the outer class, since locking on
 	 * the "this" object within an inner class does not work.
 	 */

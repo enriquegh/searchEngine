@@ -1,5 +1,5 @@
-import java.io.IOException;
-import java.io.PrintWriter;
+package com.enriquegh.searchEngine;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;

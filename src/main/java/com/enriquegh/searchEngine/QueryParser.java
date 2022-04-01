@@ -1,3 +1,5 @@
+package com.enriquegh.searchEngine;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -18,7 +20,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class QueryParser {
     private static Logger logger = LogManager.getLogger();
-    private final LinkedHashMap<String, ArrayList<SearchResult>> results; 
+    private final LinkedHashMap<String, ArrayList<SearchResult>> results;
 
     /**
      * Instantiated the LinkedHashMap that will be used to save the results.
@@ -30,7 +32,7 @@ public class QueryParser {
     /**
      * Parses a file by word and adds the whole line as key and adds
      * SearchResult ArrayList as value by calling {@link InvertedIndex#search}
-     * 
+     *
      * @param file
      *            a {@link Path} instance of that contains the path to the input
      *            query.
@@ -51,14 +53,14 @@ public class QueryParser {
             }
         }
     }
-    
+
     public void addResult(String line, ArrayList<SearchResult> tempResults) {
         results.put(line,tempResults);
     }
 
     /**
      * Prints out all the SearchResults found into a human readable file.
-     * 
+     *
      * @param output
      *            {@link String} that contains the output file.
      * @throws IOException
