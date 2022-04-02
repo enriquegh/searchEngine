@@ -23,15 +23,15 @@
     </orderEntry>
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.13.2" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:10.0.8" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty.toolchain:jetty-servlet-api:4.0.6" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:10.0.8" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:10.0.8" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:10.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:11.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api:5.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:11.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:11.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:11.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.0-alpha5" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:10.0.8" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:10.0.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-slf4j-impl:10.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:11.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:11.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-slf4j-impl:11.0.8" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.20" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.13.1" level="project" />

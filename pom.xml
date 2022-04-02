@@ -8,7 +8,7 @@
     <artifactId>SearchEngine</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <jetty.version>10.0.8</jetty.version>
+        <jetty.version>11.0.8</jetty.version>
         <jersey.version>2.34</jersey.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
