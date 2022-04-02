@@ -8,7 +8,7 @@
     <artifactId>SearchEngine</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <jetty.version>9.4.30.v20200611</jetty.version>
+        <jetty.version>10.0.8</jetty.version>
         <jersey.version>2.34</jersey.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -159,6 +159,12 @@
             <artifactId>jetty-servlet</artifactId>
             <version>${jetty.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-slf4j-impl</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>mysql</groupId>
