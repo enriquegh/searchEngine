@@ -70,8 +70,7 @@ public class Driver {
                     port = 8080;
                 }
 
-                MainServer server = new MainServer(port);
-                server.run(index);
+                logger.info("Server not working right now...");
             }
 
             if (parser.hasFlag("-d") && parser.hasValue("-d")) {
