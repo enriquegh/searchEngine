@@ -7,6 +7,7 @@ target/*
 workspace.xml
 tasks.xml
 
+.java-version
 
 # Created by https://www.gitignore.io/api/intellij,java,macos
 
