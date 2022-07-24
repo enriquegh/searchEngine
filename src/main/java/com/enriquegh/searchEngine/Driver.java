@@ -29,57 +29,9 @@ public class Driver {
 
 
     public static void main(String[] args) {
-        String outputPath;
-        int threads;
-        ArgumentParser parser = new ArgumentParser(args);
 
-//        ThreadSafeInvertedIndex index = new ThreadSafeInvertedIndex(); //Need to call here if not traverse uses parent method
+        SpringApplication.run(Driver.class, args);
 
-        if (parser.hasValue("-t")) {
-
-            try {
-                threads = Integer.parseInt(parser.getValue("-t"));
-            } catch (NumberFormatException e) {
-                threads = 5;
-            }
-        } else {
-            threads = 5;
-        }
-        ThreadSafeInvertedIndexBuilder tsbuilder;
-        ThreadSafeQueryParser parseQuery;
-        tsbuilder = new ThreadSafeInvertedIndexBuilder(threads);
-        parseQuery = new ThreadSafeQueryParser(threads);
-
-//        if (parser.hasFlag("-u") && parser.hasValue("-u")) {
-//            LinkTraverser traverser = new LinkTraverser(threads);
-//            String urlPath = parser.getValue("-u");
-//
-//            traverser.traverse(urlPath, index);
-//            logger.debug("Finished traversing links");
-//            traverser.shutdown();
-//
-//        }
-
-        if (parser.hasFlag("-p")) {
-            int port;
-
-            if (parser.hasValue("-p")) {
-
-                try {
-                    port = Integer.parseInt(parser.getValue("-p"));
-                } catch (NumberFormatException e) {
-                    port = 8080;
-                }
-            } else {
-                port = 8080;
-            }
-
-//                logger.info("Server not working right now...");
-            SpringApplication.run(Driver.class, args);
-        }
-
-        tsbuilder.shutdown();
-        parseQuery.shutdown();
 
     }
 

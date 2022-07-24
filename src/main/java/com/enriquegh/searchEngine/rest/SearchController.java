@@ -22,6 +22,6 @@ public class SearchController {
 
     @GetMapping("/search")
     List<SearchResult> search(@RequestParam String query) {
-        return index.search(query.split(" "));
+        return index.search(query.trim().split(" "));
     }
 }
