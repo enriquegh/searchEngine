@@ -78,14 +78,10 @@ public class InvertedIndex {
     }
 
     /**
-     * Adds a whole List of type String into the WordIndex
+     * Adds a whole InvertedIndex into another InvertedIndex.
      *
-     * @param list
-     *            - list to be added
-     * @param file
-     *            - String path to where word was found
-     * @param start
-     *            - Number where the position should start
+     * @param tempIndex
+     *            - InvervedIndex to add to this one
      * @return true if the word is stored in the index
      */
     public boolean addAll(InvertedIndex tempIndex) {
@@ -170,6 +166,8 @@ public class InvertedIndex {
     public ArrayList<SearchResult> search(String[] queryList) {
         ArrayList<SearchResult> searchResultsList = new ArrayList<>();
         Map<String, SearchResult> searchResultsMap = new HashMap<>();
+
+        logger.info("Searching for {}", queryList);
 
         for (String query : queryList) {
 

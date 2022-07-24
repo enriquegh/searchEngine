@@ -1,5 +1,9 @@
 package com.enriquegh.searchEngine;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * This class is an object that contains the necessary elements of a search
  * results hit.
@@ -7,11 +11,13 @@ package com.enriquegh.searchEngine;
  * The class implements Comparable so it may be able to sort all the instances.
  *
  */
+@Entity
 public class SearchResult implements Comparable<SearchResult> {
 
     private int frequency;
     private int position;
     private final String path;
+    private @Id @GeneratedValue Long id;
 
     /**
      * Stores frequency, position and path to the SearchResult instance.
@@ -80,6 +86,14 @@ public class SearchResult implements Comparable<SearchResult> {
 
     public String getPath() {
     	return path;
+    }
+
+    public int getFrequency() {
+    	return frequency;
+    }
+
+    public int getPosition() {
+    	return position;
     }
 
 }
